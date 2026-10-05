@@ -1,0 +1,73 @@
+<script>
+  const preference = matchMedia('(prefers-reduced-motion: reduce)');
+  const strip = document.querySelector<HTMLElement>('.work-strip');
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-parallax]'));
+  const groups = [
+    '.services-grid > div', '.section-heading', '.projects-grid > a',
+    '.quote-grid > div', '.about-grid > div', '.stats > div',
+    '.cta-inner > *', '.footer-top > *', '.footer-bottom',
+  ];
+  const reveals = groups.flatMap(selector => Array.from(document.querySelectorAll<HTMLElement>(selector)));
+  const running = new Set<Animation>();
+  const revealed = new WeakSet<Element>();
+  let observer: IntersectionObserver | undefined;
+  let frame = 0;
+
+  function updateParallax() {
+    frame = 0;
+    if (!strip || preference.matches) return;
+    const rect = strip.getBoundingClientRect();
+    const height = window.innerHeight;
+    const progress = Math.max(-1, Math.min(1, (height / 2 - rect.top - rect.height / 2) / ((height + rect.height) / 2)));
+    const distance = window.innerWidth <= 760 ? 12 : 28;
+    cards.forEach(card => {
+      const direction = Number(card.dataset.parallax || 0);
+      card.style.setProperty('--scroll-offset', `${(progress * distance * direction).toFixed(2)}px`);
+    });
+  }
+
+  function schedule() {
+    if (!frame && !preference.matches) frame = requestAnimationFrame(updateParallax);
+  }
+
+  function configure() {
+    observer?.disconnect();
+    running.forEach(animation => animation.cancel());
+    running.clear();
+    if (frame) cancelAnimationFrame(frame);
+    frame = 0;
+    if (preference.matches) {
+      cards.forEach(card => card.style.removeProperty('--scroll-offset'));
+      return;
+    }
+    // Content stays visible without JavaScript and if observation is unavailable.
+    if ('IntersectionObserver' in window && typeof Element.prototype.animate === 'function') {
+      observer = new IntersectionObserver(entries => {
+        const entering = entries.filter(entry => entry.isIntersecting);
+        entering.forEach((entry, index) => {
+          observer?.unobserve(entry.target);
+          if (revealed.has(entry.target)) return;
+          revealed.add(entry.target);
+          const animation = entry.target.animate([
+            { opacity: 0, transform: 'translateY(18px)' },
+            { opacity: 1, transform: 'translateY(0)' },
+          ], {
+            duration: 650,
+            delay: Math.min(index, 3) * 65,
+            easing: 'cubic-bezier(0.2, 0.65, 0.3, 1)',
+            fill: 'backwards',
+          });
+          running.add(animation);
+          animation.finished.then(() => running.delete(animation), () => running.delete(animation));
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
+      reveals.forEach(element => { if (!revealed.has(element)) observer?.observe(element); });
+    }
+    schedule();
+  }
+
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', schedule, { passive: true });
+  preference.addEventListener('change', configure);
+  configure();
+</script>

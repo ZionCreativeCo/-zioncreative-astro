@@ -1,0 +1,17 @@
+{
+  "build": "passed",
+  "generated_pages": [
+    "/",
+    "/contact"
+  ],
+  "html_asset_font_and_link_checks": "passed",
+  "browser_visual_qa": "pending: cloud browser cannot access local preview",
+  "elfsight_delivery": "pending: not submitted",
+  "secondary_routes": "link to current live site",
+  "fonts": "DM Sans OFL; original licensed fonts pending",
+  "portable_preview_paths": "passed: 48 local references including every srcset candidate and font",
+  "motion_logic": "passed: opposing bounded parallax and reduced-motion reset in simulated environment",
+  "phone_gif": "byte-identical to supplied upload; static reduced-motion source included",
+  "brand_identities": "original source GIF restored: 129 frames, 1080\u00d7608; included in portable preview",
+  "arrows": "shared decorative SVG; stock glyphs removed across built pages"
+}

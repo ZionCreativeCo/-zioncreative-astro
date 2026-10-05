@@ -1,0 +1,35 @@
+---
+import Arrow from './Arrow.astro';
+import { siteLink } from '../lib/links';
+const nav = [{label:'Work',path:'/portfolio'},{label:'Services',path:'/services'},{label:'About',path:'/about-us'}];
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Zion Creative home"><img src="/images/logo.webp" width="176" height="95" alt="Zion Creative" /></a>
+    <nav class="desktop-nav" aria-label="Main navigation">{nav.map(item => <a href={siteLink(item.path)}>{item.label}</a>)}</nav>
+    <div class="header-actions">
+      <a class="button button-lime header-cta" href="/contact">Start a project <span aria-hidden="true"><Arrow /></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" hidden>
+    {nav.map(item => <a href={siteLink(item.path)}>{item.label}<span aria-hidden="true"><Arrow /></span></a>)}
+    <a href="/contact">Start a project <span aria-hidden="true"><Arrow /></span></a>
+  </nav>
+</header>
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+  const menu = document.querySelector<HTMLElement>('#mobile-menu');
+  const setOpen = (open: boolean) => {
+    if (!toggle || !menu) return;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    menu.hidden = !open;
+  };
+  toggle?.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') { setOpen(false); toggle.focus(); }
+  });
+  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setOpen(false)));
+  matchMedia('(min-width: 761px)').addEventListener('change', event => { if (event.matches) setOpen(false); });
+</script>

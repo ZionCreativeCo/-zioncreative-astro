@@ -1,0 +1,13 @@
+---
+import Arrow from './Arrow.astro';
+import { siteLink } from '../lib/links';
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div><p class="eyebrow">Good things start with a conversation.</p><a class="footer-email" href="mailto:hello@zioncreative.co">hello@zioncreative.co <span aria-hidden="true"><Arrow /></span></a><a class="footer-phone" href="tel:+12177252031">217.725.2031</a></div>
+      <nav aria-label="Footer navigation"><a href={siteLink('/portfolio')}>Our work</a><a href={siteLink('/services')}>Services</a><a href={siteLink('/about-us')}>About Zion</a><a href="/contact">Start a project</a></nav>
+    </div>
+    <div class="footer-bottom"><a href="/" aria-label="Zion Creative home"><img src="/images/logo.webp" width="112" height="60" alt="Zion Creative" /></a><p>Springfield, Illinois. Creating everywhere.</p><small>© {new Date().getFullYear()} Zion Creative</small></div>
+  </div>
+</footer>

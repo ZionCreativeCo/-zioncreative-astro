@@ -1,0 +1,132 @@
+[
+  {
+    "name": "beat",
+    "width": 640,
+    "bytes": 25458
+  },
+  {
+    "name": "beat",
+    "width": 1280,
+    "bytes": 63478
+  },
+  {
+    "name": "beer",
+    "width": 640,
+    "bytes": 16830
+  },
+  {
+    "name": "beer",
+    "width": 1280,
+    "bytes": 42912
+  },
+  {
+    "name": "branding",
+    "width": 640,
+    "bytes": 3340
+  },
+  {
+    "name": "branding",
+    "width": 1280,
+    "bytes": 6372
+  },
+  {
+    "name": "footer-mark",
+    "format": "webp",
+    "width": 1500,
+    "height": 808,
+    "channels": 4,
+    "premultiplied": false,
+    "hasAlpha": true,
+    "size": 23024
+  },
+  {
+    "name": "logo",
+    "format": "webp",
+    "width": 360,
+    "height": 181,
+    "channels": 4,
+    "premultiplied": true,
+    "hasAlpha": true,
+    "size": 21068
+  },
+  {
+    "name": "mobile-sites",
+    "width": 640,
+    "bytes": 19362
+  },
+  {
+    "name": "mobile-sites",
+    "width": 1280,
+    "bytes": 19362
+  },
+  {
+    "name": "nick",
+    "width": 640,
+    "bytes": 94582
+  },
+  {
+    "name": "nick",
+    "width": 1280,
+    "bytes": 290268
+  },
+  {
+    "name": "packaging",
+    "width": 640,
+    "bytes": 11724
+  },
+  {
+    "name": "packaging",
+    "width": 1280,
+    "bytes": 32216
+  },
+  {
+    "name": "pillars",
+    "width": 640,
+    "bytes": 25856
+  },
+  {
+    "name": "pillars",
+    "width": 1280,
+    "bytes": 96212
+  },
+  {
+    "name": "pillars-hero",
+    "width": 640,
+    "bytes": 36236
+  },
+  {
+    "name": "pillars-hero",
+    "width": 1280,
+    "bytes": 77318
+  },
+  {
+    "name": "villas",
+    "width": 640,
+    "bytes": 29492
+  },
+  {
+    "name": "villas",
+    "width": 1280,
+    "bytes": 41838
+  },
+  {
+    "name": "website",
+    "width": 640,
+    "bytes": 8906
+  },
+  {
+    "name": "website",
+    "width": 1280,
+    "bytes": 23616
+  },
+  {
+    "name": "wordmark",
+    "format": "webp",
+    "width": 1500,
+    "height": 755,
+    "channels": 4,
+    "premultiplied": false,
+    "hasAlpha": true,
+    "size": 43904
+  }
+]

@@ -5,5 +5,13 @@ dist/
 .env.*
 !.env.example
 .DS_Store
+
 __pycache__/
 *.pyc
+# Original Squarespace capture is retained in the migration ZIP, outside the deployable repository.
+migration/source/
+migration/assets/
+migration/pages/
+migration/inventory.json
+migration/additional-inventory.json
+migration/dashboard.astro

@@ -1,0 +1,16 @@
+---
+import { siteLink } from '../lib/links';
+import Arrow from './Arrow.astro';
+interface Props { name: string; category: string; image: string; alt: string; path: string; number: string; animatedImage?: string; }
+const {name,category,image,alt,path,number,animatedImage} = Astro.props;
+---
+<a class="project-card" href={siteLink(path)}>
+  <div class="project-image">
+    {animatedImage ? <picture>
+      <source media="(prefers-reduced-motion: reduce)" srcset={`/images/${image}-1280.webp`} />
+      <img src={animatedImage} width="1080" height="608" loading="lazy" decoding="async" alt={alt} />
+    </picture> : <img src={`/images/${image}-1280.webp`} srcset={`/images/${image}-640.webp 640w, /images/${image}-1280.webp 1280w`} sizes="(max-width: 760px) 100vw, 50vw" width="1280" height="960" loading="lazy" decoding="async" alt={alt} />}
+    <span class="project-open" aria-hidden="true"><Arrow /></span>
+  </div>
+  <div class="project-caption"><div><h3>{name}</h3><p>{category}</p></div><span class="project-number" aria-hidden="true">{number}</span></div>
+</a>
