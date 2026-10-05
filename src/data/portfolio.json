@@ -1,0 +1,159 @@
+[
+  {
+    "name": "WholeMoon",
+    "category": "Shopify website · Development",
+    "image": "work-wholemoon",
+    "alt": "WholeMoon — selected creative work by Zion Creative",
+    "path": "/wholemoon",
+    "number": "01"
+  },
+  {
+    "name": "Anvil & Forge",
+    "category": "Branding · Packaging · Web · Photography",
+    "image": "work-anvil-and-forge",
+    "alt": "Anvil & Forge — selected creative work by Zion Creative",
+    "path": "/anvil-and-forge",
+    "number": "02"
+  },
+  {
+    "name": "The Villas",
+    "category": "Brand direction · Web · Photography · Social",
+    "image": "work-the-villas",
+    "alt": "The Villas — selected creative work by Zion Creative",
+    "path": "/the-villas",
+    "number": "03"
+  },
+  {
+    "name": "Beat",
+    "category": "Identity · Animation · Messaging · Collateral",
+    "image": "work-bfg",
+    "alt": "Beat — selected creative work by Zion Creative",
+    "path": "/bfg",
+    "number": "04",
+    "animatedImage": "/images/work-bfg-animated.webp"
+  },
+  {
+    "name": "VPNE",
+    "category": "Website design",
+    "image": "work-project-vpne",
+    "alt": "VPNE — selected creative work by Zion Creative",
+    "path": "/project/vpne",
+    "number": "05"
+  },
+  {
+    "name": "KidKits",
+    "category": "Brand strategy · Identity · Web",
+    "image": "work-kidkits",
+    "alt": "KidKits — selected creative work by Zion Creative",
+    "path": "/kidkits",
+    "number": "06",
+    "animatedImage": "/images/work-kidkits-animated.webp"
+  },
+  {
+    "name": "Evangel Church",
+    "category": "Website design",
+    "image": "work-evangel",
+    "alt": "Evangel Church — selected creative work by Zion Creative",
+    "path": "/evangel",
+    "number": "07"
+  },
+  {
+    "name": "Garrison Group",
+    "category": "Brand identity · Web design & development",
+    "image": "work-garrison-group",
+    "alt": "Garrison Group — selected creative work by Zion Creative",
+    "path": "/garrison-group",
+    "number": "08"
+  },
+  {
+    "name": "Hill Country Linens",
+    "category": "Website design · Branding",
+    "image": "work-hill-country-linens",
+    "alt": "Hill Country Linens — selected creative work by Zion Creative",
+    "path": "/hill-country-linens",
+    "number": "09"
+  },
+  {
+    "name": "Little Pond",
+    "category": "Art direction · Identity · Web",
+    "image": "work-little-pond",
+    "alt": "Little Pond — selected creative work by Zion Creative",
+    "path": "/little-pond",
+    "number": "10"
+  },
+  {
+    "name": "SpringFree EV",
+    "category": "Identity · Illustration · Web",
+    "image": "work-springfree-ev",
+    "alt": "SpringFree EV — selected creative work by Zion Creative",
+    "path": "/springfree-ev",
+    "number": "11",
+    "animatedImage": "/images/work-springfree-ev-animated.webp"
+  },
+  {
+    "name": "Lingk",
+    "category": "Identity · Illustration · Web",
+    "image": "work-lingk",
+    "alt": "Lingk — selected creative work by Zion Creative",
+    "path": "/lingk",
+    "number": "12",
+    "animatedImage": "/images/work-lingk-animated.webp"
+  },
+  {
+    "name": "Pillars",
+    "category": "Art direction · Packaging",
+    "image": "work-pillars-yogurt",
+    "alt": "Pillars — selected creative work by Zion Creative",
+    "path": "/pillars-yogurt",
+    "number": "13"
+  },
+  {
+    "name": "Settlers Mountain",
+    "category": "Website design",
+    "image": "work-settlers-mtn",
+    "alt": "Settlers Mountain — selected creative work by Zion Creative",
+    "path": "/settlers-mtn",
+    "number": "14"
+  },
+  {
+    "name": "Takoma Park Cooperative Nursery School",
+    "category": "Website design",
+    "image": "work-tpcns",
+    "alt": "Takoma Park Cooperative Nursery School — selected creative work by Zion Creative",
+    "path": "/tpcns",
+    "number": "15"
+  },
+  {
+    "name": "Brand identities",
+    "category": "Distinctive logos. Lasting impressions.",
+    "image": "work-logo-design-springfield-il",
+    "alt": "Brand identities — selected creative work by Zion Creative",
+    "path": "/logo-design-springfield-il",
+    "number": "16",
+    "animatedImage": "/images/work-logo-design-springfield-il-animated.webp"
+  },
+  {
+    "name": "SGK Law",
+    "category": "Website design",
+    "image": "work-sgk-law",
+    "alt": "SGK Law — selected creative work by Zion Creative",
+    "path": "/sgk-law",
+    "number": "17"
+  },
+  {
+    "name": "Equiventures East",
+    "category": "Website · Branding · Photo & video",
+    "image": "work-project-equiventures-east",
+    "alt": "Equiventures East — selected creative work by Zion Creative",
+    "path": "/project/equiventures-east",
+    "number": "18"
+  },
+  {
+    "name": "KP",
+    "category": "Webflow website",
+    "image": "work-project-kp",
+    "alt": "KP — selected creative work by Zion Creative",
+    "path": "/project/kp",
+    "number": "19"
+  }
+]

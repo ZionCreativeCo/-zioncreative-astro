@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import ProjectCTA from '../components/ProjectCTA.astro';
+import ScrollMotion from '../components/ScrollMotion.astro';
+import projects from '../data/portfolio.json';
+import '../styles/secondary.css';
+---
+<BaseLayout title="Our Portfolio | Zion Creative | Graphic Design, Web Design, Packaging, Creative Services Springfield, IL — Zion Creative" description="Explore the portfolio of Zion Creative Co. in Springfield, IL. See our successful brand strategy, logo design, web design, and marketing projects. Get inspired by our creative solutions and results.">
+  <Header />
+  <main id="main" class="portfolio-page">
+    <section class="container page-intro" aria-labelledby="portfolio-title">
+      <p class="eyebrow">Independent thinking. Shared success.</p>
+      <div class="page-title-row"><h1 id="portfolio-title">Our <em>work.</em></h1><p>Logos, Websites, Brand Development and more.</p></div>
+    </section>
+    <section class="portfolio-collection section-dark" aria-label="Project collection">
+      <div class="container">
+        <div class="collection-label"><p class="eyebrow">A collection of creative partnerships</p><span>{projects.length} projects</span></div>
+        <div class="projects-grid">{projects.map(project=><ProjectCard {...project} />)}</div>
+      </div>
+    </section>
+    <ProjectCTA />
+  </main>
+  <Footer /><ScrollMotion />
+</BaseLayout>

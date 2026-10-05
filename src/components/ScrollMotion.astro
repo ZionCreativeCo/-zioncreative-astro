@@ -5,7 +5,7 @@
   const groups = [
     '.services-grid > div', '.section-heading', '.projects-grid > a',
     '.quote-grid > div', '.about-grid > div', '.stats > div',
-    '.cta-inner > *', '.footer-top > *', '.footer-bottom',
+    '[data-reveal]', '.cta-inner > *', '.footer-top > *', '.footer-bottom',
   ];
   const reveals = groups.flatMap(selector => Array.from(document.querySelectorAll<HTMLElement>(selector)));
   const running = new Set<Animation>();

@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Arrow from '../components/Arrow.astro';
+import CaseImage from '../components/CaseImage.astro';
+import ProjectCTA from '../components/ProjectCTA.astro';
+import ScrollMotion from '../components/ScrollMotion.astro';
+import content from '../data/villas.json';
+import '../styles/secondary.css';
+const photos = [
+ {name:'villas-detail-09',alt:'Portrait of a Villas team member in a blazer'},
+ {name:'villas-detail-10',alt:'Portrait of a Villas team member in a branded polo'},
+ {name:'villas-detail-11',alt:'Portrait photographed at The Villas'},
+ {name:'villas-detail-12',alt:'Portrait of a Villas team member in a white shirt'},
+ {name:'villas-detail-13',alt:'Rehabilitation gym at The Villas with timber beams and therapy equipment'},
+ {name:'villas-detail-14',alt:'Bright community dining room at The Villas'},
+ {name:'villas-detail-15',alt:'The Villas lounge with a piano and seating'},
+ {name:'villas-detail-16',alt:'Sunlit sitting area at The Villas'},
+] as const;
+---
+<BaseLayout title={content.title} description="Explore Zion Creative’s work for The Villas Senior Care Community in central Illinois, from website design and brand management to social media and photography.">
+  <Header />
+  <main id="main" class="case-page">
+    <section class="container page-intro case-intro" aria-labelledby="villas-title">
+      <a class="text-link case-back" href="/portfolio">All work <span aria-hidden="true"><Arrow /></span></a>
+      <p class="eyebrow">Senior care · Central Illinois</p>
+      <h1 id="villas-title">The Villas<br /><em>Senior Care Community.</em></h1>
+      <p class="case-deck">Redefining the digital presence of an established care community in central Illinois.</p>
+    </section>
+    <div class="container case-cover"><CaseImage name="work-the-villas" alt="The Villas brand identity over a photograph of the community’s outdoor patio" eager sizes="100vw" /></div>
+    <section class="case-overview container" aria-labelledby="overview-title">
+      <div class="case-summary" data-reveal><p class="eyebrow">The partnership</p><h2 id="overview-title">Thoughtful design.<br /><em>Meaningful connection.</em></h2><p>{content.intro}</p></div>
+      <aside class="case-scope" aria-label="Project services" data-reveal><p class="eyebrow">Our role</p><ul>{content.roles.map(role=><li>{role}</li>)}</ul></aside>
+    </section>
+    <section class="case-results section-dark" aria-label="Project results"><div class="container"><p class="eyebrow">The impact</p><div class="stats">{content.results.map(result=><div><strong>{result.value}</strong><p>{result.label}</p></div>)}</div></div></section>
+    <section class="case-section container" aria-labelledby="website-title">
+      <div class="case-section-heading" data-reveal><p class="eyebrow">01 / Website</p><h2 id="website-title">A clearer path<br /><em>to care.</em></h2><div><h3>The Website Problem</h3><p>{content.problem}</p><p>{content.solution}</p></div></div>
+      <div class="case-comparison">
+        <figure data-reveal><figcaption><span class="eyebrow">Before</span><span>Separate experiences</span></figcaption><CaseImage name="villas-detail-03" alt="Before: the previous Villas website with separate community navigation" /></figure>
+        <figure data-reveal><figcaption><span class="eyebrow">After</span><span>A unified presence</span></figcaption><CaseImage name="villas-detail-04" alt="After: redesigned Villas website with clear senior living and memory care navigation" /></figure>
+      </div>
+      <details class="website-details"><summary>Explore the full website designs <span aria-hidden="true">+</span></summary><div class="case-comparison"><figure><CaseImage name="villas-detail-06" alt="Full redesigned Villas homepage, including care options, community information, and contact section" /><figcaption>Homepage</figcaption></figure><figure><CaseImage name="villas-detail-07" alt="Full redesigned Villas independent living page" /><figcaption>Independent living</figcaption></figure></div></details>
+    </section>
+    <section class="case-social section-dark" aria-labelledby="social-title"><div class="container"><div class="case-section-heading" data-reveal><p class="eyebrow">02 / Social media</p><h2 id="social-title">A community<br /><em>worth sharing.</em></h2><p>{content.social}</p></div><figure class="case-social-image" data-reveal><CaseImage name="villas-detail-08" alt="Three examples of social media creative for The Villas: a birthday celebration, community information, and employee recognition" sizes="100vw" /></figure></div></section>
+    <section class="case-section container" aria-labelledby="photography-title"><div class="case-section-heading" data-reveal><p class="eyebrow">03 / Photography</p><h2 id="photography-title">The people.<br /><em>The place.</em></h2></div><div class="case-photo-grid">{photos.map(photo=><figure data-reveal><CaseImage {...photo} /></figure>)}</div></section>
+    <section class="case-testimonial section-dark" aria-label="Client testimonial"><div class="container quote-grid"><div><p class="eyebrow">In their words</p><span class="quote-mark" aria-hidden="true">“</span></div><div><blockquote>{content.quote}</blockquote><p class="quote-attribution">{content.quoteAttribution}</p></div></div></section>
+    <div class="container case-return"><a class="text-link" href="/portfolio">Explore more work <span aria-hidden="true"><Arrow /></span></a></div>
+    <ProjectCTA />
+  </main>
+  <Footer /><ScrollMotion />
+</BaseLayout>

@@ -2,7 +2,7 @@
 
 ## Goal and current status
 Keep the existing Squarespace site’s visual identity while optimizing and elevating sections, as explicitly authorized by Nick. Tighten typography, spacing, readability, responsive behavior and presentation.
-This repository contains a captured inventory plus a first homepage/header/footer/contact design pass. Secondary pages still link to the original site through src/lib/links.ts. It is not launch-ready.
+This repository contains the homepage, contact page, complete portfolio index, and Villas case study. Other pages still link to the original site through src/lib/links.ts. It is not launch-ready. Cloudflare previews remain noindexed; the main domain is still on Squarespace.
 
 ## Working rules
 - Preserve the existing paths, substantive page copy, titles and descriptions unless a change is agreed.

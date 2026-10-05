@@ -202,3 +202,11 @@ The crawl is a starting inventory, not a complete backup of Squarespace.
 ## Repository scope
 
 GitHub contains the Astro source, optimized public assets, build workflow and migration notes/scripts. The original HTML snapshots, raw source assets and full parsed page records remain in the downloadable migration ZIP rather than the deployable repository. Capture and asset scripts require those archived inputs when rerun.
+
+## Portfolio and Villas preview — October 5, 2026
+
+- `/portfolio` retains all 19 original project destinations with local optimized images and animated artwork.
+- `/the-villas` preserves the existing results, narrative, testimonial, before/after screenshots, social creative, and photography. Full website captures expand on request.
+- Navigation and homepage Villas links now stay on the preview for these two routes. Other case studies remain on the existing site.
+- `src/data/portfolio.json` and `src/data/villas.json` hold the page content. `migration/secondary-assets.json` records asset sources; `migration/optimize-secondary.mjs` regenerates assets from the archived captures.
+- Nick confirmed successful Elfsight form delivery on the Cloudflare preview.
