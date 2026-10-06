@@ -1,23 +1,27 @@
 ---
 import Arrow from './Arrow.astro';
 import { siteLink } from '../lib/links';
+const services = [{label:'Design strategy',path:'/services#strategy'},{label:'Logo & branding',path:'/logo-design-springfield-il'},{label:'Custom web design',path:'/web-design-springfield-il'},{label:'Ongoing management',path:'/brand-management-services'}];
 const nav = [{label:'Work',path:'/portfolio'},{label:'Services',path:'/services'},{label:'About',path:'/about-us'}];
 ---
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/" aria-label="Zion Creative home"><img src="/images/logo.webp" width="176" height="95" alt="Zion Creative" /></a>
-    <nav class="desktop-nav" aria-label="Main navigation">{nav.map(item => <a href={siteLink(item.path)}>{item.label}</a>)}</nav>
+    <nav class="desktop-nav" aria-label="Main navigation">{nav.map(item => item.label==='Services' ? <details class="services-dropdown"><summary>Services <span aria-hidden="true">⌄</span></summary><div class="services-panel">{services.map(service=><a href={service.path}>{service.label}</a>)}<a class="all-services" href="/services">Explore all services <Arrow /></a></div></details> : <a href={siteLink(item.path)}>{item.label}</a>)}</nav>
     <div class="header-actions">
       <a class="button button-lime header-cta" href="/contact">Start a project <span aria-hidden="true"><Arrow /></span></a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
     </div>
   </div>
   <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" hidden>
-    {nav.map(item => <a href={siteLink(item.path)}>{item.label}<span aria-hidden="true"><Arrow /></span></a>)}
+    {nav.map(item => item.label==='Services' ? <details class="mobile-services"><summary>Services <span aria-hidden="true">⌄</span></summary><div>{services.map(service=><a href={service.path}>{service.label}</a>)}<a href="/services">All services</a></div></details> : <a href={siteLink(item.path)}>{item.label}<span aria-hidden="true"><Arrow /></span></a>)}
     <a href="/contact">Start a project <span aria-hidden="true"><Arrow /></span></a>
   </nav>
 </header>
 <script>
+  const dropdowns = document.querySelectorAll<HTMLDetailsElement>('.services-dropdown, .mobile-services');
+  document.addEventListener('click', event => { dropdowns.forEach(dropdown => { if (event.target instanceof Node && !dropdown.contains(event.target)) dropdown.open = false; }); });
+  document.addEventListener('keydown', event => { if(event.key === 'Escape') dropdowns.forEach(dropdown => { if(dropdown.open) { dropdown.open=false; dropdown.querySelector('summary')?.focus(); } }); });
   const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
   const menu = document.querySelector<HTMLElement>('#mobile-menu');
   const setOpen = (open: boolean) => {
@@ -25,6 +29,7 @@ const nav = [{label:'Work',path:'/portfolio'},{label:'Services',path:'/services'
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     menu.hidden = !open;
+    if (!open) dropdowns.forEach(dropdown => dropdown.open = false);
   };
   toggle?.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
   document.addEventListener('keydown', (event) => {

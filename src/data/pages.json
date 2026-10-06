@@ -1472,7 +1472,9 @@
     "gallery": [
       {
         "id": "2015d5b0a8b1",
-        "alt": "Little Pond Zion Creative Springfield Illinois Logo Design.webp"
+        "alt": "Little Pond \u2014 brand identity",
+        "href": "/little-pond",
+        "project": "Little Pond"
       },
       {
         "id": "e5e31cbf3e8a",
@@ -1484,7 +1486,9 @@
       },
       {
         "id": "210d1120dab8",
-        "alt": "A full color SaaS Company Logo Design by Zion Creative Springfield Illinois Logo Designer"
+        "alt": "Lingk \u2014 brand identity",
+        "href": "/lingk",
+        "project": "Lingk"
       },
       {
         "id": "a03c8abb0cab",
@@ -1496,7 +1500,9 @@
       },
       {
         "id": "e9d1b725dc95",
-        "alt": "Full Color Kid Friendly Logo Design by Zion Creative Springfield Illinois Logo Designer"
+        "alt": "KidKits \u2014 brand identity",
+        "href": "/kidkits",
+        "project": "KidKits"
       },
       {
         "id": "7179006c1a75",
@@ -1504,7 +1510,9 @@
       },
       {
         "id": "616d907828b7",
-        "alt": "Full Color Commercial Real estate Logo Design by Zion Creative Springfield Illinois Logo Designer"
+        "alt": "Garrison Group \u2014 brand identity",
+        "href": "/garrison-group",
+        "project": "Garrison Group"
       },
       {
         "id": "4c11695066ff",
@@ -2234,27 +2242,39 @@
       },
       {
         "id": "d6cc48c9502a",
-        "alt": "Paint+splash+Mockups.001-min.jpeg"
+        "alt": "Little Pond \u2014 website design",
+        "href": "/little-pond",
+        "project": "Little Pond"
       },
       {
         "id": "25ad514add14",
-        "alt": "Artboard+2-min.png"
+        "alt": "Evangel Church \u2014 website design",
+        "href": "/evangel",
+        "project": "Evangel Church"
       },
       {
         "id": "3e484673d8b6",
-        "alt": "image-asset-min.gif"
+        "alt": "Lingk \u2014 website design",
+        "href": "/lingk",
+        "project": "Lingk"
       },
       {
         "id": "5030f734c6b8",
-        "alt": "Artboard+1-min.png"
+        "alt": "Takoma Park Cooperative Nursery School \u2014 website design",
+        "href": "/tpcns",
+        "project": "Takoma Park Cooperative Nursery School"
       },
       {
         "id": "e088c80fc50f",
-        "alt": "image-asset (1)-min.gif"
+        "alt": "SpringFree EV \u2014 website design",
+        "href": "/springfree-ev",
+        "project": "SpringFree EV"
       },
       {
         "id": "c49a6a386886",
-        "alt": "Artboard+3-min.png"
+        "alt": "Hill Country Linens \u2014 website design",
+        "href": "/hill-country-linens",
+        "project": "Hill Country Linens"
       }
     ],
     "kind": "editorial"

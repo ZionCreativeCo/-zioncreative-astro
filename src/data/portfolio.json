@@ -155,5 +155,13 @@
     "alt": "KP — selected creative work by Zion Creative",
     "path": "/project/kp",
     "number": "19"
+  },
+  {
+    "name": "Colossus",
+    "category": "Custom Webflow development",
+    "image": "work-colossus",
+    "alt": "Colossus website, designed by Colossus and developed by Zion Creative",
+    "path": "/colossus",
+    "number": "20"
   }
 ]
