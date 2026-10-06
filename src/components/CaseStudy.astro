@@ -4,14 +4,16 @@ import MediaGallery from './MediaGallery.astro';
 import ProjectCTA from './ProjectCTA.astro';
 import ProjectCard from './ProjectCard.astro';
 import portfolio from '../data/portfolio.json';
+import dimensions from '../data/image-dimensions.json';
 const {page}=Astro.props;
+const coverSize=dimensions[page.cover.image as keyof typeof dimensions];
 const next=portfolio[(portfolio.findIndex(p=>p.path===`/${page.slug}`)+1)%portfolio.length];
 ---
 <section class="container page-intro case-intro">
  <a class="text-link case-back" href="/portfolio">All work <span aria-hidden="true"><Arrow /></span></a>
  <p class="eyebrow">Selected work / {page.cover.number}</p><h1>{page.name}</h1><p class="case-deck">{page.deck}</p>
 </section>
-<div class="container case-cover"><picture>{page.cover.animatedImage&&<source media="(prefers-reduced-motion: reduce)" srcset={`/images/${page.cover.image}-1280.webp`}/>}<img src={page.cover.animatedImage||`/images/${page.cover.image}-1280.webp`} width="1280" height="800" alt={page.cover.alt} fetchpriority="high" /></picture></div>
+<div class="container case-cover"><picture>{page.cover.animatedImage&&<source media="(prefers-reduced-motion: reduce)" srcset={`/images/${page.cover.image}-1280.webp`}/>}<img src={page.cover.animatedImage||`/images/${page.cover.image}-1280.webp`} width={coverSize.width} height={coverSize.height} alt={page.cover.alt} fetchpriority="high" /></picture></div>
 <section class="container case-overview">
  <div class="case-summary rich-copy" data-reveal><p class="eyebrow">The project</p>{page.paragraphs.map((p:string)=><p>{p}</p>)}</div>
  <aside class="case-scope" data-reveal><p class="eyebrow">Our role</p><p class="role-copy">{page.roles}</p><dl>{page.details.map((d:{label:string;value:string})=><div><dt>{d.label}</dt><dd>{d.value}</dd></div>)}</dl>{page.liveUrl&&<a class="text-link" href={page.liveUrl} target="_blank" rel="noopener noreferrer">Visit website <Arrow /></a>}</aside>
