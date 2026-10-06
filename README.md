@@ -42,11 +42,9 @@ contain old preview links and native form configuration.
 
 ## Remaining launch work
 
-1. Receive Elfsight install codes for **Branding Onboarding** and **Website
-   Onboarding**. Public field schemas are archived in
-   `migration/onboarding-form-fields.json`. The new `/onboarding/` page currently
-   links to the existing Squarespace questionnaires. Replace those links with the
-   two widgets before switching the domain; otherwise they would loop back.
+1. Confirm delivery for the consolidated Client Onboarding Elfsight form on
+   `/onboarding/`. The widget is installed; original questionnaire field schemas
+   remain archived in `migration/onboarding-form-fields.json`.
 2. Review new pages on desktop and mobile. Confirm original pricing and metrics.
 3. Confirm management-form delivery and scheduler behavior. Contact form already
    tested by Nick; never submit unsolicited test leads.

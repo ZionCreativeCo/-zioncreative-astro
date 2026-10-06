@@ -2,7 +2,7 @@
 
 ## Goal and current status
 Keep the existing Squarespace site’s visual identity while optimizing and elevating sections, as explicitly authorized by Nick. Tighten typography, spacing, readability, responsive behavior and presentation.
-This repository contains the complete portfolio, case studies, services, About, reviews, consultation, and supporting public pages. The onboarding page still links to the existing Squarespace questionnaires pending two Elfsight widget IDs; replace those links before switching domains. It is not launch-ready. Cloudflare previews remain noindexed; the main domain is still on Squarespace. See README.md for remaining review and launch work.
+This repository contains the complete portfolio, case studies, services, About, reviews, consultation, and supporting public pages. The onboarding page uses one consolidated Client Onboarding Elfsight widget; confirm its delivery before switching domains. It is not launch-ready. Cloudflare previews remain noindexed; the main domain is still on Squarespace. See README.md for remaining review and launch work.
 
 ## Working rules
 - Preserve the existing paths, substantive page copy, titles and descriptions unless a change is agreed.

@@ -1,40 +1,44 @@
 ---
 import Arrow from './Arrow.astro';
-import { siteLink } from '../lib/links';
-const services = [{label:'Design strategy',path:'/services#strategy'},{label:'Logo & branding',path:'/logo-design-springfield-il'},{label:'Custom web design',path:'/web-design-springfield-il'},{label:'Ongoing management',path:'/brand-management-services'}];
-const nav = [{label:'Work',path:'/portfolio'},{label:'Services',path:'/services'},{label:'About',path:'/about-us'}];
+import Chevron from './Chevron.astro';
+import ServiceIcon from './ServiceIcon.astro';
+const services = [{label:'Design strategy',path:'/services#strategy',icon:'strategy'},{label:'Logo & branding',path:'/logo-design-springfield-il',icon:'branding'},{label:'Custom web design',path:'/web-design-springfield-il',icon:'web'},{label:'Ongoing management',path:'/brand-management-services',icon:'management'}];
 ---
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="/" aria-label="Zion Creative home"><img src="/images/logo.webp" width="176" height="95" alt="Zion Creative" /></a>
-    <nav class="desktop-nav" aria-label="Main navigation">{nav.map(item => item.label==='Services' ? <details class="services-dropdown"><summary>Services <span aria-hidden="true">⌄</span></summary><div class="services-panel">{services.map(service=><a href={service.path}>{service.label}</a>)}<a class="all-services" href="/services">Explore all services <Arrow /></a></div></details> : <a href={siteLink(item.path)}>{item.label}</a>)}</nav>
-    <div class="header-actions">
-      <a class="button button-lime header-cta" href="/contact">Start a project <span aria-hidden="true"><Arrow /></span></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
-    </div>
-  </div>
-  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" hidden>
-    {nav.map(item => item.label==='Services' ? <details class="mobile-services"><summary>Services <span aria-hidden="true">⌄</span></summary><div>{services.map(service=><a href={service.path}>{service.label}</a>)}<a href="/services">All services</a></div></details> : <a href={siteLink(item.path)}>{item.label}<span aria-hidden="true"><Arrow /></span></a>)}
-    <a href="/contact">Start a project <span aria-hidden="true"><Arrow /></span></a>
+ <div class="container header-inner">
+  <a class="brand" href="/" aria-label="Zion Creative home"><img src="/images/logo.webp" width="176" height="95" alt="Zion Creative" /></a>
+  <nav class="desktop-nav" aria-label="Main navigation">
+   <a href="/portfolio">Work</a>
+   <div class="services-dropdown"><button class="services-trigger" aria-expanded="false" aria-controls="desktop-services">Services <Chevron /></button><div id="desktop-services" class="services-panel" inert>{services.map(service=><a href={service.path}><ServiceIcon kind={service.icon}/><span>{service.label}</span></a>)}<a class="all-services" href="/services">Explore all services <Arrow /></a></div></div>
+   <a href="/about-us">About</a>
   </nav>
+  <div class="header-actions"><a class="button button-lime header-cta" href="/contact">Start a project <span aria-hidden="true"><Arrow /></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button></div>
+ </div>
+ <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" hidden>
+  <a href="/portfolio">Work <Arrow /></a>
+  <details class="mobile-services"><summary>Services <Chevron /></summary><div>{services.map(service=><a href={service.path}><ServiceIcon kind={service.icon}/><span>{service.label}</span></a>)}<a href="/services">All services</a></div></details>
+  <a href="/about-us">About <Arrow /></a><a href="/contact">Start a project <Arrow /></a>
+ </nav>
 </header>
 <script>
-  const dropdowns = document.querySelectorAll<HTMLDetailsElement>('.services-dropdown, .mobile-services');
-  document.addEventListener('click', event => { dropdowns.forEach(dropdown => { if (event.target instanceof Node && !dropdown.contains(event.target)) dropdown.open = false; }); });
-  document.addEventListener('keydown', event => { if(event.key === 'Escape') dropdowns.forEach(dropdown => { if(dropdown.open) { dropdown.open=false; dropdown.querySelector('summary')?.focus(); } }); });
-  const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
-  const menu = document.querySelector<HTMLElement>('#mobile-menu');
-  const setOpen = (open: boolean) => {
-    if (!toggle || !menu) return;
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    menu.hidden = !open;
-    if (!open) dropdowns.forEach(dropdown => dropdown.open = false);
-  };
-  toggle?.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') { setOpen(false); toggle.focus(); }
-  });
-  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setOpen(false)));
-  matchMedia('(min-width: 761px)').addEventListener('change', event => { if (event.matches) setOpen(false); });
+ const dropdown=document.querySelector<HTMLElement>('.services-dropdown');
+ const trigger=dropdown?.querySelector<HTMLButtonElement>('.services-trigger');
+ const panel=dropdown?.querySelector<HTMLElement>('.services-panel');
+ const hover=matchMedia('(hover: hover) and (pointer: fine)');
+ let dismissed=false;
+ const setServices=(open:boolean)=>{trigger?.setAttribute('aria-expanded',String(open));dropdown?.classList.toggle('is-open',open);if(panel)panel.inert=!open;};
+ dropdown?.addEventListener('pointerenter',()=>{dismissed=false;if(hover.matches)setServices(true);});
+ dropdown?.addEventListener('pointerleave',()=>{if(!dropdown.contains(document.activeElement))setServices(false);});
+ dropdown?.addEventListener('focusin',()=>{if(hover.matches&&!dismissed)setServices(true);});
+ dropdown?.addEventListener('focusout',event=>{if(!(event.relatedTarget instanceof Node)||!dropdown.contains(event.relatedTarget))setServices(false);});
+ trigger?.addEventListener('click',()=>{if(!hover.matches)setServices(trigger.getAttribute('aria-expanded')!=='true');});
+ trigger?.addEventListener('keydown',event=>{if(event.key==='ArrowDown'){event.preventDefault();setServices(true);panel?.querySelector('a')?.focus();}if(event.key==='Enter'||event.key===' '){event.preventDefault();dismissed=false;setServices(true);}});
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&trigger?.getAttribute('aria-expanded')==='true'){dismissed=true;setServices(false);trigger.focus();}});
+ document.addEventListener('pointerdown',event=>{if(event.target instanceof Node&&!dropdown?.contains(event.target))setServices(false);});
+ const toggle=document.querySelector<HTMLButtonElement>('.menu-toggle');const menu=document.querySelector<HTMLElement>('#mobile-menu');
+ const setOpen=(open:boolean)=>{if(!toggle||!menu)return;toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close menu':'Open menu');menu.hidden=!open;if(!open)menu.querySelectorAll('details').forEach(d=>d.open=false);};
+ toggle?.addEventListener('click',()=>setOpen(toggle.getAttribute('aria-expanded')!=='true'));
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&toggle?.getAttribute('aria-expanded')==='true'){setOpen(false);toggle.focus();}});
+ menu?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setOpen(false)));
+ matchMedia('(min-width: 761px)').addEventListener('change',event=>{if(event.matches)setOpen(false);});
 </script>

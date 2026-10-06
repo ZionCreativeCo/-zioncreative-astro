@@ -1,0 +1,82 @@
+{
+  "height": 5518,
+  "tiles": [
+    {
+      "h": 720,
+      "height": 5113,
+      "w": 1280,
+      "y": 0,
+      "src": "/images/colossus-home-tile-0.jpg"
+    },
+    {
+      "h": 720,
+      "height": 5113,
+      "w": 1280,
+      "y": 504,
+      "src": "/images/colossus-home-tile-1.jpg"
+    },
+    {
+      "h": 720,
+      "height": 5314,
+      "w": 1280,
+      "y": 1008,
+      "src": "/images/colossus-home-tile-2.jpg"
+    },
+    {
+      "height": 720,
+      "total": 5518,
+      "width": 1280,
+      "y": 1512,
+      "src": "/images/colossus-home-tile-3.jpg"
+    },
+    {
+      "height": 720,
+      "total": 5518,
+      "width": 1280,
+      "y": 2016,
+      "src": "/images/colossus-home-tile-4.jpg"
+    },
+    {
+      "height": 720,
+      "total": 5518,
+      "width": 1280,
+      "y": 2520,
+      "src": "/images/colossus-home-tile-5.jpg"
+    },
+    {
+      "height": 720,
+      "total": 5518,
+      "width": 1280,
+      "y": 3024,
+      "src": "/images/colossus-home-tile-6.jpg"
+    },
+    {
+      "height": 720,
+      "total": 5518,
+      "width": 1280,
+      "y": 3528,
+      "src": "/images/colossus-home-tile-7.jpg"
+    },
+    {
+      "height": 720,
+      "total": 5518,
+      "width": 1280,
+      "y": 4032,
+      "src": "/images/colossus-home-tile-8.jpg"
+    },
+    {
+      "height": 720,
+      "total": 5518,
+      "width": 1280,
+      "y": 4536,
+      "src": "/images/colossus-home-tile-9.jpg"
+    },
+    {
+      "height": 720,
+      "total": 5518,
+      "width": 1280,
+      "y": 4798,
+      "src": "/images/colossus-home-tile-10.jpg"
+    }
+  ]
+}

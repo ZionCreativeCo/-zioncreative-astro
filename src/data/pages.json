@@ -1991,7 +1991,9 @@
     "gallery": [
       {
         "id": "7fd258d532bd",
-        "alt": ""
+        "alt": "",
+        "href": "/bfg",
+        "project": "Beat"
       },
       {
         "id": "a6db3aa797fe",
@@ -2381,7 +2383,9 @@
       },
       {
         "id": "66d1a1bd4a44",
-        "alt": ""
+        "alt": "",
+        "href": "/anvil-and-forge",
+        "project": "Anvil & Forge"
       },
       {
         "id": "344d7d392aa9",
@@ -2393,15 +2397,21 @@
       },
       {
         "id": "f73a1998d45d",
-        "alt": "Screen+Shot+2020-02-23+at+10.47.35+PM.png"
+        "alt": "Screen+Shot+2020-02-23+at+10.47.35+PM.png",
+        "href": "/anvil-and-forge",
+        "project": "Anvil & Forge"
       },
       {
         "id": "a25495be4a98",
-        "alt": ""
+        "alt": "",
+        "href": "/garrison-group",
+        "project": "Garrison Group"
       },
       {
         "id": "6a84b0510e10",
-        "alt": "Screen Shot 2021-02-22 at 3.31.51 AM.png"
+        "alt": "Screen Shot 2021-02-22 at 3.31.51 AM.png",
+        "href": "/pillars-yogurt",
+        "project": "Pillars"
       },
       {
         "id": "1b8793fc65d5",
@@ -2516,15 +2526,21 @@
       },
       {
         "id": "f73a1998d45d",
-        "alt": "Screen+Shot+2020-02-23+at+10.47.35+PM.png"
+        "alt": "Screen+Shot+2020-02-23+at+10.47.35+PM.png",
+        "href": "/anvil-and-forge",
+        "project": "Anvil & Forge"
       },
       {
         "id": "a25495be4a98",
-        "alt": ""
+        "alt": "",
+        "href": "/garrison-group",
+        "project": "Garrison Group"
       },
       {
         "id": "6a84b0510e10",
-        "alt": "Screen Shot 2021-02-22 at 3.31.51 AM.png"
+        "alt": "Screen Shot 2021-02-22 at 3.31.51 AM.png",
+        "href": "/pillars-yogurt",
+        "project": "Pillars"
       },
       {
         "id": "1b8793fc65d5",
