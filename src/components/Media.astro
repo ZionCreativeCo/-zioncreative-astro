@@ -1,0 +1,11 @@
+---
+import media from '../data/media.json';
+interface Props { id:string; alt:string; eager?:boolean; }
+const {id,alt,eager=false}=Astro.props;
+const image=media[id as keyof typeof media] as {src:string;width:number;height:number;dark:boolean;animated?:string};
+if(!image)throw new Error(`Missing media: ${id}`);
+---
+<picture class:list={['migrated-media',{'media-dark':image.dark}]}>
+ {image.animated && <source media="(prefers-reduced-motion: reduce)" srcset={image.src} />}
+ <img src={image.animated||image.src} width={image.width} height={image.height} alt={alt} loading={eager?'eager':'lazy'} decoding="async" />
+</picture>

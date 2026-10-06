@@ -15,3 +15,7 @@ migration/pages/
 migration/inventory.json
 migration/additional-inventory.json
 migration/dashboard.astro
+
+# Raw audit can contain legacy preview links and form configuration.
+migration/rest-audit.json
+public/images/migrated/

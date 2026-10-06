@@ -1,0 +1,6 @@
+---
+interface Props { id:string; }
+const {id}=Astro.props;
+---
+<div class="embed-shell"><div class={`elfsight-app-${id}`} data-elfsight-app-lazy></div><noscript><p>Please enable JavaScript to view this widget. You can also <a href="mailto:hello@zioncreative.co">email hello@zioncreative.co</a>.</p></noscript></div>
+<script is:inline src="https://elfsightcdn.com/platform.js" async></script>

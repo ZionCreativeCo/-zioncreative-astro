@@ -1,0 +1,16 @@
+---
+import Media from './Media.astro';
+import media from '../data/media.json';
+interface Props { items:{id:string;alt:string}[]; name:string; compact?:boolean; }
+const {items,name,compact=false}=Astro.props;
+---
+<div class:list={['media-gallery',{'gallery-compact':compact}]}>
+ {items.map((item,index)=>{
+ const m=media[item.id as keyof typeof media];
+ const tall=m.height/m.width>2;
+ const alt=item.alt && !/\.(png|jpe?g|webp|gif)$|image.asset|Screenshot|Screen.Shot|Untitled|Artboard/i.test(item.alt)?item.alt:`${name} — project detail ${index+1}`;
+ return <figure class:list={{'gallery-wide':!compact && (index===0||m.width/m.height>2.3),'gallery-tall':tall,'gallery-small':m.width<500}} data-reveal>
+ {tall ? <details class="full-design"><summary><span class="design-crop"><Media id={item.id} alt={alt} /></span><span class="design-toggle">Explore the full design <span aria-hidden="true">+</span></span></summary><Media id={item.id} alt={`Full design: ${alt}`} /></details>:<Media id={item.id} alt={alt} />}
+ </figure>
+ })}
+</div>

@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ScrollMotion from '../components/ScrollMotion.astro';
+import CaseStudy from '../components/CaseStudy.astro';
+import ServiceDetail from '../components/ServiceDetail.astro';
+import EditorialPage from '../components/EditorialPage.astro';
+import pages from '../data/pages.json';
+import '../styles/secondary.css';
+import '../styles/remaining.css';
+export function getStaticPaths(){return pages.map(page=>({params:{slug:page.slug},props:{page}}));}
+const {page}=Astro.props;
+const service=page.slug.endsWith('-design-springfield-il')||page.slug==='digital-marketing-springfield-il';
+---
+<BaseLayout title={page.title} description={page.description.trim()} noindex={['onboarding','sample','consultation'].includes(page.slug)}><Header/><main id="main" class:list={['rest-page',{'case-page':page.kind==='case'}]}>{page.kind==='case'?<CaseStudy page={page}/>:service?<ServiceDetail page={page}/>:<EditorialPage page={page}/>}</main><Footer/><ScrollMotion/></BaseLayout>

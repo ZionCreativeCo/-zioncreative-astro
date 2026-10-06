@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Branding Onboarding",
+    "fields": [
+      {
+        "type": "name",
+        "title": "Name",
+        "description": "",
+        "required": true
+      },
+      {
+        "type": "email",
+        "title": "Email",
+        "description": "",
+        "placeholder": "",
+        "required": true
+      },
+      {
+        "required": false,
+        "description": "",
+        "type": "phone",
+        "title": "Phone"
+      },
+      {
+        "required": false,
+        "description": "",
+        "type": "text",
+        "placeholder": "",
+        "title": "What is the exact name being used for your logo?"
+      },
+      {
+        "type": "textarea",
+        "title": "What are your top three preferred colors for your brand?",
+        "description": "",
+        "placeholder": "",
+        "required": false
+      },
+      {
+        "required": false,
+        "description": "This helps us get a general idea of what kind of logo you like the look & feel of. ",
+        "type": "textarea",
+        "placeholder": "",
+        "title": "What brands or logos do you consider inspirational?"
+      },
+      {
+        "required": false,
+        "description": "If you'd like to see anything in specific for your logo concepts, you can put that info here!",
+        "type": "textarea",
+        "placeholder": "",
+        "title": "Do you have any ideas or requirements?"
+      },
+      {
+        "required": false,
+        "description": "",
+        "type": "likert",
+        "options": [
+          "More abstract than realistic",
+          "More wavy/rounded than blocky/sharp",
+          "More modern than classic",
+          "More mature than youthful",
+          "More sophisticated than playful",
+          "More luxurious than urban",
+          "More bright than dark"
+        ],
+        "title": "I see my brand as more:"
+      },
+      {
+        "required": false,
+        "description": "Please mark all you are interested in. ",
+        "type": "checkbox",
+        "options": [
+          "Business Cards",
+          "Letterhead",
+          "Envelope",
+          "Logo Animation",
+          "Social Media Profile Images",
+          "Social Media Post Templates",
+          "Product Packaging",
+          "One-Pager",
+          "Brochure",
+          "Rack Card",
+          "Signage"
+        ],
+        "title": "Do you need any other items designed?"
+      },
+      {
+        "required": false,
+        "description": "",
+        "type": "date",
+        "title": "When do you need this work complete?"
+      }
+    ]
+  },
+  {
+    "name": "Website Onboarding",
+    "fields": [
+      {
+        "type": "name",
+        "title": "Name",
+        "description": "",
+        "required": true
+      },
+      {
+        "type": "email",
+        "title": "Email",
+        "description": "",
+        "placeholder": "",
+        "required": true
+      },
+      {
+        "required": false,
+        "description": "",
+        "type": "phone",
+        "title": "Phone"
+      },
+      {
+        "required": false,
+        "description": "",
+        "type": "text",
+        "placeholder": "",
+        "title": "Company"
+      },
+      {
+        "required": false,
+        "description": "",
+        "type": "checkbox",
+        "options": [
+          "Branding",
+          "Custom Illustration",
+          "SEO",
+          "Website Training",
+          "Domain Connection",
+          "Photography/ Video"
+        ],
+        "title": "I need to include the following in my website:"
+      },
+      {
+        "required": false,
+        "description": "",
+        "type": "select",
+        "placeholder": "Select an option",
+        "options": [
+          "I am uploading all the images I want to use.",
+          "I am uploading some images but need you to provide stock images.",
+          "I need you to provide stock images.",
+          "I'd like you to schedule a photo shoot for custom photos."
+        ],
+        "title": "Do you have images/ photography for your website? "
+      },
+      {
+        "required": false,
+        "description": "Help us better understand where you are at in terms of the text content needed for your website.",
+        "type": "select",
+        "placeholder": "Select an option",
+        "options": [
+          "Pull content from my existing website",
+          "I need Copy Writing services",
+          "I am emailing my content"
+        ],
+        "title": "Website Content"
+      },
+      {
+        "type": "textarea",
+        "title": "Please list all of the pages needed on your website",
+        "description": "",
+        "placeholder": "",
+        "required": false
+      },
+      {
+        "required": false,
+        "description": "This helps us get a general idea of what kind of websites you like the look & feel of. ",
+        "type": "textarea",
+        "placeholder": "",
+        "title": "What websites or brands you consider inspiration?"
+      },
+      {
+        "required": false,
+        "description": "",
+        "type": "textarea",
+        "placeholder": "",
+        "title": "Anything else we should know about your website project?"
+      },
+      {
+        "required": false,
+        "description": "",
+        "type": "date",
+        "title": "When do we need to have the website launched by?"
+      }
+    ]
+  }
+]

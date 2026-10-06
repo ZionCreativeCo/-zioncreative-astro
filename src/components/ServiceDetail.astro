@@ -1,0 +1,16 @@
+---
+import MediaGallery from './MediaGallery.astro';
+import ProjectCTA from './ProjectCTA.astro';
+import Arrow from './Arrow.astro';
+const {page}=Astro.props;
+const names:Record<string,string>={'logo-design-springfield-il':'Brand identities & logo design.','web-design-springfield-il':'Websites built around your brand.','graphic-design-springfield-il':'Good design. Real purpose.','digital-marketing-springfield-il':'Make your next move count.'};
+const flat=page.blocks.flat();
+const intro=flat.find((x:{tag:string})=>x.tag==='p')?.text;
+const sections=page.blocks.filter((b:{tag:string;text:string}[])=>b.some(x=>x.tag==='p')).map((b:{tag:string;text:string}[])=>b.filter(x=>x.text!==intro)).filter((b:unknown[])=>b.length);
+---
+<section class="container page-intro service-intro"><a class="text-link case-back" href="/services">Our services <span aria-hidden="true"><Arrow /></span></a><p class="eyebrow">Springfield, Illinois / Creating everywhere</p><h1>{names[page.slug]}</h1><p class="intro-copy">{intro}</p><a class="button button-lime" href="/contact">Start a conversation <Arrow /></a></section>
+{page.gallery.length>0&&<div class="container"><MediaGallery items={page.gallery.slice(0,1)} name={names[page.slug]}/></div>}
+{sections.length>0&&<section class="container service-details"><p class="eyebrow">Designed to move you forward</p><div class="service-detail-grid">{sections.map((b:{tag:string;text:string}[],i:number)=><article data-reveal><span class="service-ordinal">{String(i+1).padStart(2,'0')}</span>{b.map(x=>x.tag.startsWith('h')?<h2>{x.text}</h2>:<p>{x.text}</p>)}</article>)}</div></section>}
+{page.faqs.length>0&&<section class="section-dark faq-section"><div class="container faq-grid"><div><p class="eyebrow">The details</p><h2>Process, pricing<br /><em>& good questions.</em></h2></div><div>{page.faqs.map((f:{title:string;paragraphs:string[]})=><details><summary>{f.title}<span aria-hidden="true">+</span></summary><div>{f.paragraphs.map(p=><p>{p.replace('Learn More →','').replace('launch.Need','launch. Need').replace('delivery.Need','delivery. Need')}</p>)}{f.title==='Web Management Services'&&<a class="text-link" href="/brand-management-services">Explore management plans <Arrow /></a>}</div></details>)}</div></div></section>}
+{page.gallery.length>1&&<section class="container case-section"><div class="section-heading"><div><p class="eyebrow">A few examples</p><h2>Made for real brands.</h2></div><a class="text-link" href="/portfolio">See the work <Arrow /></a></div><MediaGallery items={page.gallery.slice(1)} name={names[page.slug]} compact={page.slug==='logo-design-springfield-il'}/></section>}
+<ProjectCTA/>
