@@ -41,15 +41,6 @@
     "number": "05"
   },
   {
-    "name": "KidKits",
-    "category": "Brand strategy · Identity · Web",
-    "image": "work-kidkits",
-    "alt": "KidKits — selected creative work by Zion Creative",
-    "path": "/kidkits",
-    "number": "06",
-    "animatedImage": "/images/work-kidkits-animated.webp"
-  },
-  {
     "name": "Evangel Church",
     "category": "Website design",
     "image": "work-evangel",
@@ -116,14 +107,6 @@
     "number": "14"
   },
   {
-    "name": "Takoma Park Cooperative Nursery School",
-    "category": "Website design",
-    "image": "work-tpcns",
-    "alt": "Takoma Park Cooperative Nursery School — selected creative work by Zion Creative",
-    "path": "/tpcns",
-    "number": "15"
-  },
-  {
     "name": "Brand identities",
     "category": "Distinctive logos. Lasting impressions.",
     "image": "work-logo-design-springfield-il",
@@ -131,14 +114,6 @@
     "path": "/logo-design-springfield-il",
     "number": "16",
     "animatedImage": "/images/work-logo-design-springfield-il-animated.webp"
-  },
-  {
-    "name": "SGK Law",
-    "category": "Website design",
-    "image": "work-sgk-law",
-    "alt": "SGK Law — selected creative work by Zion Creative",
-    "path": "/sgk-law",
-    "number": "17"
   },
   {
     "name": "Equiventures East",
