@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Arrow from '../../components/Arrow.astro';
+import CaseTemplate from '../../components/CaseTemplate.astro';
+import ScrollableScreen from '../../components/ScrollableScreen.astro';
+import ProjectCTA from '../../components/ProjectCTA.astro';
+import pages from '../../data/pages.json';
+import '../../styles/secondary.css';
+const page=pages.find(p=>p.slug==='project/kp')!;
+---
+<BaseLayout title={page.title} description={page.description.trim()}><Header/><main id="main"><CaseTemplate name="KP" tagline="Complex capabilities. A clearer digital experience." related={['/project/vpne','/wholemoon','/colossus']}>
+<div slot="hero" class="kp-hero"><div class="container"><ScrollableScreen id="357479fb8238" title="Homepage" address="kpcorp.com" brand="KP" primary/></div></div>
+<section class="container clean-story-section kp-intro"><p class="eyebrow">The partnership</p><div class="clean-story-copy"><h2>An enterprise platform.<br/>Built to work smarter.</h2><p>{page.paragraphs[0]}</p></div><div class="clean-case-credits kp-credits"><div><strong>Our role</strong>{page.roles}</div><div><strong>Agency</strong>Ten Gun Design</div><div><strong>Project</strong>Professional Services · Q3 2023</div><a class="text-link kp-live" href="https://www.kpcorp.com/" target="_blank" rel="noopener noreferrer">Explore the live site <Arrow/></a></div></section>
+<section class="container clean-story-section"><p class="eyebrow">The experience</p><div class="clean-story-copy"><h2>A broad offering.<br/>An approachable website.</h2><p>The homepage gives KP’s print and digital communication capabilities a clear structure. Services, industry solutions, and company resources sit within a consistent visual system, helping visitors find a relevant starting point.</p></div></section>
+<div class="kp-secondary"><div class="container kp-screen-grid"><ScrollableScreen id="313499f7a391" title="About KP" address="kpcorp.com / About" brand="KP"/><ScrollableScreen id="734c00b7a075" title="Contact & Locations" address="kpcorp.com / Contact" brand="KP"/></div></div>
+<section class="container clean-story-section"><p class="eyebrow">Beyond the homepage</p><div class="clean-story-copy"><h2>The company behind the work.<br/>The next step within reach.</h2><div class="kp-content-pair"><div><h3>About KP</h3><p>The company story brings together values, people, and sustainability. Photography and distinct content sections give a substantial page a readable rhythm.</p></div><div><h3>Contact &amp; Locations</h3><p>Office information and a dedicated contact area create a clear destination for visitors ready to connect with the team.</p></div></div></div></section>
+<section class="clean-impact"><div class="container clean-impact-inner"><div class="kp-outcomes"><p><strong>Built in Webflow</strong>A manageable platform for the client team.</p><p><strong>Connected content</strong>Services, industries, and company information in one experience.</p><p><strong>Room to grow</strong>A scalable foundation for evolving communication needs.</p></div><div class="clean-impact-copy"><p class="eyebrow">The result</p><h2>A capable platform.<br/>Ready for what comes next.</h2><p>The finished website pairs an engaging experience with a practical foundation for ongoing management, supporting KP’s breadth of services and the project’s long-term goals.</p></div></div></section>
+</CaseTemplate><ProjectCTA/></main><Footer/></BaseLayout>
+<style>
+.kp-hero{background:#e5e1d9;padding:55px 0}.kp-intro{row-gap:30px}.kp-credits{grid-column:2;margin-top:0;gap:20px 30px;align-items:center}.kp-live{margin-left:auto;white-space:nowrap;font-size:14px}.kp-secondary{padding:55px 0;background:#e6e2d8}.kp-screen-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.kp-content-pair{display:grid;grid-template-columns:1fr 1fr;gap:35px}.kp-content-pair h3{font-size:19px;margin-bottom:14px;font-weight:500}.kp-outcomes{display:grid;gap:25px}.kp-outcomes p{font-size:14px;line-height:1.5;color:#66635d}.kp-outcomes strong{display:block;font-size:24px;color:var(--ink);margin-bottom:8px;font-weight:500}@media(max-width:1000px){.kp-live{margin-left:0}}@media(max-width:760px){.kp-hero,.kp-secondary{padding:30px 0}.kp-credits{grid-column:1}.kp-screen-grid,.kp-content-pair{grid-template-columns:1fr;gap:35px}}
+</style>
