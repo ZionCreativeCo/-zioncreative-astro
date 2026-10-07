@@ -9,7 +9,7 @@ import EditorialPage from '../components/EditorialPage.astro';
 import pages from '../data/pages.json';
 import '../styles/secondary.css';
 import '../styles/remaining.css';
-export function getStaticPaths(){return pages.filter(page=>!['anvil-and-forge','pillars-yogurt','bfg','project/vpne','wholemoon','project/kp','evangel','little-pond'].includes(page.slug)).map(page=>({params:{slug:page.slug},props:{page}}));}
+export function getStaticPaths(){return pages.filter(page=>!['anvil-and-forge','pillars-yogurt','bfg','project/vpne','wholemoon','project/kp','evangel','little-pond','project/equiventures-east'].includes(page.slug)).map(page=>({params:{slug:page.slug},props:{page}}));}
 const {page}=Astro.props;
 const service=page.slug.endsWith('-design-springfield-il')||page.slug==='digital-marketing-springfield-il';
 ---

@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CaseTemplate from '../../components/CaseTemplate.astro';
+import ScrollableScreen from '../../components/ScrollableScreen.astro';
+import ProjectCTA from '../../components/ProjectCTA.astro';
+import ExpandingGallery from '../../components/ExpandingGallery.astro';
+import photos from '../../data/equiventures-gallery.json';
+import pages from '../../data/pages.json';
+import '../../styles/secondary.css';
+const page=pages.find(p=>p.slug==='project/equiventures-east')!;
+---
+<BaseLayout title={page.title} description={page.description.trim()}><Header/><main id="main"><CaseTemplate name="Equiventures East" tagline="A place to stay. A landscape to explore." related={['/the-villas','/anvil-and-forge','/project/vpne']}>
+<div slot="hero" class="equi-hero"><div class="container"><ScrollableScreen id="3785e0d34ab9" title="Homepage" address="Equiventures East" brand="Equiventures East" primary/></div></div>
+<section class="container clean-story-section equi-intro"><p class="eyebrow">The partnership</p><div class="clean-story-copy"><h2>A country retreat.<br/>An inviting digital home.</h2><p>{page.paragraphs[0]}</p></div><div class="clean-case-credits equi-credits"><div><strong>Our role</strong>Website · Branding · Photo &amp; video</div><div><strong>Project</strong>Hospitality · Q4 2023</div></div></section>
+<section class="container clean-story-section"><p class="eyebrow">The website</p><div class="clean-story-copy"><h2>Explore the property.<br/>Find the right stay.</h2><p>Warm colors, generous photography, and organic image shapes introduce the destination. The homepage connects visitors with barn rentals, vacation stays, and short-term horse layovers.</p></div></section>
+<div class="equi-secondary"><div class="container equi-about-grid"><div class="equi-about-copy"><p class="eyebrow">Barn rentals</p><h2>The details,<br/>all in one place.</h2><p>The rental page brings together the facilities, pricing, and practical information visitors need to explore a stay with their horses.</p><p>Scroll inside the screen to explore the complete page.</p></div><ScrollableScreen id="bfabbbb544fc" title="Barn Rentals" address="Equiventures East / Barn Rentals" brand="Equiventures East"/></div></div>
+<section class="container clean-story-section"><p class="eyebrow">Photography</p><div class="clean-story-copy"><h2>A closer look at life<br/>on the property.</h2><p>From aerial views of the pastures to the horses, barns, and vacation home, the photography gives the website its sense of place. Hover over a photo to expand it, or select one to keep it open.</p></div></section>
+<div class="container"><ExpandingGallery photos={photos} name="Equiventures East" rowSize={6}/></div>
+<section class="clean-impact"><div class="container clean-impact-inner"><div class="equi-outcomes"><p><strong>A connected identity</strong>Branding and website design share a rustic, outdoorsy feel.</p><p><strong>Clear rental information</strong>Packages, rates, and facilities have a dedicated home.</p><p><strong>Original photography</strong>The landscape and property lead the story.</p></div><div class="clean-impact-copy"><p class="eyebrow">The result</p><h2>A welcoming introduction.<br/>Rooted in the landscape.</h2><p>The Squarespace website brings the property’s accommodations and equestrian offerings together, pairing practical information with the photography that makes the destination distinctive.</p></div></div></section>
+</CaseTemplate><ProjectCTA/></main><Footer/></BaseLayout>
+<style>
+.equi-hero{background:#e5e1d9;padding:55px 0}.equi-intro{row-gap:30px}.equi-credits{grid-column:2;margin-top:0;gap:20px 30px;align-items:center}.equi-live{margin-left:auto;white-space:nowrap;font-size:14px}.equi-secondary{padding:55px 0;background:#e6e2d8}.equi-about-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:75px;align-items:center}.equi-about-copy h2{font-size:clamp(28px,3vw,42px);line-height:1.12;margin:18px 0 25px}.equi-about-copy p:not(.eyebrow){font-size:16px;line-height:1.7;color:#66635d;margin-bottom:18px}.equi-content-pair{display:grid;grid-template-columns:1fr 1fr;gap:35px}.equi-content-pair h3{font-size:19px;margin-bottom:14px;font-weight:500}.equi-outcomes{display:grid;gap:25px}.equi-outcomes p{font-size:14px;line-height:1.5;color:#66635d}.equi-outcomes strong{display:block;font-size:24px;color:var(--ink);margin-bottom:8px;font-weight:500}@media(max-width:1000px){.equi-live{margin-left:0}}@media(max-width:760px){.equi-hero,.equi-secondary{padding:30px 0}.equi-credits{grid-column:1}.equi-about-grid,.equi-content-pair{grid-template-columns:1fr;gap:35px}}
+</style>
