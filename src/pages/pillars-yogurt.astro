@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Media from '../components/Media.astro';
+import CaseTemplate from '../components/CaseTemplate.astro';
+import ProjectCTA from '../components/ProjectCTA.astro';
+import pages from '../data/pages.json';
+import '../styles/secondary.css';
+import '../styles/brand-cases.css';
+const page=pages.find(p=>p.slug==='pillars-yogurt')!;
+const cups=[{id:'114caa61b9ad',name:'Plain / Pillars Blue',color:'#cee3ef'},{id:'299e167b1b5b',name:'Strawberry Banana',color:'#f5d0c5'},{id:'e83a80592ac7',name:'Mixed Berry',color:'#e4d1e9'},{id:'dbc761171287',name:'Vanilla',color:'#eee1ce'}];
+const ingredients=[{id:'3f8538d46b3f',name:'Coconut'},{id:'b3e200911f24',name:'Strawberry & banana'},{id:'6c1637346815',name:'Coconut flesh'},{id:'624d5cf17056',name:'Mixed berries'},{id:'971569419835',name:'Coconut shell'},{id:'37f85b42a9d1',name:'Vanilla'}];
+---
+<BaseLayout title={page.title} description={page.description}><Header/><main id="main"><CaseTemplate name="Pillars Yogurt" tagline="Expanding a product line." related={['/bfg','/anvil-and-forge','/little-pond']}>
+<figure slot="hero" class="brand-hero"><Media id="e9798d7b9c92" alt="Pillars plant-based yogurt cups arranged with coconut halves" eager/></figure>
+<section class="container clean-story-section brand-intro"><p class="eyebrow">The partnership</p><div class="clean-story-copy"><h2>A new branch.<br/>The same strong roots.</h2><p>{page.paragraphs[0]}</p></div><div class="clean-case-credits brand-credits"><div><strong>Client</strong>Pillars Yogurt</div><div><strong>Our role</strong>{page.roles.replaceAll('\n',' · ')}</div><div><strong>Focus</strong>Plant-based product line</div></div></section>
+<figure class="brand-full"><Media id="7959c9277770" alt="A parent and child enjoy Pillars yogurt at a kitchen table"/></figure>
+<section class="container clean-story-section"><p class="eyebrow">Primary art direction</p><div class="clean-story-copy"><h2>A family of flavors.<br/>One recognizable system.</h2><p>A consistent packaging structure gives the plant-based line its own identity. Flavor colors and ingredient illustrations add variety while keeping the range connected.</p><div class="palette" aria-label="Original flavor colorway"><span style="background:#97c8e1">Plain / Pillars Blue</span><span style="background:#ed927a">Strawberry Banana</span><span style="background:#9e5dae;color:white">Mixed Berry</span><span style="background:#d4b38e">Vanilla</span><span style="background:#f2c24e">Mango</span></div></div></section>
+<div class="container brand-grid flavor-grid brand-gallery-space">{cups.map(cup=><figure style={`--flavor-bg:${cup.color}`}><Media id={cup.id} alt={`Pillars plant-based ${cup.name} yogurt cup packaging`}/><figcaption>{cup.name}</figcaption></figure>)}</div>
+<section class="container clean-story-section"><p class="eyebrow">Icons & illustrations</p><div class="clean-story-copy"><h2>Ingredients with personality.</h2><p>Hand-painted ingredient illustrations bring a softer, expressive layer to the packaging, creating a visual connection between the flavor and the product.</p></div></section>
+<div class="ingredients-stage"><div class="container brand-grid ingredients">{ingredients.map(item=><figure><Media id={item.id} alt={`Pillars packaging illustration of ${item.name.toLowerCase()}`}/><figcaption>{item.name}</figcaption></figure>)}</div></div>
+<section class="container clean-story-section"><p class="eyebrow">Secondary art direction</p><div class="clean-story-copy"><h2>The system, in another form.</h2><p>The secondary direction explores the product family across drinkable packaging and multipacks, keeping flavor, illustration, and brand recognition connected.</p></div></section>
+<div class="brand-stage"><div class="container"><div class="brand-grid brand-pair"><figure><Media id="e0fe9ca6e68c" alt="Pillars mixed berry drinkable yogurt bottle and multipack concept"/></figure><figure><Media id="6a84b0510e10" alt="Pillars drinkable yogurt packaging concepts in mixed berry, strawberry banana, and vanilla"/></figure></div><div class="brand-grid brand-triptych"><figure><Media id="8f7f276558d8" alt="Front and back of Pillars mixed berry bottle design"/></figure><figure><Media id="9f2a01fa9505" alt="Front and back of Pillars vanilla bottle design"/></figure><figure><Media id="acaba8f5201b" alt="Front and back of Pillars strawberry banana bottle design"/></figure></div></div></div>
+<section class="clean-impact"><div class="container clean-impact-inner"><div class="brand-impact-list"><p><strong>A connected product family</strong>Color, typography, and illustration across the range.</p><p><strong>Two art directions</strong>Cup packaging and a secondary bottle exploration.</p><p><strong>A distinct plant-based identity</strong>A sub-brand ecosystem for the new product line.</p></div><div class="clean-impact-copy"><p class="eyebrow">Impact</p><h2>Room to grow.<br/>Built to belong.</h2><p>The work gives the new plant-based line a cohesive visual foundation, with an identity that can carry across flavors and packaging formats.</p></div></div></section>
+</CaseTemplate><ProjectCTA/></main><Footer/></BaseLayout>

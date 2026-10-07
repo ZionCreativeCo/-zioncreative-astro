@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Media from '../components/Media.astro';
+import CaseTemplate from '../components/CaseTemplate.astro';
+import ProjectCTA from '../components/ProjectCTA.astro';
+import pages from '../data/pages.json';
+import '../styles/secondary.css';
+import '../styles/brand-cases.css';
+const page=pages.find(p=>p.slug==='bfg')!;
+---
+<BaseLayout title={page.title} description={page.description.trim()}><Header/><main id="main"><CaseTemplate name="BEAT" tagline="Reinventing food brands in need of TLC." related={['/pillars-yogurt','/anvil-and-forge','/little-pond']}>
+<figure slot="hero" class="brand-hero"><Media id="7fd258d532bd" alt="BEAT campaign wall with bold black typography, food photography, and bright green graphics" eager/></figure>
+<section class="container clean-story-section brand-intro"><p class="eyebrow">The partnership</p><div class="clean-story-copy"><h2>Fresh energy.<br/>A brand with an appetite.</h2><p>{page.paragraphs[0]}</p></div><div class="clean-case-credits brand-credits"><div><strong>Client</strong>BEAT</div><div><strong>Our role</strong>{page.roles.replaceAll('\n',' · ')}</div><div><strong>Focus</strong>Food & beverage brand reinvention</div></div></section>
+<section class="container clean-story-section"><p class="eyebrow">Brand identity</p><div class="clean-story-copy"><h2>Bold enough to make some noise.</h2><p>A direct wordmark, oversized typography, and bright green accents give BEAT a lively visual language. The identity stays simple enough to move across messaging, print, and motion.</p></div></section>
+<div class="brand-grid brand-pair"><figure><Media id="39de21bbcefe" alt="The white BEAT wordmark centered on a black background"/></figure><figure><Media id="4e352ff5ca6f" alt="BEAT brand palette showing black, white, and vivid green"/></figure></div>
+<figure class="brand-full"><Media id="db03b8394a61" alt="Large BEAT EAT typography applied to an architectural wall"/></figure>
+<section class="container clean-story-section"><p class="eyebrow">Motion & expression</p><div class="clean-story-copy"><h2>A brand that keeps moving.</h2><p>Animated green brand elements and branded objects extend the identity beyond a static logo, giving BEAT more ways to show up with energy and character.</p></div></section>
+<div class="brand-grid brand-pair beat-motion"><figure><Media id="1bbb48609fe1" alt="Animated bright green BEAT brand elements moving across a white background"/></figure><figure><Media id="cd02fc2ddaf0" alt="Animated BEAT-branded lanyard and tote bag presentation"/></figure></div>
+<section class="container clean-story-section"><p class="eyebrow">Collateral & messaging</p><div class="clean-story-copy"><h2>Eat this.<br/>Remember that.</h2><p>The identity expands into stickers, business cards, stationery, packaging, animations, and merch. Repeated typography and food-led imagery create a consistent presence across the applications.</p></div></section>
+<figure class="brand-full"><Media id="9cc5a405b83d" alt="A spread of BEAT EAT printed graphics with repeated bold typography"/></figure>
+<figure class="brand-full"><Media id="fcdbf058fb4d" alt="BEAT campaign panels pairing food photography with bold EAT THIS typography"/></figure>
+<section class="clean-impact"><div class="container clean-impact-inner"><div class="brand-impact-list"><p><strong>One energetic identity</strong>Wordmark, typography, color, and visual language.</p><p><strong>Print to motion</strong>Collateral, packaging, animation, and merch.</p><p><strong>A clear brand voice</strong>Messaging for a business that reinvents food brands.</p></div><div class="clean-impact-copy"><p class="eyebrow">Impact</p><h2>Built to stand out.<br/>Ready to show up.</h2><p>The work brings BEAT’s identity together as an expressive system, with creative direction and design that carry consistently across its brand applications.</p></div></div></section>
+</CaseTemplate><ProjectCTA/></main><Footer/></BaseLayout>
