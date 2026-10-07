@@ -1,11 +1,10 @@
 ---
 import dimensions from '../data/colossus-video-dimensions.json';
-interface Props {name:string;label:string;portrait?:boolean;}
-const {name,label,portrait=false}=Astro.props;
-const size=dimensions[name as keyof typeof dimensions];
-const address=name==='news-scroll'?'wearecolossus.com/news':'wearecolossus.com';
+interface Props {name:string;label:string;portrait?:boolean;src?:string;poster?:string;width?:number;height?:number;address?:string;}
+const {name,label,portrait=false,src=`/videos/colossus-${name}.mp4`,poster=`/images/colossus-${name}-poster.jpg`,width,height,address=name==='news-scroll'?'wearecolossus.com/news':'wearecolossus.com'}=Astro.props;
+const size=width&&height?{width,height}:dimensions[name as keyof typeof dimensions];
 ---
-<div class:list={['case-film',{'case-film-portrait':portrait}]}> <div class:list={['film-window',{'film-window-phone':portrait}]}>{!portrait&&<div class="film-browser-bar" aria-hidden="true"><span class="film-browser-dots"><i></i><i></i><i></i></span><span>{address}</span><span>↗</span></div>}<video class="case-demo-video" width={size.width} height={size.height} controls muted playsinline loop preload="none" poster={`/images/colossus-${name}-poster.jpg`} aria-label={label}><source src={`/videos/colossus-${name}.mp4`} type="video/mp4" /></video></div></div>
+<div class:list={['case-film',{'case-film-portrait':portrait}]}> <div class:list={['film-window',{'film-window-phone':portrait}]}>{!portrait&&<div class="film-browser-bar" aria-hidden="true"><span class="film-browser-dots"><i></i><i></i><i></i></span><span>{address}</span><span>↗</span></div>}<video class="case-demo-video" width={size.width} height={size.height} controls muted playsinline loop preload="none" poster={poster} aria-label={label}><source src={src} type="video/mp4" /></video></div></div>
 <script>
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const clips=[...document.querySelectorAll<HTMLVideoElement>('.case-demo-video')];
