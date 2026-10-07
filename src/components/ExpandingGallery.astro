@@ -1,9 +1,12 @@
 ---
-import photos from '../data/villas-gallery.json';
+import villasPhotos from '../data/villas-gallery.json';
+interface Props {photos?:{src:string;alt:string;position?:string;width:number;height:number}[];name?:string;rowSize?:number;}
+const {photos=villasPhotos,name='The Villas',rowSize=6}=Astro.props;
+const rows=Array.from({length:Math.ceil(photos.length/rowSize)},(_,index)=>photos.slice(index*rowSize,(index+1)*rowSize));
 ---
-<div class="expanding-gallery" aria-label="The Villas photography gallery">
-{[photos.slice(0,6),photos.slice(6)].map((row,rowIndex)=><div class="gallery-rail" role="group" aria-label={`Photography row ${rowIndex+1}`}>
-{row.map((photo,index)=><button class="gallery-panel" type="button" aria-label={`Expand photo: ${photo.alt}`} aria-pressed="false" style={`--photo-position:${photo.position}`}><img src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async"/><span class="gallery-caption"><span>{String(rowIndex*6+index+1).padStart(2,'0')}</span>{photo.alt}</span></button>)}
+<div class="expanding-gallery" aria-label={`${name} photography gallery`}>
+{rows.map((row,rowIndex)=><div class="gallery-rail" role="group" aria-label={`Photography row ${rowIndex+1}`}>
+{row.map((photo,index)=><button class="gallery-panel" type="button" aria-label={`Expand photo: ${photo.alt}`} aria-pressed="false" style={`--photo-position:${photo.position??'50%'}`}><img src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy" decoding="async"/><span class="gallery-caption"><span>{String(rowIndex*rowSize+index+1).padStart(2,'0')}</span>{photo.alt}</span></button>)}
 </div>)}
 </div>
 <script>
