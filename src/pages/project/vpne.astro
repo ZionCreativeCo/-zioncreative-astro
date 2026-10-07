@@ -10,7 +10,7 @@ import pages from '../../data/pages.json';
 import '../../styles/secondary.css';
 const page=pages.find(p=>p.slug==='project/vpne')!;
 ---
-<BaseLayout title={page.title} description={page.description.trim()}><Header/><main id="main"><CaseTemplate name="VPNE" tagline="Powered by people. Connected by design." related={['/colossus','/evangel','/hill-country-linens']}>
+<BaseLayout title={page.title} description={page.description.trim()}><Header/><main id="main"><CaseTemplate name="VPNE" tagline="Powered by people. Connected by design." related={['/colossus','/evangel','/project/kp']}>
 <div slot="hero" class="vpne-hero"><div class="container"><ScrollableScreen id="9dd2dd12226b" title="Homepage" address="vpne.com" primary/></div></div>
 <section class="container clean-story-section vpne-intro"><p class="eyebrow">The partnership</p><div class="clean-story-copy"><h2>A new identity.<br/>A clearer digital experience.</h2><p>{page.paragraphs[0]}</p></div><div class="clean-case-credits vpne-credits"><div><strong>Our role</strong>{page.roles}</div><div><strong>Agency</strong>Colossus</div><div><strong>Project</strong>Professional Services · Q3 2024</div><a class="text-link vpne-live" href={page.liveUrl} target="_blank" rel="noopener noreferrer">Explore the live site <Arrow/></a></div></section>
 <section class="container clean-story-section"><p class="eyebrow">The experience</p><div class="clean-story-copy"><h2>People at the center.<br/>A connected story across the site.</h2><p>The homepage introduces VPNE’s people-first positioning and connects visitors with the company, its solutions, and career opportunities. Bold typography, photography, and a consistent visual language carry the new identity through each page.</p></div></section>

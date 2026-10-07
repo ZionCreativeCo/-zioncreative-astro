@@ -13,7 +13,7 @@ import '../styles/secondary.css';
 ---
 <BaseLayout title={content.title} description="Explore Zion Creative’s work for The Villas Senior Care Community in central Illinois, from website design and brand management to social media and photography.">
 <Header/><main id="main">
-<CaseTemplate name="The Villas" tagline="Thoughtful design. Meaningful connection." related={['/colossus','/evangel','/hill-country-linens']}>
+<CaseTemplate name="The Villas" tagline="Thoughtful design. Meaningful connection." related={['/colossus','/evangel','/project/kp']}>
 <CaseFilm slot="hero" name="villas-home-scroll" label="Scrolling presentation of the redesigned Villas homepage" src="/videos/villas-home-scroll.mp4" poster="/images/villas-home-scroll-poster.jpg" width={1280} height={720} address="villasseniorcare.com"/>
 <section class="container clean-story-section villas-intro" aria-labelledby="partnership-title"><p class="eyebrow">The partnership</p><div class="clean-story-copy"><h2 id="partnership-title">A community built on care.<br/>A brand built on connection.</h2><p>{content.intro}</p></div><div class="clean-case-credits villas-credits"><div><strong>Client</strong>The Villas Senior Care Community</div><div><strong>Our role</strong>{content.roles.join(' · ')}</div><a class="text-link credits-live-link" href="https://www.villasseniorcare.com/" target="_blank" rel="noopener noreferrer">Explore the live site <Arrow/></a></div></section>
 <section class="container clean-story-section" aria-labelledby="website-title"><p class="eyebrow">Website</p><div class="clean-story-copy"><h2 id="website-title">A clearer path to care.</h2><p>{content.problem}</p><p>{content.solution}</p></div></section>

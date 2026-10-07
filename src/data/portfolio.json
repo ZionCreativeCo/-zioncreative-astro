@@ -57,29 +57,12 @@
     "number": "08"
   },
   {
-    "name": "Hill Country Linens",
-    "category": "Website design · Branding",
-    "image": "work-hill-country-linens",
-    "alt": "Hill Country Linens — selected creative work by Zion Creative",
-    "path": "/hill-country-linens",
-    "number": "09"
-  },
-  {
     "name": "Little Pond",
     "category": "Art direction · Identity · Web",
     "image": "work-little-pond",
     "alt": "Little Pond — selected creative work by Zion Creative",
     "path": "/little-pond",
     "number": "10"
-  },
-  {
-    "name": "SpringFree EV",
-    "category": "Identity · Illustration · Web",
-    "image": "work-springfree-ev",
-    "alt": "SpringFree EV — selected creative work by Zion Creative",
-    "path": "/springfree-ev",
-    "number": "11",
-    "animatedImage": "/images/work-springfree-ev-animated.webp"
   },
   {
     "name": "Lingk",

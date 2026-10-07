@@ -9,7 +9,7 @@ import dimensions from '../data/image-dimensions.json';
 const {page}=Astro.props;
 const coverSize=dimensions[page.cover.image as keyof typeof dimensions];
 const next=portfolio[(portfolio.findIndex(p=>p.path===`/${page.slug}`)+1)%portfolio.length];
-const website=['wholemoon','project/vpne','evangel','hill-country-linens','settlers-mtn','tpcns','sgk-law','project/kp'].includes(page.slug);
+const website=['wholemoon','project/vpne','evangel','settlers-mtn','tpcns','sgk-law','project/kp'].includes(page.slug);
 ---
 <div class:list={['original-case',{'original-case-website':website,'original-case-brand':!website}]}>
 {!website&&<div class="original-case-cover">{page.gallery.length>0?<Media id={page.gallery[0].id} alt={page.gallery[0].alt||`${page.name} brand design`} eager />:<img src={`/images/${page.cover.image}-1280.webp`} width={coverSize.width} height={coverSize.height} alt={page.cover.alt} fetchpriority="high" />}</div>}

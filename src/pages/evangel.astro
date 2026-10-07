@@ -9,7 +9,7 @@ import pages from '../data/pages.json';
 import '../styles/secondary.css';
 const page=pages.find(p=>p.slug==='evangel')!;
 ---
-<BaseLayout title={page.title} description={page.description.trim()}><Header/><main id="main"><CaseTemplate name="Evangel Church" tagline="A welcoming community. A bold digital home." related={['/project/vpne','/hill-country-linens','/colossus']}>
+<BaseLayout title={page.title} description={page.description.trim()}><Header/><main id="main"><CaseTemplate name="Evangel Church" tagline="A welcoming community. A bold digital home." related={['/project/vpne','/project/kp','/colossus']}>
 <div slot="hero" class="evangel-hero"><div class="container"><ScrollableScreen id="3d77c50462b3" title="Homepage" address="Evangel Church" brand="Evangel Church" primary/></div></div>
 <section class="container clean-story-section evangel-intro"><p class="eyebrow">The partnership</p><div class="clean-story-copy"><h2>A voice of hope.<br/>A place to belong.</h2><p>{page.paragraphs[0]}</p></div><div class="clean-case-credits evangel-credits"><div><strong>Our role</strong>Squarespace website</div><div><strong>Project</strong>Non-Profit / Church · Q4 2023</div></div></section>
 <section class="container clean-story-section"><p class="eyebrow">The experience</p><div class="clean-story-copy"><h2>Welcome home.<br/>Find your next step.</h2><p>Bold typography, mint accents, and photography from the church bring energy and warmth to the homepage. Service information, community groups, and upcoming events give both first-time visitors and members clear places to begin.</p></div></section>
