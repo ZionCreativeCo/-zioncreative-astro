@@ -1,0 +1,10 @@
+{
+  "source": "Google Search Console · Web search",
+  "period": "Custom reporting period",
+  "metrics": [
+    {"value":"26K","label":"Organic search clicks"},
+    {"value":"587K","label":"Search impressions"},
+    {"value":"4.4%","label":"Average click-through rate"},
+    {"value":"9.4","label":"Average search position"}
+  ]
+}
