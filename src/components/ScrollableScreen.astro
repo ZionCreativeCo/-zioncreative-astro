@@ -1,0 +1,12 @@
+---
+import Media from './Media.astro';
+interface Props {id:string;title:string;address:string;primary?:boolean;}
+const {id,title,address,primary=false}=Astro.props;
+---
+<figure class:list={['scrollable-screen',{'primary-screen':primary}]}>
+<div class="screen-shell"><div class="screen-toolbar" aria-hidden="true"><span class="screen-dots"><i></i><i></i><i></i></span><span>{address}</span><span>↗</span></div><div class="screen-viewport" tabindex="0" role="region" aria-label={`${title} website mockup. Scroll inside this screen to explore the full page.`}><Media id={id} alt={`Full VPNE ${title} website design`} eager={primary}/></div></div>
+<figcaption><strong>{title}</strong><span>Scroll inside to explore the full page <span aria-hidden="true">↓</span></span></figcaption>
+</figure>
+<style>
+.scrollable-screen{margin:0;min-width:0}.screen-shell{border:1px solid #25251b38;border-radius:12px;overflow:hidden;box-shadow:0 24px 55px #20231c22;background:#eeefea}.screen-toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:12px 18px;color:#64665f;font-size:11px}.screen-dots{display:flex;gap:5px}.screen-dots i{width:5px;height:5px;background:#77796e;border-radius:50%}.screen-viewport{height:420px;overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:#88867c #eeefea;background:white}.primary-screen .screen-viewport{height:clamp(360px,48vw,620px)}.screen-viewport :global(img){display:block;width:100%;height:auto;max-width:none}.screen-viewport:focus-visible{outline:3px solid var(--lime);outline-offset:-3px}.scrollable-screen figcaption{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:18px;font-size:12px;color:#69665e}.scrollable-screen figcaption strong{font-size:14px;color:var(--ink);font-weight:500}@media(max-width:760px){.screen-toolbar{font-size:9px;padding:10px 12px}.screen-viewport{height:350px}.primary-screen .screen-viewport{height:320px}.scrollable-screen figcaption{gap:12px;font-size:11px}.scrollable-screen figcaption strong{font-size:13px}.screen-shell{border-radius:9px}}
+</style>

@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Arrow from '../../components/Arrow.astro';
+import CaseTemplate from '../../components/CaseTemplate.astro';
+import ScrollableScreen from '../../components/ScrollableScreen.astro';
+import ProjectCTA from '../../components/ProjectCTA.astro';
+import pages from '../../data/pages.json';
+import '../../styles/secondary.css';
+const page=pages.find(p=>p.slug==='project/vpne')!;
+---
+<BaseLayout title={page.title} description={page.description.trim()}><Header/><main id="main"><CaseTemplate name="VPNE" tagline="Powered by people. Connected by design." related={['/colossus','/evangel','/hill-country-linens']}>
+<div slot="hero" class="vpne-hero"><div class="container"><ScrollableScreen id="9dd2dd12226b" title="Homepage" address="vpne.com" primary/></div></div>
+<section class="container clean-story-section vpne-intro"><p class="eyebrow">The partnership</p><div class="clean-story-copy"><h2>A new identity.<br/>A clearer digital experience.</h2><p>{page.paragraphs[0]}</p></div><div class="clean-case-credits vpne-credits"><div><strong>Our role</strong>{page.roles}</div><div><strong>Agency</strong>Colossus</div><div><strong>Project</strong>Professional Services · Q3 2024</div><a class="text-link vpne-live" href={page.liveUrl} target="_blank" rel="noopener noreferrer">Explore the live site <Arrow/></a></div></section>
+<section class="container clean-story-section"><p class="eyebrow">The experience</p><div class="clean-story-copy"><h2>People at the center.<br/>A connected story across the site.</h2><p>The homepage introduces VPNE’s people-first positioning and connects visitors with the company, its solutions, and career opportunities. Bold typography, photography, and a consistent visual language carry the new identity through each page.</p></div></section>
+<div class="vpne-secondary"><div class="container vpne-screen-grid"><ScrollableScreen id="539a3392464c" title="About VPNE" address="vpne.com / About"/><ScrollableScreen id="d05a012b404e" title="Healthcare Solutions" address="vpne.com / Healthcare Solutions"/></div></div>
+<section class="container clean-story-section"><p class="eyebrow">Beyond the homepage</p><div class="clean-story-copy"><h2>From company story<br/>to specialized services.</h2><div class="vpne-content-pair"><div><h3>About VPNE</h3><p>The About page brings together the company’s history, leadership, and team culture. People-focused imagery and clearly defined sections give the longer story a readable rhythm.</p></div><div><h3>Healthcare Solutions</h3><p>The healthcare page organizes clinical support, facilities support, and parking and transportation services into distinct sections, making the breadth of the offering easier to explore.</p></div></div></div></section>
+<section class="clean-impact"><div class="container clean-impact-inner"><div class="vpne-outcomes"><p><strong>A cohesive brand experience</strong>The new identity carries across the website.</p><p><strong>Clearer content structure</strong>Company information and service offerings have defined places.</p><p><strong>People-first storytelling</strong>Photography and content reflect VPNE’s team and culture.</p></div><div class="clean-impact-copy"><p class="eyebrow">The result</p><h2>A digital presence<br/>built around the people.</h2><p>The redesign brings the company’s identity, story, and solutions into one consistent website experience, supporting the project’s goals for usability and engagement.</p></div></div></section>
+</CaseTemplate><ProjectCTA/></main><Footer/></BaseLayout>
+<style>
+.vpne-hero{background:#e5e1d9;padding:55px 0}.vpne-intro{row-gap:30px}.vpne-credits{grid-column:2;margin-top:0;gap:20px 30px;align-items:center}.vpne-live{margin-left:auto;white-space:nowrap;font-size:14px}.vpne-secondary{padding:55px 0;background:#e6e2d8}.vpne-screen-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.vpne-content-pair{display:grid;grid-template-columns:1fr 1fr;gap:35px}.vpne-content-pair h3{font-size:19px;margin-bottom:14px;font-weight:500}.vpne-outcomes{display:grid;gap:25px}.vpne-outcomes p{font-size:14px;line-height:1.5;color:#66635d}.vpne-outcomes strong{display:block;font-size:24px;color:var(--ink);margin-bottom:8px;font-weight:500}@media(max-width:1000px){.vpne-live{margin-left:0}}@media(max-width:760px){.vpne-hero,.vpne-secondary{padding:30px 0}.vpne-credits{grid-column:1}.vpne-screen-grid,.vpne-content-pair{grid-template-columns:1fr;gap:35px}}
+</style>
