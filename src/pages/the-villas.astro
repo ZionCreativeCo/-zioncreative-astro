@@ -21,14 +21,14 @@ const photos = [
 ---
 <BaseLayout title={content.title} description="Explore Zion Creative’s work for The Villas Senior Care Community in central Illinois, from website design and brand management to social media and photography.">
   <Header />
-  <main id="main" class="case-page">
+  <main id="main" class="case-page original-villas">
+    <div class="container case-cover"><CaseImage name="work-the-villas" alt="The Villas brand identity over a photograph of the community’s outdoor patio" eager sizes="100vw" /></div>
     <section class="container page-intro case-intro" aria-labelledby="villas-title">
       <a class="text-link case-back" href="/portfolio">All work <span aria-hidden="true"><Arrow /></span></a>
       <p class="eyebrow">Senior care · Central Illinois</p>
       <h1 id="villas-title">The Villas<br /><em>Senior Care Community.</em></h1>
       <p class="case-deck">Redefining the digital presence of an established care community in central Illinois.</p>
     </section>
-    <div class="container case-cover"><CaseImage name="work-the-villas" alt="The Villas brand identity over a photograph of the community’s outdoor patio" eager sizes="100vw" /></div>
     <section class="case-overview container" aria-labelledby="overview-title">
       <div class="case-summary" data-reveal><p class="eyebrow">The partnership</p><h2 id="overview-title">Thoughtful design.<br /><em>Meaningful connection.</em></h2><p>{content.intro}</p></div>
       <aside class="case-scope" aria-label="Project services" data-reveal><p class="eyebrow">Our role</p><ul>{content.roles.map(role=><li>{role}</li>)}</ul></aside>
