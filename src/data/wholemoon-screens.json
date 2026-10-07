@@ -1,0 +1,17 @@
+{
+  "home": {
+    "src": "/images/wholemoon-home.webp",
+    "width": 1600,
+    "height": 3713
+  },
+  "coconut": {
+    "src": "/images/wholemoon-coconut.webp",
+    "width": 1600,
+    "height": 2950
+  },
+  "products": {
+    "src": "/images/wholemoon-products.webp",
+    "width": 1600,
+    "height": 4366
+  }
+}
