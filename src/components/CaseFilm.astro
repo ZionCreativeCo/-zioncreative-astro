@@ -1,0 +1,17 @@
+---
+import dimensions from '../data/colossus-video-dimensions.json';
+interface Props {name:string;label:string;portrait?:boolean;}
+const {name,label,portrait=false}=Astro.props;
+const size=dimensions[name as keyof typeof dimensions];
+---
+<div class:list={['case-film',{'case-film-portrait':portrait}]}><video class="case-demo-video" width={size.width} height={size.height} controls muted playsinline loop preload="none" poster={`/images/colossus-${name}-poster.jpg`} aria-label={label}><source src={`/videos/colossus-${name}.mp4`} type="video/mp4" /></video></div>
+<script>
+const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+const clips=[...document.querySelectorAll<HTMLVideoElement>('.case-demo-video')];
+const manuallyPaused=new WeakSet<HTMLVideoElement>();
+const automatic=new WeakSet<HTMLVideoElement>();
+clips.forEach(video=>{video.addEventListener('pause',()=>{if(video.getBoundingClientRect().top<innerHeight&&video.getBoundingClientRect().bottom>0&&automatic.has(video))manuallyPaused.add(video);});});
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{const video=entry.target as HTMLVideoElement;if(entry.isIntersecting&&!reduced.matches&&!manuallyPaused.has(video)){automatic.add(video);video.play().catch(()=>{});}else{automatic.delete(video);video.pause();}});},{threshold:.35});clips.forEach(video=>observer.observe(video));
+reduced.addEventListener('change',()=>{if(reduced.matches)clips.forEach(video=>{automatic.delete(video);video.pause();});});
+</script>
+<style>.case-film{background:#e5e1d9;overflow:hidden}.case-film video{display:block;width:100%;height:auto}.case-film-portrait{background:#dcd8cd;padding:45px;display:flex;justify-content:center;align-items:center}.case-film-portrait video{max-width:330px;border:8px solid #252525;border-radius:32px;background:#111;box-shadow:0 25px 55px #28251f25}@media(max-width:760px){.case-film-portrait{padding:30px}.case-film-portrait video{max-width:280px}}</style>
