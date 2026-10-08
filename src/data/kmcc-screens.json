@@ -1,0 +1,17 @@
+{
+  "home": {
+    "src": "/images/kmcc-home.webp",
+    "width": 1600,
+    "height": 3901
+  },
+  "gather": {
+    "src": "/images/kmcc-gather.webp",
+    "width": 1600,
+    "height": 6203
+  },
+  "about": {
+    "src": "/images/kmcc-about.webp",
+    "width": 1600,
+    "height": 5449
+  }
+}
