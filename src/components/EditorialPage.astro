@@ -35,4 +35,4 @@ const serviceAnchors=['strategy','branding','web','management'];
 {slug==='jobs'&&<section class="container page-intro service-intro utility-page"><p class="eyebrow">Work with Zion</p><h1>Good work starts<br /><em>with good people.</em></h1><p class="intro-copy">{b[0][1].text}</p><p>Still think you’d be a good fit?</p><a class="text-link" href="mailto:hello@zioncreative.co">Say hello <Arrow /></a></section>}
 {slug==='onboarding'&&<><section class="container page-intro onboarding-intro"><h1>Let’s get started.</h1><p class="intro-copy">Tell us about your business, your goals, and the project you have in mind.</p></section><section class="container onboarding-form" aria-label="Client onboarding"><ElfsightWidget id="7e555f75-1e03-4532-8977-c377ed33d633" /></section></>}
 {slug==='sample'&&<section class="container page-intro widget-section"><h1>Let’s connect.</h1><ElfsightWidget id="5cfa0b99-8564-4156-92a7-c14976c7a28b"/></section>}
-{!['sample','onboarding','consultation','jobs'].includes(slug)&&<ProjectCTA/>}
+{!['sample','onboarding','consultation','jobs'].includes(slug)&&<ProjectCTA marketing={slug==='brand-management-services'}/>}
