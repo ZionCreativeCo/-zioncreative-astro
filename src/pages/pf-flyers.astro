@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CaseTemplate from '../components/CaseTemplate.astro';
+import ScrollableScreen from '../components/ScrollableScreen.astro';
+import CaseFilm from '../components/CaseFilm.astro';
+import ProjectCTA from '../components/ProjectCTA.astro';
+import screens from '../data/pf-screens.json';
+import '../styles/secondary.css';
+---
+<BaseLayout title="PF Flyers — Website Experience | Zion Creative" description="Explore PF Flyers’ heritage-inspired website through homepage, collection, and product page experiences."><Header/><main id="main"><CaseTemplate name="PF Flyers" tagline="An American original. A new digital stride." related={['/wholemoon','/pillars-yogurt','/colossus']}>
+<CaseFilm slot="hero" name="pf-home" label="PF Flyers homepage scrolling demonstration" src="/videos/pf-home.mp4" poster="/images/pf-home-poster.jpg" width={1600} height={1000} address="pfflyers.com"/>
+<section class="container clean-story-section"><p class="eyebrow">The project</p><div class="clean-story-copy"><h2>Heritage in every detail.<br/>Discovery at every turn.</h2><p>The PF Flyers website brings a recognizable American footwear brand into an expressive shopping experience. A warm cream palette, deep green accents, and oversized imagery connect the products with the brand’s history and personality.</p><p>From the homepage to individual sneakers, the experience balances editorial storytelling with clear paths into the collection.</p><div class="clean-case-credits"><div><strong>Client</strong>PF Flyers</div><div><strong>Focus</strong>Website experience</div><div><strong>Category</strong>Footwear / Retail</div></div></div></section>
+<section class="container clean-story-section"><p class="eyebrow">Collection discovery</p><div class="clean-story-copy"><h2>A little movement.<br/>A lot of personality.</h2><p>Large collection cards put the footwear and lifestyle photography first. Hover details give browsing an expressive rhythm while keeping the next step close at hand.</p></div></section>
+<CaseFilm name="pf-collections" label="PF Flyers collection card hover interactions" src="/videos/pf-collections.mp4" poster="/images/pf-collections-poster.jpg" width={1600} height={1000} address="pfflyers.com / collections"/>
+<section class="container clean-story-section"><p class="eyebrow">The All-American</p><div class="clean-story-copy"><h2>A collection with a story.</h2><p>The All-American collection page pairs a bold introduction with focused product browsing. Price, size, and color filters sit above the sneaker cards, keeping the collection easy to explore.</p></div></section>
+<div class="pf-stage"><div class="container pf-collection"><ScrollableScreen image={screens.collection} title="The All-American collection" address="pfflyers.com / collections / all-american" brand="PF Flyers"/></div></div>
+<section class="container clean-story-section"><p class="eyebrow">Product detail</p><div class="clean-story-copy"><h2>Built around the sneaker.</h2><p>Detailed product photography, color and size selection, and heritage storytelling bring the shopping experience together. The product page gives each style room to be seen and understood.</p></div></section>
+<CaseFilm name="pf-product" label="PF Flyers All-American product page scrolling demonstration" src="/videos/pf-product.mp4" poster="/images/pf-product-poster.jpg" width={1600} height={1000} address="pfflyers.com / products / all-american-hi"/>
+<section class="clean-impact"><div class="container clean-impact-inner"><div class="pf-outcomes"><p><strong>Brand character</strong>Heritage, typography, and photography throughout the experience.</p><p><strong>Collection discovery</strong>Expressive browsing with practical product filters.</p><p><strong>Product storytelling</strong>Detailed views that connect each sneaker to its roots.</p></div><div class="clean-impact-copy"><p class="eyebrow">The experience</p><h2>Distinctive from the first impression to the final detail.</h2><p>The pages share a consistent visual language while giving collections and individual products their own moments. The result is a website experience that carries PF Flyers’ character through the shopping journey.</p></div></div></section>
+</CaseTemplate><ProjectCTA/></main><Footer/></BaseLayout>
+<style>.pf-stage{background:#e5e1d9;padding:55px 0}.pf-collection{max-width:1100px}.pf-outcomes{display:grid;gap:25px}.pf-outcomes p{font-size:14px;line-height:1.5;color:#66635d}.pf-outcomes strong{display:block;font-size:24px;color:var(--ink);font-weight:500;margin-bottom:8px}@media(max-width:760px){.pf-stage{padding:30px 0}}</style>

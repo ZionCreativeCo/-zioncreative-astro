@@ -9,33 +9,33 @@
   },
   {
     "name": "WholeMoon",
-    "category": "Shopify website · Development",
+    "category": "Shopify website \u00b7 Development",
     "image": "work-wholemoon",
-    "alt": "WholeMoon — selected creative work by Zion Creative",
+    "alt": "WholeMoon \u2014 selected creative work by Zion Creative",
     "path": "/wholemoon",
     "number": "01"
   },
   {
     "name": "Anvil & Forge",
-    "category": "Branding · Packaging · Web · Photography",
+    "category": "Branding \u00b7 Packaging \u00b7 Web \u00b7 Photography",
     "image": "work-anvil-and-forge",
-    "alt": "Anvil & Forge — selected creative work by Zion Creative",
+    "alt": "Anvil & Forge \u2014 selected creative work by Zion Creative",
     "path": "/anvil-and-forge",
     "number": "02"
   },
   {
     "name": "The Villas",
-    "category": "Brand direction · Web · Photography · Social",
+    "category": "Brand direction \u00b7 Web \u00b7 Photography \u00b7 Social",
     "image": "work-the-villas",
-    "alt": "The Villas — selected creative work by Zion Creative",
+    "alt": "The Villas \u2014 selected creative work by Zion Creative",
     "path": "/the-villas",
     "number": "03"
   },
   {
     "name": "Beat",
-    "category": "Identity · Animation · Messaging · Collateral",
+    "category": "Identity \u00b7 Animation \u00b7 Messaging \u00b7 Collateral",
     "image": "work-bfg",
-    "alt": "Beat — selected creative work by Zion Creative",
+    "alt": "Beat \u2014 selected creative work by Zion Creative",
     "path": "/bfg",
     "number": "04",
     "animatedImage": "/images/work-bfg-animated.webp"
@@ -44,7 +44,7 @@
     "name": "VPNE",
     "category": "Website design",
     "image": "work-project-vpne",
-    "alt": "VPNE — selected creative work by Zion Creative",
+    "alt": "VPNE \u2014 selected creative work by Zion Creative",
     "path": "/project/vpne",
     "number": "05"
   },
@@ -52,40 +52,48 @@
     "name": "Evangel Church",
     "category": "Website design",
     "image": "work-evangel",
-    "alt": "Evangel Church — selected creative work by Zion Creative",
+    "alt": "Evangel Church \u2014 selected creative work by Zion Creative",
     "path": "/evangel",
     "number": "07"
   },
   {
+    "name": "PF Flyers",
+    "category": "Website experience",
+    "image": "work-pf-flyers",
+    "alt": "PF Flyers heritage-inspired website experience",
+    "path": "/pf-flyers",
+    "number": "22"
+  },
+  {
     "name": "Garrison Group",
-    "category": "Creative direction · Brand identity",
+    "category": "Creative direction \u00b7 Brand identity",
     "image": "work-garrison-group",
-    "alt": "Garrison Group — selected creative work by Zion Creative",
+    "alt": "Garrison Group \u2014 selected creative work by Zion Creative",
     "path": "/garrison-group",
     "number": "08"
   },
   {
     "name": "Little Pond",
-    "category": "Art direction · Identity · Web",
+    "category": "Art direction \u00b7 Identity \u00b7 Web",
     "image": "work-little-pond",
-    "alt": "Little Pond — selected creative work by Zion Creative",
+    "alt": "Little Pond \u2014 selected creative work by Zion Creative",
     "path": "/little-pond",
     "number": "10"
   },
   {
     "name": "Lingk",
-    "category": "Identity · Illustration · Web",
+    "category": "Identity \u00b7 Illustration \u00b7 Web",
     "image": "work-lingk",
-    "alt": "Lingk — selected creative work by Zion Creative",
+    "alt": "Lingk \u2014 selected creative work by Zion Creative",
     "path": "/lingk",
     "number": "12",
     "animatedImage": "/images/work-lingk-animated.webp"
   },
   {
     "name": "Pillars",
-    "category": "Art direction · Packaging",
+    "category": "Art direction \u00b7 Packaging",
     "image": "work-pillars-yogurt",
-    "alt": "Pillars — selected creative work by Zion Creative",
+    "alt": "Pillars \u2014 selected creative work by Zion Creative",
     "path": "/pillars-yogurt",
     "number": "13"
   },
@@ -93,16 +101,16 @@
     "name": "Brand identities",
     "category": "Distinctive logos. Lasting impressions.",
     "image": "work-logo-design-springfield-il",
-    "alt": "Brand identities — selected creative work by Zion Creative",
+    "alt": "Brand identities \u2014 selected creative work by Zion Creative",
     "path": "/logo-design-springfield-il",
     "number": "16",
     "animatedImage": "/images/work-logo-design-springfield-il-animated.webp"
   },
   {
     "name": "Equiventures East",
-    "category": "Website · Branding · Photo & video",
+    "category": "Website \u00b7 Branding \u00b7 Photo & video",
     "image": "work-project-equiventures-east",
-    "alt": "Equiventures East — selected creative work by Zion Creative",
+    "alt": "Equiventures East \u2014 selected creative work by Zion Creative",
     "path": "/project/equiventures-east",
     "number": "18"
   },
@@ -110,7 +118,7 @@
     "name": "KP",
     "category": "Webflow website",
     "image": "work-project-kp",
-    "alt": "KP — selected creative work by Zion Creative",
+    "alt": "KP \u2014 selected creative work by Zion Creative",
     "path": "/project/kp",
     "number": "19"
   },
