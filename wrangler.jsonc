@@ -1,0 +1,12 @@
+{
+  "name": "zioncreative-astro",
+  "account_id": "ca921bf5ea6c70627d7662a86fe2ef18",
+  "compatibility_date": "2026-10-06",
+  "workers_dev": true,
+  "routes": [{ "pattern": "www.zioncreative.co", "custom_domain": true }],
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}
