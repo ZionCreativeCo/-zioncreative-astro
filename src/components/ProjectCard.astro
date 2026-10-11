@@ -1,10 +1,10 @@
 ---
 import { siteLink } from '../lib/links';
 import SeeMore from './SeeMore.astro';
-interface Props { name: string; category: string; image: string; alt: string; path: string; number: string; animatedImage?: string; }
-const {name,category,image,alt,path,number,animatedImage} = Astro.props;
+interface Props { name: string; category: string; image: string; alt: string; path: string; number: string; animatedImage?: string; filters?:string[]; }
+const {name,category,image,alt,path,number,animatedImage,filters=[]} = Astro.props;
 ---
-<a class="project-card" href={siteLink(path)}>
+<a class="project-card" data-project-filters={filters.join(" ")} href={siteLink(path)}>
   <div class="project-image">
     {animatedImage ? <picture>
       <source media="(prefers-reduced-motion: reduce)" srcset={`/images/${image}-1280.webp`} />

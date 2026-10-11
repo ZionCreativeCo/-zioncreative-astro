@@ -5,3 +5,5 @@ const {name,alt,eager=false,sizes='(max-width: 760px) 100vw, 50vw'}=Astro.props;
 const {width,height}=dimensions[name];
 ---
 <img src={`/images/${name}-1280.webp`} srcset={`/images/${name}-640.webp 640w, /images/${name}-1280.webp 1280w`} sizes={sizes} width={width} height={height} alt={alt} loading={eager?'eager':'lazy'} decoding="async" />
+
+<style>img{display:block;width:100%;height:auto}</style>

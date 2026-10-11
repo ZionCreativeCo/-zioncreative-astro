@@ -1,0 +1,29 @@
+---
+import Media from './Media.astro';
+interface Props {intro:string;logo?:boolean;marketing?:boolean;mainMarketing?:boolean;}
+const {intro,logo=false,marketing=false,mainMarketing=false}=Astro.props;
+---
+<section class:list={["graphic-hero section-dark",{"logo-hero":logo,"marketing-single":marketing&&!mainMarketing}]} aria-labelledby="graphic-hero-title">
+ <div class="graphic-hero-copy"><h1 id="graphic-hero-title"><em>{mainMarketing?'Marketing':marketing?'Digital':logo?'Logo':'Graphic'}</em> {mainMarketing?'':marketing?'Marketing':'Design'}<br/>{logo?'& Branding':'Services'}</h1><span class="graphic-location">Springfield, Illinois</span><p>{intro}</p><a class="button button-lime" href="/contact">Start a project</a></div>
+ <div class="graphic-collage" aria-label={marketing?"Selected marketing creative":logo?"Selected logo and brand identity work":"Selected graphic design work"}>
+  <img class="graphic-swoop" src="/images/graphic-design-swoop.png" width="2500" height="1263" alt="" aria-hidden="true"/>
+  <figure class="collage-finabro" data-collage-speed="-0.13">{mainMarketing?<img src="/images/marketing-hero.webp" width="1448" height="1086" alt="Campaign materials, social creative and brand assets in a studio setting" loading="eager"/>:<Media id={marketing?"9b88b579ba0e":logo?"616d907828b7":"6b58e419ec11"} alt={marketing?"Digital marketing campaign creative":logo?"Garrison Group brand identity":"Finabro branded financial campaign graphics"} eager/>}</figure>
+  {(!marketing||mainMarketing)&&<figure class="collage-villas" data-collage-speed="0.06"><Media id={logo?"2015d5b0a8b1":"885e75fc4d75"} alt={logo?"Little Pond logo and brand identity":"The Villas social media campaign designs"} eager/></figure>}
+  {(!marketing||mainMarketing)&&<figure class="collage-cans" data-collage-speed="-0.22"><Media id={logo?"210d1120dab8":"66d1a1bd4a44"} alt={logo?"Lingk brand identity":"Pink Hibiscus craft beer can packaging for Anvil & Forge"} eager/></figure>}
+ </div>
+</section>
+<style>
+.graphic-hero{position:relative;display:grid;grid-template-columns:minmax(0,44fr) minmax(0,56fr);align-items:center;gap:35px;padding:55px max(28px,calc((100vw - 1440px)/2)) 70px;overflow:hidden;background:#282828;min-height:650px}.graphic-hero-copy{position:relative;z-index:2;max-width:570px;padding-left:28px}.graphic-hero h1{font-size:clamp(48px,5vw,80px);font-weight:450;line-height:1.2;letter-spacing:-.04em;margin-bottom:28px}.graphic-hero h1 em{font-weight:450;color:inherit}.graphic-location{display:block;font-size:16px;letter-spacing:.03em;color:var(--lime);margin:-10px 0 24px}.graphic-hero-copy p{font-size:17px;line-height:1.8;color:#deddd7;max-width:530px}.graphic-hero-copy .button{margin-top:35px;padding:17px 32px}.graphic-collage{position:relative;height:clamp(500px,48vw,720px);min-width:0;margin-right:20px}.graphic-swoop{position:absolute;left:-14%;top:9%;width:140%;max-width:none;height:auto;object-fit:contain;pointer-events:none}.marketing-single .graphic-collage{margin-right:calc(-1 * max(28px, (100vw - 1440px)/2))}.marketing-single .collage-finabro{width:96%;left:auto;right:0;top:18%}.graphic-collage figure{position:absolute;margin:0;translate:0 var(--collage-offset,0px);will-change:translate;overflow:hidden}.graphic-collage figure :global(img){width:100%;height:auto;display:block}.collage-finabro{width:56%;left:37%;top:0;z-index:1}.collage-villas{width:78%;left:0;top:27%;z-index:2}.collage-cans{width:42%;right:0;top:48%;z-index:3}.collage-cans :global(img){aspect-ratio:.8;object-fit:cover}.logo-hero .collage-cans :global(img){aspect-ratio:auto;object-fit:contain}@media(max-width:1000px){.graphic-hero{grid-template-columns:minmax(0,43fr) minmax(0,57fr);gap:20px;padding-inline:20px;min-height:580px}.graphic-hero-copy{padding-left:0}.graphic-location{display:block;font-size:16px;letter-spacing:.03em;color:var(--lime);margin:-10px 0 24px}.graphic-hero-copy p{font-size:16px}.graphic-collage{margin-right:15px;height:480px}}@media(max-width:1000px) and (min-width:761px){.marketing-single .graphic-collage{margin-right:-20px}}@media(max-width:760px){.graphic-hero{grid-template-columns:1fr;padding:40px 20px 35px;gap:40px;min-height:0}.graphic-hero h1{font-size:48px;line-height:1.12;margin-bottom:24px}.graphic-hero-copy .button{margin-top:25px}.graphic-collage{height:clamp(330px,91vw,480px);margin-right:0}.graphic-collage figure{translate:none;will-change:auto}.collage-finabro{width:54%;left:38%}.marketing-single .graphic-collage{margin-right:-20px}.marketing-single .collage-finabro{width:100%;left:auto;right:0;top:12%}.collage-villas{top:27%;width:78%}.collage-cans{top:45%;width:40%}}@media(prefers-reduced-motion:reduce){.graphic-collage figure{translate:none;will-change:auto}}
+</style>
+<script>
+const hero=document.querySelector<HTMLElement>('.graphic-hero');
+if(hero){
+ const images=[...hero.querySelectorAll<HTMLElement>('[data-collage-speed]')];
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const mobile=matchMedia('(max-width:760px)');
+ let frame=0;
+ const update=()=>{frame=0;if(reduced.matches||mobile.matches){images.forEach(image=>image.style.removeProperty('--collage-offset'));return;}const rect=hero.getBoundingClientRect();if(rect.bottom<0||rect.top>innerHeight)return;const progress=Math.max(-600,Math.min(600,-rect.top));images.forEach(image=>image.style.setProperty('--collage-offset',`${(progress*Number(image.dataset.collageSpeed)).toFixed(1)}px`));};
+ const schedule=()=>{if(!frame)frame=requestAnimationFrame(update);};
+ window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',schedule,{passive:true});reduced.addEventListener('change',schedule);mobile.addEventListener('change',schedule);update();
+}
+</script>

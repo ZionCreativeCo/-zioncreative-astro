@@ -5,56 +5,82 @@
     "image": "work-koke-mill-church",
     "alt": "Koke Mill Church custom website by Zion Creative",
     "path": "/koke-mill-church",
-    "number": "21"
+    "number": "21",
+    "filters": [
+      "websites"
+    ]
   },
   {
     "name": "WholeMoon",
-    "category": "Shopify website \u00b7 Development",
+    "category": "Shopify website · Development",
     "image": "work-wholemoon",
-    "alt": "WholeMoon \u2014 selected creative work by Zion Creative",
+    "alt": "WholeMoon, selected creative work by Zion Creative",
     "path": "/wholemoon",
-    "number": "01"
+    "number": "01",
+    "filters": [
+      "websites"
+    ]
   },
   {
     "name": "Anvil & Forge",
-    "category": "Branding \u00b7 Packaging \u00b7 Web \u00b7 Photography",
+    "category": "Branding · Packaging · Web · Photography",
     "image": "work-anvil-and-forge",
-    "alt": "Anvil & Forge \u2014 selected creative work by Zion Creative",
+    "alt": "Anvil & Forge, selected creative work by Zion Creative",
     "path": "/anvil-and-forge",
-    "number": "02"
+    "number": "02",
+    "filters": [
+      "websites",
+      "branding",
+      "marketing"
+    ]
   },
   {
     "name": "The Villas",
-    "category": "Brand direction \u00b7 Web \u00b7 Photography \u00b7 Social",
+    "category": "Brand direction · Web · Photography · Social",
     "image": "work-the-villas",
-    "alt": "The Villas \u2014 selected creative work by Zion Creative",
+    "alt": "The Villas, selected creative work by Zion Creative",
     "path": "/the-villas",
-    "number": "03"
+    "number": "03",
+    "filters": [
+      "websites",
+      "branding",
+      "marketing"
+    ]
   },
   {
     "name": "Beat",
-    "category": "Identity \u00b7 Animation \u00b7 Messaging \u00b7 Collateral",
+    "category": "Identity · Animation · Messaging · Collateral",
     "image": "work-bfg",
-    "alt": "Beat \u2014 selected creative work by Zion Creative",
+    "alt": "Beat, selected creative work by Zion Creative",
     "path": "/bfg",
     "number": "04",
-    "animatedImage": "/images/work-bfg-animated.webp"
+    "animatedImage": "/images/work-bfg-animated.webp",
+    "filters": [
+      "branding",
+      "marketing"
+    ]
   },
   {
     "name": "VPNE",
     "category": "Website design",
     "image": "work-project-vpne",
-    "alt": "VPNE \u2014 selected creative work by Zion Creative",
+    "alt": "VPNE, selected creative work by Zion Creative",
     "path": "/project/vpne",
-    "number": "05"
+    "number": "05",
+    "filters": [
+      "websites"
+    ]
   },
   {
     "name": "Evangel Church",
     "category": "Website design",
     "image": "work-evangel",
-    "alt": "Evangel Church \u2014 selected creative work by Zion Creative",
+    "alt": "Evangel Church, selected creative work by Zion Creative",
     "path": "/evangel",
-    "number": "07"
+    "number": "07",
+    "filters": [
+      "websites"
+    ]
   },
   {
     "name": "PF Flyers",
@@ -62,65 +88,94 @@
     "image": "work-pf-flyers",
     "alt": "PF Flyers heritage-inspired website experience",
     "path": "/pf-flyers",
-    "number": "22"
+    "number": "22",
+    "filters": [
+      "websites"
+    ]
   },
   {
     "name": "Garrison Group",
-    "category": "Creative direction \u00b7 Brand identity",
+    "category": "Creative direction · Brand identity",
     "image": "work-garrison-group",
-    "alt": "Garrison Group \u2014 selected creative work by Zion Creative",
+    "alt": "Garrison Group, selected creative work by Zion Creative",
     "path": "/garrison-group",
-    "number": "08"
+    "number": "08",
+    "filters": [
+      "branding"
+    ]
   },
   {
     "name": "Little Pond",
-    "category": "Art direction \u00b7 Identity \u00b7 Web",
+    "category": "Art direction · Identity · Web",
     "image": "work-little-pond",
-    "alt": "Little Pond \u2014 selected creative work by Zion Creative",
+    "alt": "Little Pond, selected creative work by Zion Creative",
     "path": "/little-pond",
-    "number": "10"
+    "number": "10",
+    "filters": [
+      "websites",
+      "branding"
+    ]
   },
   {
     "name": "Lingk",
-    "category": "Identity \u00b7 Illustration \u00b7 Web",
+    "category": "Identity · Illustration · Web",
     "image": "work-lingk",
-    "alt": "Lingk \u2014 selected creative work by Zion Creative",
+    "alt": "Lingk, selected creative work by Zion Creative",
     "path": "/lingk",
     "number": "12",
-    "animatedImage": "/images/work-lingk-animated.webp"
+    "animatedImage": "/images/work-lingk-animated.webp",
+    "filters": [
+      "websites",
+      "branding",
+      "marketing"
+    ]
   },
   {
     "name": "Pillars",
-    "category": "Art direction \u00b7 Packaging",
+    "category": "Art direction · Packaging",
     "image": "work-pillars-yogurt",
-    "alt": "Pillars \u2014 selected creative work by Zion Creative",
+    "alt": "Pillars, selected creative work by Zion Creative",
     "path": "/pillars-yogurt",
-    "number": "13"
+    "number": "13",
+    "filters": [
+      "branding"
+    ]
   },
   {
     "name": "Brand identities",
     "category": "Distinctive logos. Lasting impressions.",
     "image": "work-logo-design-springfield-il",
-    "alt": "Brand identities \u2014 selected creative work by Zion Creative",
+    "alt": "Brand identities, selected creative work by Zion Creative",
     "path": "/logo-design-springfield-il",
     "number": "16",
-    "animatedImage": "/images/work-logo-design-springfield-il-animated.webp"
+    "animatedImage": "/images/work-logo-design-springfield-il-animated.webp",
+    "filters": [
+      "branding"
+    ]
   },
   {
     "name": "Equiventures East",
-    "category": "Website \u00b7 Branding \u00b7 Photo & video",
+    "category": "Website · Branding · Photo & video",
     "image": "work-project-equiventures-east",
-    "alt": "Equiventures East \u2014 selected creative work by Zion Creative",
+    "alt": "Equiventures East, selected creative work by Zion Creative",
     "path": "/project/equiventures-east",
-    "number": "18"
+    "number": "18",
+    "filters": [
+      "websites",
+      "branding",
+      "marketing"
+    ]
   },
   {
     "name": "KP",
     "category": "Webflow website",
     "image": "work-project-kp",
-    "alt": "KP \u2014 selected creative work by Zion Creative",
+    "alt": "KP, selected creative work by Zion Creative",
     "path": "/project/kp",
-    "number": "19"
+    "number": "19",
+    "filters": [
+      "websites"
+    ]
   },
   {
     "name": "Colossus",
@@ -128,6 +183,9 @@
     "image": "work-colossus",
     "alt": "Colossus website, designed by Colossus and developed by Zion Creative",
     "path": "/colossus",
-    "number": "20"
+    "number": "20",
+    "filters": [
+      "websites"
+    ]
   }
 ]

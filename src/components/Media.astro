@@ -5,7 +5,9 @@ const {id,alt,eager=false}=Astro.props;
 const image=media[id as keyof typeof media] as {src:string;width:number;height:number;dark:boolean;animated?:string};
 if(!image)throw new Error(`Missing media: ${id}`);
 ---
-<picture class:list={['migrated-media',{'media-dark':image.dark}]}>
+<picture style={`--media-ratio:${image.width} / ${image.height}`} class:list={['migrated-media',{'media-dark':image.dark}]}>
  {image.animated && <source media="(prefers-reduced-motion: reduce)" srcset={image.src} />}
  <img src={image.animated||image.src} width={image.width} height={image.height} alt={alt} loading={eager?'eager':'lazy'} decoding="async" />
 </picture>
+
+<style>.migrated-media{display:block;min-width:0}img{display:block;width:100%;height:auto;aspect-ratio:var(--media-ratio)}</style>

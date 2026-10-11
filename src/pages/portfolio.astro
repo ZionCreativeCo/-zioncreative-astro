@@ -7,8 +7,9 @@ import ProjectCTA from '../components/ProjectCTA.astro';
 import ScrollMotion from '../components/ScrollMotion.astro';
 import projects from '../data/portfolio.json';
 import '../styles/secondary.css';
+const filters=[{id:'all',label:'All work'},{id:'websites',label:'Websites'},{id:'branding',label:'Branding & Packaging'},{id:'marketing',label:'Marketing & Content'}];
 ---
-<BaseLayout title="Our Portfolio | Zion Creative | Graphic Design, Web Design, Packaging, Creative Services Springfield, IL — Zion Creative" description="Explore the portfolio of Zion Creative Co. in Springfield, IL. See our successful brand strategy, logo design, web design, and marketing projects. Get inspired by our creative solutions and results.">
+<BaseLayout title="Our Portfolio | Zion Creative | Graphic Design, Web Design, Packaging, Creative Services Springfield, IL, Zion Creative" description="Explore the portfolio of Zion Creative Co. in Springfield, IL. See our successful brand strategy, logo design, web design, and marketing projects. Get inspired by our creative solutions and results.">
   <Header />
   <main id="main" class="portfolio-page">
     <section class="container page-intro" aria-labelledby="portfolio-title">
@@ -17,11 +18,32 @@ import '../styles/secondary.css';
     </section>
     <section class="portfolio-collection section-dark" aria-label="Project collection">
       <div class="container">
-        <div class="collection-label"><p class="eyebrow">A collection of creative partnerships</p><span>{projects.length} projects</span></div>
-        <div class="projects-grid">{projects.map(project=><ProjectCard {...project} />)}</div>
+        <div class="collection-label"><p class="eyebrow">A collection of creative partnerships</p><span data-project-count role="status" aria-live="polite">{projects.length} projects</span></div>
+        <div class="portfolio-filters" role="group" aria-label="Filter work by service" hidden>{filters.map(filter=><button type="button" data-work-filter={filter.id} aria-pressed={filter.id==='all'?'true':'false'} aria-controls="portfolio-projects">{filter.label}</button>)}</div>
+        <div class="projects-grid" id="portfolio-projects">{projects.map(project=><ProjectCard {...project} />)}</div>
       </div>
     </section>
     <ProjectCTA />
   </main>
   <Footer /><ScrollMotion />
 </BaseLayout>
+
+<style>
+.portfolio-filters{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 38px}.portfolio-filters[hidden]{display:none}.portfolio-filters button{border:1px solid #66685d;border-radius:30px;padding:12px 20px;background:transparent;color:var(--cream);font:inherit;font-size:14px;cursor:pointer;touch-action:manipulation}.portfolio-filters button[aria-pressed="true"]{background:var(--lime);border-color:var(--lime);color:var(--ink)}.portfolio-filters button:focus-visible{outline:2px solid var(--cream);outline-offset:4px}.projects-grid :global(.project-card[hidden]){display:none}@media(hover:hover) and (pointer:fine){.portfolio-filters button:hover{border-color:var(--lime)}}@media(max-width:760px){.portfolio-filters{gap:8px;margin-bottom:30px}.portfolio-filters button{padding:12px 15px;font-size:12px;min-height:44px}}
+</style>
+<script>
+const group=document.querySelector<HTMLElement>('.portfolio-filters');
+if(group){
+ const buttons=[...group.querySelectorAll<HTMLButtonElement>('[data-work-filter]')];
+ const cards=[...document.querySelectorAll<HTMLAnchorElement>('#portfolio-projects .project-card')];
+ const count=document.querySelector<HTMLElement>('[data-project-count]');
+ group.hidden=false;
+ buttons.forEach(button=>button.addEventListener('click',()=>{
+  const category=button.dataset.workFilter!;
+  buttons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+  let visible=0;
+  cards.forEach(card=>{card.hidden=category!=='all'&&!card.dataset.projectFilters?.split(' ').includes(category);if(!card.hidden)visible++;});
+  if(count)count.textContent=`${visible} ${visible===1?'project':'projects'}`;
+ }));
+}
+</script>

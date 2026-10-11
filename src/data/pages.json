@@ -1,7 +1,7 @@
 [
   {
     "slug": "wholemoon",
-    "title": "Wholemoon \u2014 Zion Creative",
+    "title": "Wholemoon | Zion Creative",
     "description": "Whole Moon is a startup beverage company making a splash in the plant-based space. With unique formation and roasting processes, it was important to present in a cle",
     "blocks": [
       [
@@ -43,7 +43,7 @@
       [
         {
           "tag": "p",
-          "text": "Back to portfolio \u203a"
+          "text": "Back to portfolio ›"
         }
       ]
     ],
@@ -62,16 +62,16 @@
     "name": "WholeMoon",
     "cover": {
       "name": "WholeMoon",
-      "category": "Shopify website \u00b7 Development",
+      "category": "Shopify website · Development",
       "image": "work-wholemoon",
-      "alt": "WholeMoon \u2014 selected creative work by Zion Creative",
+      "alt": "WholeMoon ,  selected creative work by Zion Creative",
       "path": "/wholemoon",
       "number": "01"
     },
     "paragraphs": [
       "Whole Moon is a startup beverage company making a splash in the plant-based space. With unique formation and roasting processes, it was important to present in a clear and direct manner. We partnered with Colossus to bring Whole Moon to life by providing design direction, user experience design, and launching the company with a custom Shopify website."
     ],
-    "roles": "Shopify website \u00b7 Development",
+    "roles": "Shopify website · Development",
     "details": [
       {
         "label": "Date",
@@ -93,8 +93,8 @@
   },
   {
     "slug": "anvil-and-forge",
-    "title": "Anvil & Forge \u2014 Zion Creative",
-    "description": "Anvil & Forge broke into the central Illinois craft beer scene with a storm. The team bootstrapped the business from the ground up and built the brand with out much ",
+    "title": "Anvil & Forge Case Study | Zion Creative",
+    "description": "Explore Anvil & Forge’s brand identity, craft beer packaging, website and photography created by Zion Creative for the central Illinois brewery.",
     "blocks": [
       [
         {
@@ -129,13 +129,13 @@
       [
         {
           "tag": "p",
-          "text": "Back to portfolio \u203a"
+          "text": "Back to portfolio ›"
         }
       ],
       [
         {
           "tag": "h3",
-          "text": "Zion Creative\u2019s professionalism and attention to detail is unmatched. I would highly recommend their services.\u201d"
+          "text": "Zion Creative’s professionalism and attention to detail is unmatched. I would highly recommend their services.”"
         },
         {
           "tag": "p",
@@ -198,16 +198,16 @@
     "name": "Anvil & Forge",
     "cover": {
       "name": "Anvil & Forge",
-      "category": "Branding \u00b7 Packaging \u00b7 Web \u00b7 Photography",
+      "category": "Branding · Packaging · Web · Photography",
       "image": "work-anvil-and-forge",
-      "alt": "Anvil & Forge \u2014 selected creative work by Zion Creative",
+      "alt": "Anvil & Forge ,  selected creative work by Zion Creative",
       "path": "/anvil-and-forge",
       "number": "02"
     },
     "paragraphs": [
       "Anvil & Forge broke into the central Illinois craft beer scene with a storm. The team bootstrapped the business from the ground up and built the brand with out much time spent on their website or design strategy.\n\nWe teamed up with A&F to provide creative direction and a number of different deliverables including branding, logo design, website development, photography and more."
     ],
-    "roles": "Branding \u00b7 Packaging \u00b7 Web \u00b7 Photography",
+    "roles": "Branding · Packaging · Web · Photography",
     "details": [
       {
         "label": "Date",
@@ -218,15 +218,15 @@
         "value": "Food & Bev"
       }
     ],
-    "quote": "Zion Creative\u2019s professionalism and attention to detail is unmatched. I would highly recommend their services.",
+    "quote": "Zion Creative’s professionalism and attention to detail is unmatched. I would highly recommend their services.",
     "attribution": "Dan S. | Operations Manager, Anvil & Forge",
     "deck": "Branding, Packaging, Website, Photo",
     "liveUrl": "https://anvilandforge.com"
   },
   {
     "slug": "bfg",
-    "title": "BFG \u2014 Zion Creative",
-    "description": "As a company that reinvents stale brands in the food and beverage space, it was import for Beat\u2019s brand identity to feel energetic, attractive and lively. I was brou",
+    "title": "BEAT Brand Identity Case Study | Zion Creative",
+    "description": "Discover BEAT’s energetic brand identity, animation, messaging and collateral, created to reflect its work reinventing food and beverage brands.",
     "blocks": [
       [
         {
@@ -249,7 +249,7 @@
       [
         {
           "tag": "p",
-          "text": "As a company that reinvents stale brands in the food and beverage space, it was import for Beat\u2019s brand identity to feel energetic, attractive and lively. I was brought on to provide creative direction for rebuilding the brand from the ground up."
+          "text": "As a company that reinvents stale brands in the food and beverage space, it was import for Beat’s brand identity to feel energetic, attractive and lively. I was brought on to provide creative direction for rebuilding the brand from the ground up."
         }
       ],
       [
@@ -298,15 +298,15 @@
     "name": "Beat",
     "cover": {
       "name": "Beat",
-      "category": "Identity \u00b7 Animation \u00b7 Messaging \u00b7 Collateral",
+      "category": "Identity · Animation · Messaging · Collateral",
       "image": "work-bfg",
-      "alt": "Beat \u2014 selected creative work by Zion Creative",
+      "alt": "Beat ,  selected creative work by Zion Creative",
       "path": "/bfg",
       "number": "04",
       "animatedImage": "/images/work-bfg-animated.webp"
     },
     "paragraphs": [
-      "As a company that reinvents stale brands in the food and beverage space, it was import for Beat\u2019s brand identity to feel energetic, attractive and lively. I was brought on to provide creative direction for rebuilding the brand from the ground up."
+      "As a company that reinvents stale brands in the food and beverage space, it was import for Beat’s brand identity to feel energetic, attractive and lively. I was brought on to provide creative direction for rebuilding the brand from the ground up."
     ],
     "roles": "Creative Direction\nDesign\nBrand Identity\nCollateral Design\nMessaging",
     "details": [],
@@ -317,8 +317,8 @@
   },
   {
     "slug": "project/vpne",
-    "title": "VPNE \u2014 Zion Creative",
-    "description": "The VPNE website redesign project focused on creating a modern, user-friendly, and visually appealing digital presence that reflected the company's commitment to exc",
+    "title": "VPNE Website Case Study | Zion Creative",
+    "description": "Explore VPNE’s website redesign, with clear navigation and responsive pages presenting its parking, transportation and healthcare solutions.",
     "blocks": [
       [
         {
@@ -347,7 +347,7 @@
       [
         {
           "tag": "p",
-          "text": "The VPNE website redesign project focused on creating a modern, user-friendly, and visually appealing digital presence that reflected the company's commitment to excellence in parking and transportation services. The goal was to unveil the company\u2019s new brand identity while also enhancing user experience, increase engagement, and establish VPNE as a leader in its industry. Visit live website \u2192"
+          "text": "The VPNE website redesign project focused on creating a modern, user-friendly, and visually appealing digital presence that reflected the company's commitment to excellence in parking and transportation services. The goal was to unveil the company’s new brand identity while also enhancing user experience, increase engagement, and establish VPNE as a leader in its industry. Visit live website →"
         }
       ],
       [
@@ -359,7 +359,7 @@
       [
         {
           "tag": "p",
-          "text": "Back to portfolio \u203a"
+          "text": "Back to portfolio ›"
         }
       ]
     ],
@@ -384,12 +384,12 @@
       "name": "VPNE",
       "category": "Website design",
       "image": "work-project-vpne",
-      "alt": "VPNE \u2014 selected creative work by Zion Creative",
+      "alt": "VPNE ,  selected creative work by Zion Creative",
       "path": "/project/vpne",
       "number": "05"
     },
     "paragraphs": [
-      "The VPNE website redesign project focused on creating a modern, user-friendly, and visually appealing digital presence that reflected the company's commitment to excellence in parking and transportation services. The goal was to unveil the company\u2019s new brand identity while also enhancing user experience, increase engagement, and establish VPNE as a leader in its industry."
+      "The VPNE website redesign project focused on creating a modern, user-friendly, and visually appealing digital presence that reflected the company's commitment to excellence in parking and transportation services. The goal was to unveil the company’s new brand identity while also enhancing user experience, increase engagement, and establish VPNE as a leader in its industry."
     ],
     "roles": "Website design",
     "details": [
@@ -413,8 +413,8 @@
   },
   {
     "slug": "evangel",
-    "title": "Evangel \u2014 Zion Creative",
-    "description": "Evangel is a church in Columbus, Georgia seeking to create an authentic community of believers and be a voice of hope. We worked with them to build a site that feels",
+    "title": "Evangel Church Website | Zion Creative",
+    "description": "Explore Zion Creative’s website for Evangel Church in Columbus, Georgia, designed to welcome visitors and connect its community.",
     "blocks": [
       [
         {
@@ -449,7 +449,7 @@
       [
         {
           "tag": "p",
-          "text": "Back to portfolio \u203a"
+          "text": "Back to portfolio ›"
         }
       ]
     ],
@@ -470,7 +470,7 @@
       "name": "Evangel Church",
       "category": "Website design",
       "image": "work-evangel",
-      "alt": "Evangel Church \u2014 selected creative work by Zion Creative",
+      "alt": "Evangel Church ,  selected creative work by Zion Creative",
       "path": "/evangel",
       "number": "07"
     },
@@ -495,8 +495,8 @@
   },
   {
     "slug": "garrison-group",
-    "title": "Garrison Group \u2014 Zion Creative",
-    "description": "In a fairly stale industry, Garrison Group wanted to make a splash with a rebrand. The result is an adaptable and robust design system that will push the commercial ",
+    "title": "Garrison Group Branding | Zion Creative",
+    "description": "Explore Garrison Group’s adaptable visual identity and brand system, designed by Zion Creative for commercial real estate.",
     "blocks": [
       [
         {
@@ -566,9 +566,9 @@
     "name": "Garrison Group",
     "cover": {
       "name": "Garrison Group",
-      "category": "Creative direction \u00b7 Brand identity",
+      "category": "Creative direction · Brand identity",
       "image": "work-garrison-group",
-      "alt": "Garrison Group \u2014 selected creative work by Zion Creative",
+      "alt": "Garrison Group ,  selected creative work by Zion Creative",
       "path": "/garrison-group",
       "number": "08"
     },
@@ -585,8 +585,8 @@
   },
   {
     "slug": "little-pond",
-    "title": "Little Pond \u2014 Zion Creative",
-    "description": "As a new entity established by the state of Georgia, it was important for the Little Pond project to not feel like feel like another stale government initiative. I w",
+    "title": "Little Pond Brand Identity | Zion Creative",
+    "description": "See how Zion Creative developed Little Pond’s approachable brand identity, illustration and website experience.",
     "blocks": [
       [
         {
@@ -666,9 +666,9 @@
     "name": "Little Pond",
     "cover": {
       "name": "Little Pond",
-      "category": "Art direction \u00b7 Identity \u00b7 Web",
+      "category": "Art direction · Identity · Web",
       "image": "work-little-pond",
-      "alt": "Little Pond \u2014 selected creative work by Zion Creative",
+      "alt": "Little Pond ,  selected creative work by Zion Creative",
       "path": "/little-pond",
       "number": "10"
     },
@@ -684,8 +684,8 @@
   },
   {
     "slug": "lingk",
-    "title": "Lingk \u2014 Zion Creative",
-    "description": "Role:\nCreative Direction\nBrand Identity\nLogo\nIllustration\nWebsite Design\nIconography",
+    "title": "Lingk Brand Identity & Website | Zion Creative",
+    "description": "Explore Lingk’s visual identity, logo, illustrations, iconography and website design by Zion Creative.",
     "blocks": [
       [
         {
@@ -710,7 +710,7 @@
       [
         {
           "tag": "p",
-          "text": "We were able to provide design solutions and creative direction for Lingk\u2019s rebrand. This included working closely with the marketing team to conceptualize and design the graphics and illustrations that would set the tone for the overhaul."
+          "text": "We were able to provide design solutions and creative direction for Lingk’s rebrand. This included working closely with the marketing team to conceptualize and design the graphics and illustrations that would set the tone for the overhaul."
         }
       ]
     ],
@@ -757,15 +757,15 @@
     "name": "Lingk",
     "cover": {
       "name": "Lingk",
-      "category": "Identity \u00b7 Illustration \u00b7 Web",
+      "category": "Identity · Illustration · Web",
       "image": "work-lingk",
-      "alt": "Lingk \u2014 selected creative work by Zion Creative",
+      "alt": "Lingk ,  selected creative work by Zion Creative",
       "path": "/lingk",
       "number": "12",
       "animatedImage": "/images/work-lingk-animated.webp"
     },
     "paragraphs": [
-      "We were able to provide design solutions and creative direction for Lingk\u2019s rebrand. This included working closely with the marketing team to conceptualize and design the graphics and illustrations that would set the tone for the overhaul."
+      "We were able to provide design solutions and creative direction for Lingk’s rebrand. This included working closely with the marketing team to conceptualize and design the graphics and illustrations that would set the tone for the overhaul."
     ],
     "roles": "Creative Direction\nBrand Identity\nLogo\nIllustration\nWebsite Design\nIconography",
     "details": [],
@@ -776,7 +776,7 @@
   },
   {
     "slug": "pillars-yogurt",
-    "title": "Pillars Yogurt \u2014 Zion Creative",
+    "title": "Pillars Yogurt | Zion Creative",
     "description": "I was able to partner with Pillars Yogurt to create a sub-brand ecosystem for their new plant-based product line.",
     "blocks": [
       [
@@ -935,9 +935,9 @@
     "name": "Pillars",
     "cover": {
       "name": "Pillars",
-      "category": "Art direction \u00b7 Packaging",
+      "category": "Art direction · Packaging",
       "image": "work-pillars-yogurt",
-      "alt": "Pillars \u2014 selected creative work by Zion Creative",
+      "alt": "Pillars ,  selected creative work by Zion Creative",
       "path": "/pillars-yogurt",
       "number": "13"
     },
@@ -953,8 +953,8 @@
   },
   {
     "slug": "logo-design-springfield-il",
-    "title": "Logo Design & Branding | Springfield, IL \u2014 Zion Creative",
-    "description": "Transform your brand with Zion Creative logo design services in Springfield. Bold, strategic identities, logo and branding built to stand out and grow.",
+    "title": "Logo Design in Springfield, IL | Zion Creative",
+    "description": "Logo design and branding in Springfield, Illinois. Zion Creative creates distinctive logos, color palettes, brand guides and graphics for your business.",
     "blocks": [
       [
         {
@@ -965,11 +965,11 @@
       [
         {
           "tag": "p",
-          "text": "At Zion Creative, we don\u2019t just create designs that look good, we create logos for Springfield, IL businesses that connect, communicate, and convert."
+          "text": "Zion Creative creates distinctive logos and brand identities for businesses in Springfield, Illinois. We combine thoughtful design with a clear understanding of your business, helping your brand connect, communicate and leave a lasting impression."
         },
         {
           "tag": "p",
-          "text": "Your logo is more than just a mark, it\u2019s the face of your business. It\u2019s often the first thing people notice and the one thing they remember. In fact, about 75% of consumers recognize a brand by its logo, making it one of the most powerful tools in your entire marketing strategy."
+          "text": "Your logo is more than a mark. It is the face of your business and the foundation of a recognizable identity. We create a coordinated system that works wherever your brand shows up."
         }
       ],
       [
@@ -985,13 +985,13 @@
         },
         {
           "tag": "p",
-          "text": "Through our simple and intentional process, you\u2019ll not only receive a logo design, but an entire package of logo variations, a brand style guide, color palette, fonts, business card design and graphics for your social and email profiles."
+          "text": "Through our simple and intentional process, you’ll not only receive a logo design, but an entire package of logo variations, a brand style guide, color palette, fonts, business card design and graphics for your social and email profiles."
         }
       ],
       [
         {
           "tag": "h3",
-          "text": "Let\u2019s create something great for your brand."
+          "text": "Let’s create something great for your brand."
         }
       ]
     ],
@@ -1023,7 +1023,7 @@
     "gallery": [
       {
         "id": "2015d5b0a8b1",
-        "alt": "Little Pond \u2014 brand identity",
+        "alt": "Little Pond ,  brand identity",
         "href": "/little-pond",
         "project": "Little Pond"
       },
@@ -1037,7 +1037,7 @@
       },
       {
         "id": "210d1120dab8",
-        "alt": "Lingk \u2014 brand identity",
+        "alt": "Lingk ,  brand identity",
         "href": "/lingk",
         "project": "Lingk"
       },
@@ -1055,7 +1055,7 @@
       },
       {
         "id": "616d907828b7",
-        "alt": "Garrison Group \u2014 brand identity",
+        "alt": "Garrison Group ,  brand identity",
         "href": "/garrison-group",
         "project": "Garrison Group"
       },
@@ -1068,8 +1068,8 @@
   },
   {
     "slug": "project/equiventures-east",
-    "title": "Equiventures East \u2014 Zion Creative",
-    "description": "Equiventures East is a horse & vacation destination nestled in a Central Florida pasture valley. We built their website to showcase their packages and rates in a rus",
+    "title": "Equiventures East Case Study | Zion Creative",
+    "description": "Explore Equiventures East’s website, branding and photography, showcasing its equestrian vacation experiences in Central Florida.",
     "blocks": [
       [
         {
@@ -1098,13 +1098,13 @@
       [
         {
           "tag": "p",
-          "text": "Equiventures East is a horse & vacation destination nestled in a Central Florida pasture valley. We built their website to showcase their packages and rates in a rustic, outdoorsy design with lots of beautiful photos. Visit live website \u2192"
+          "text": "Equiventures East is a horse & vacation destination nestled in a Central Florida pasture valley. We built their website to showcase their packages and rates in a rustic, outdoorsy design with lots of beautiful photos. Visit live website →"
         }
       ],
       [
         {
           "tag": "p",
-          "text": "Back to portfolio \u203a"
+          "text": "Back to portfolio ›"
         }
       ]
     ],
@@ -1171,16 +1171,16 @@
     "name": "Equiventures East",
     "cover": {
       "name": "Equiventures East",
-      "category": "Website \u00b7 Branding \u00b7 Photo & video",
+      "category": "Website · Branding · Photo & video",
       "image": "work-project-equiventures-east",
-      "alt": "Equiventures East \u2014 selected creative work by Zion Creative",
+      "alt": "Equiventures East ,  selected creative work by Zion Creative",
       "path": "/project/equiventures-east",
       "number": "18"
     },
     "paragraphs": [
       "Equiventures East is a horse & vacation destination nestled in a Central Florida pasture valley. We built their website to showcase their packages and rates in a rustic, outdoorsy design with lots of beautiful photos."
     ],
-    "roles": "Website \u00b7 Branding \u00b7 Photo & video",
+    "roles": "Website · Branding · Photo & video",
     "details": [
       {
         "label": "Date",
@@ -1198,8 +1198,8 @@
   },
   {
     "slug": "project/kp",
-    "title": "KP \u2014 Zion Creative",
-    "description": "KP assists enterprise clients globally in enhancing their large-scale print and digital communication strategies. The project aimed to create a robust platform capab",
+    "title": "KP Corp Website Case Study | Zion Creative",
+    "description": "Explore Zion Creative’s custom Webflow website for KP Corp, built to communicate its enterprise print and digital services clearly.",
     "blocks": [
       [
         {
@@ -1240,7 +1240,7 @@
       [
         {
           "tag": "p",
-          "text": "Back to portfolio \u203a"
+          "text": "Back to portfolio ›"
         }
       ]
     ],
@@ -1265,7 +1265,7 @@
       "name": "KP",
       "category": "Webflow website",
       "image": "work-project-kp",
-      "alt": "KP \u2014 selected creative work by Zion Creative",
+      "alt": "KP ,  selected creative work by Zion Creative",
       "path": "/project/kp",
       "number": "19"
     },
@@ -1294,8 +1294,8 @@
   },
   {
     "slug": "services",
-    "title": "Services \u2014 Zion Creative",
-    "description": "Zion Creative engages with brands from a top-to-bottom perspective, to impact digital projects at every phase of their lifecycle.",
+    "title": "Design & Marketing Services | Springfield, IL",
+    "description": "Brand strategy, logo design, custom websites and marketing services from Zion Creative in Springfield, Illinois. Explore how we can support your brand.",
     "blocks": [
       [
         {
@@ -1442,7 +1442,7 @@
       [
         {
           "tag": "h4",
-          "text": "So you\u2019re fully launched, now what?"
+          "text": "So you’re fully launched, now what?"
         },
         {
           "tag": "p",
@@ -1467,8 +1467,8 @@
   },
   {
     "slug": "about-us",
-    "title": "About Us | Zion Creative | Graphic Design, Web Design & Creative Services in Springfield, IL \u2014 Zion Creative",
-    "description": "Learn more about Zion Creative in Springfield, IL. We specialize in brand strategy, logo design, web design, and comprehensive creative marketing services. Discover our story and how we can help your brand thrive.\n\n",
+    "title": "About Zion Creative | Springfield, IL",
+    "description": "Meet Nick and Ellen of Zion Creative, a Springfield, Illinois studio creating brand identities, websites and marketing through close collaboration.",
     "blocks": [
       [
         {
@@ -1509,7 +1509,7 @@
       [
         {
           "tag": "p",
-          "text": "The world changes daily. We don\u2019t pretend to have all of the answers. However, we enter each project wanting to learn, experiment and grow with our clients. This is how we open the door to great ideas."
+          "text": "The world changes daily. We don’t pretend to have all of the answers. However, we enter each project wanting to learn, experiment and grow with our clients. This is how we open the door to great ideas."
         }
       ],
       [
@@ -1527,7 +1527,7 @@
       [
         {
           "tag": "h2",
-          "text": "Some kind words\u2026"
+          "text": "Some kind words…"
         }
       ]
     ],
@@ -1546,8 +1546,8 @@
   },
   {
     "slug": "testimonials",
-    "title": "Client Testimonials | Zion Creative | Springfield, IL \u2014 Zion Creative",
-    "description": "Read what our clients have to say about working with Zion Creative in Springfield, IL. Discover how our brand strategy, logo design, web design, and marketing services have helped businesses succeed.\n\n",
+    "title": "Client Reviews | Zion Creative in Springfield, IL",
+    "description": "Read client reviews of Zion Creative’s branding, website design and creative marketing work in Springfield, Illinois and beyond.",
     "blocks": [
       [
         {
@@ -1556,7 +1556,7 @@
         },
         {
           "tag": "h2",
-          "text": "Kind words from our happy clients\u2026"
+          "text": "Kind words from our happy clients…"
         },
         {
           "tag": "p",
@@ -1576,8 +1576,8 @@
   },
   {
     "slug": "brand-management-services",
-    "title": "Marketing Services & Ongoing Creative Support | Zion Creative",
-    "description": "Marketing direction, website management, social creative, email marketing, and ongoing design support from Zion Creative in Springfield, Illinois.",
+    "title": "Marketing Services in Springfield, IL | Zion Creative",
+    "description": "Ongoing marketing services in Springfield, Illinois. Strategy, website management, social content, email, campaigns and photography from Zion Creative.",
     "blocks": [
       [
         {
@@ -1596,7 +1596,7 @@
         },
         {
           "tag": "p",
-          "text": "By leveraging brand management services, our clients can streamline their workload, enhance their brand\u2019s performance, ensure a seamless digital experience for their customers and work less while helping their brand thrive."
+          "text": "By leveraging brand management services, our clients can streamline their workload, enhance their brand’s performance, ensure a seamless digital experience for their customers and work less while helping their brand thrive."
         },
         {
           "tag": "p",
@@ -1615,8 +1615,8 @@
   },
   {
     "slug": "web-design-springfield-il",
-    "title": "Web Design Services | Zion Creative | Springfield, IL \u2014 Zion Creative",
-    "description": "Zion Creative: Professional web design and web development services in Springfield, IL. Contact us for top-notch work and an excellent web design experience.",
+    "title": "Web Design in Springfield, IL | Zion Creative",
+    "description": "Custom website design and development in Springfield, Illinois. Zion Creative builds distinctive, responsive websites around your brand and business goals.",
     "blocks": [
       [
         {
@@ -1633,19 +1633,19 @@
       [
         {
           "tag": "p",
-          "text": "Welcome to Zion Creative, where we combine creativity and technology to deliver exceptional web design and development services tailored for Springfield businesses. Our dedicated team understands the local market and is committed to bringing your unique vision to life. Whether you're looking to establish your online presence, revamp your existing website, or develop a custom solution, we've got you covered. Let\u2019s collaborate to create a user-friendly, visually stunning website that engages your audience and drives success."
+          "text": "Welcome to Zion Creative, where we combine creativity and technology to deliver exceptional web design and development services tailored for Springfield businesses. Our dedicated team understands the local market and is committed to bringing your unique vision to life. Whether you're looking to establish your online presence, revamp your existing website, or develop a custom solution, we've got you covered. Let’s collaborate to create a user-friendly, visually stunning website that engages your audience and drives success."
         }
       ],
       [
         {
           "tag": "h2",
-          "text": "Process, Pricing & FAQ\u2019s"
+          "text": "Process, Pricing & FAQ’s"
         }
       ],
       [
         {
           "tag": "h2",
-          "text": "Let\u2019s create something great for your brand."
+          "text": "Let’s create something great for your brand."
         }
       ]
     ],
@@ -1653,11 +1653,11 @@
       {
         "title": "Why Choose Us",
         "paragraphs": [
-          "Custom Designs: We don\u2019t believe in one-size-fits-all solutions. Every website we design is unique and crafted to reflect your brand\u2019s identity.",
+          "Custom Designs: We don’t believe in one-size-fits-all solutions. Every website we design is unique and crafted to reflect your brand’s identity.",
           "Responsive Design: Our websites are optimized for all devices, ensuring a seamless user experience on desktops, tablets, and smartphones.",
           "SEO-Friendly: We incorporate best practices in search engine optimization (SEO) to help your website rank higher in search engine results and attract more visitors.",
           "User Experience (UX) Focused: We prioritize intuitive navigation and a clean layout to enhance user engagement and satisfaction.",
-          "Fast Loading Times: Our designs are optimized for speed, ensuring that your visitors don\u2019t get frustrated with slow-loading pages."
+          "Fast Loading Times: Our designs are optimized for speed, ensuring that your visitors don’t get frustrated with slow-loading pages."
         ]
       },
       {
@@ -1670,9 +1670,9 @@
           "Content Integration",
           "We help you integrate compelling content that speaks to your audience and supports your business objectives.",
           "Testing & Launch",
-          "Before going live, we rigorously test your website across different browsers and devices to ensure it\u2019s fully functional and bug-free.",
+          "Before going live, we rigorously test your website across different browsers and devices to ensure it’s fully functional and bug-free.",
           "Post-Launch Support",
-          "Our relationship doesn\u2019t end at launch. We provide ongoing support and maintenance to keep your website updated and secure."
+          "Our relationship doesn’t end at launch. We provide ongoing support and maintenance to keep your website updated and secure."
         ]
       },
       {
@@ -1696,7 +1696,7 @@
       {
         "title": "Web Management Services",
         "paragraphs": [
-          "Yeah \u2013 we do that. Learn More \u2192Want to manage your site on your own? That is okay too. You will own the website outright with unrestricted management access."
+          "Yeah – we do that. Learn More →Want to manage your site on your own? That is okay too. You will own the website outright with unrestricted management access."
         ]
       }
     ],
@@ -1707,19 +1707,19 @@
       },
       {
         "id": "d6cc48c9502a",
-        "alt": "Little Pond \u2014 website design",
+        "alt": "Little Pond ,  website design",
         "href": "/little-pond",
         "project": "Little Pond"
       },
       {
         "id": "25ad514add14",
-        "alt": "Evangel Church \u2014 website design",
+        "alt": "Evangel Church ,  website design",
         "href": "/evangel",
         "project": "Evangel Church"
       },
       {
         "id": "3e484673d8b6",
-        "alt": "Lingk \u2014 website design",
+        "alt": "Lingk ,  website design",
         "href": "/lingk",
         "project": "Lingk"
       }
@@ -1728,8 +1728,8 @@
   },
   {
     "slug": "graphic-design-springfield-il",
-    "title": "Graphic Design Services | Springfield, IL \u2014 Zion Creative",
-    "description": "Professional graphic design services in Springfield. Zion Creative delivers bold branding, marketing visuals, and design that helps businesses stand out.",
+    "title": "Graphic Design in Springfield, IL | Zion Creative",
+    "description": "Graphic design in Springfield, Illinois for logos, packaging, print, social media and digital campaigns. Create a consistent brand with Zion Creative.",
     "blocks": [
       [
         {
@@ -1740,7 +1740,7 @@
       [
         {
           "tag": "p",
-          "text": "Strong design should do more than look good, it should communicate clearly, build trust, and move your audience to action. At Zion Creative, our graphic design services in Springfield are built to help your brand stand out and perform."
+          "text": "Strong design should do more than look good, it should communicate clearly, build trust, and move your audience to action. At Zion Creative, our graphic design services in Springfield, Illinois are built to help your brand stand out and perform."
         }
       ],
       [
@@ -1786,7 +1786,7 @@
         },
         {
           "tag": "p",
-          "text": "Our print design brings your brand into the real world with polished, professional materials. Whether it\u2019s brochures, signage, or marketing collateral, we create pieces that leave a lasting impression."
+          "text": "Our print design brings your brand into the real world with polished, professional materials. Whether it’s brochures, signage, or marketing collateral, we create pieces that leave a lasting impression."
         }
       ],
       [
@@ -1812,7 +1812,7 @@
       [
         {
           "tag": "h3",
-          "text": "Let\u2019s create something great for your brand."
+          "text": "Let’s create something great for your brand."
         }
       ]
     ],
@@ -1838,7 +1838,7 @@
       },
       {
         "id": "cf03977085b5",
-        "alt": "Screenshot 2025-04-23 at 3.42.48\u202fPM-min.png"
+        "alt": "Screenshot 2025-04-23 at 3.42.48 PM-min.png"
       },
       {
         "id": "f73a1998d45d",
@@ -1867,8 +1867,8 @@
   },
   {
     "slug": "digital-marketing-springfield-il",
-    "title": "Digital Marketing Agency | Springfield, IL \u2014 Zion Creative",
-    "description": "Full-service marketing agency in Springfield, IL offering branding, web design, SEO, and digital advertising to help businesses grow, attract leads, and increase revenue.",
+    "title": "Digital Marketing in Springfield, IL | Zion Creative",
+    "description": "Digital marketing in Springfield, Illinois: SEO, Google ads, social media, photography and campaign creative. Connect your marketing with Zion Creative.",
     "blocks": [
       [
         {
@@ -1879,7 +1879,7 @@
       [
         {
           "tag": "p",
-          "text": "Digital marketing in Springfield should do more than generate clicks, it should drive real growth. At Zion Creative, we build data-driven strategies that connect your brand with the right audience at the right time. From SEO and paid advertising to content and conversion optimization, every campaign is designed to increase visibility, generate leads, and turn traffic into measurable results."
+          "text": "Digital marketing in Springfield, Illinois should do more than generate clicks, it should drive real growth. At Zion Creative, we build data-driven strategies that connect your brand with the right audience at the right time. From SEO and paid advertising to content and conversion optimization, every campaign is designed to increase visibility, generate leads, and turn traffic into measurable results."
         }
       ],
       [
@@ -1895,7 +1895,7 @@
         },
         {
           "tag": "p",
-          "text": "Reach customers at the exact moment they\u2019re searching. We create and manage high-performing campaigns on Google that drive qualified traffic, leads, and measurable ROI."
+          "text": "Reach customers at the exact moment they’re searching. We create and manage high-performing campaigns on Google that drive qualified traffic, leads, and measurable ROI."
         }
       ],
       [
@@ -1951,7 +1951,7 @@
       [
         {
           "tag": "h3",
-          "text": "Let\u2019s create something great for your brand."
+          "text": "Let’s create something great for your brand."
         }
       ]
     ],
@@ -1967,7 +1967,7 @@
       },
       {
         "id": "cf03977085b5",
-        "alt": "Screenshot 2025-04-23 at 3.42.48\u202fPM-min.png"
+        "alt": "Screenshot 2025-04-23 at 3.42.48 PM-min.png"
       },
       {
         "id": "f73a1998d45d",
@@ -1996,8 +1996,8 @@
   },
   {
     "slug": "jobs",
-    "title": "Jobs \u2014 Zion Creative",
-    "description": "Explore Zion Creative\u2019s design services and creative work in Springfield, Illinois.",
+    "title": "Creative Opportunities | Zion Creative",
+    "description": "Explore opportunities to collaborate with Zion Creative, an independent design and marketing studio based in Springfield, Illinois.",
     "blocks": [
       [
         {
@@ -2006,11 +2006,11 @@
         },
         {
           "tag": "p",
-          "text": "We don\u2019t currently have any openings. Please check back in the future."
+          "text": "We don’t currently have any openings. Please check back in the future."
         },
         {
           "tag": "p",
-          "text": "Still think you\u2019d be a good fit? Say hello."
+          "text": "Still think you’d be a good fit? Say hello."
         }
       ]
     ],
@@ -2020,19 +2020,19 @@
   },
   {
     "slug": "onboarding",
-    "title": "Onboarding \u2014 Zion Creative",
-    "description": "We\u2019re excited to partner with you on this project. Please select an option below and provide as much detail as possible to help us kick-off your project.",
+    "title": "Onboarding | Zion Creative",
+    "description": "We’re excited to partner with you on this project. Please select an option below and provide as much detail as possible to help us kick-off your project.",
     "blocks": [
       [
         {
           "tag": "h1",
-          "text": "Let\u2019s get started."
+          "text": "Let’s get started."
         }
       ],
       [
         {
           "tag": "p",
-          "text": "We\u2019re excited to partner with you on this project. Please select an option below and provide as much detail as possible to help us kick-off your project."
+          "text": "We’re excited to partner with you on this project. Please select an option below and provide as much detail as possible to help us kick-off your project."
         }
       ]
     ],
@@ -2042,19 +2042,19 @@
   },
   {
     "slug": "consultation",
-    "title": "Consultation \u2014 Zion Creative",
-    "description": "Explore Zion Creative\u2019s design services and creative work in Springfield, Illinois.",
+    "title": "Consultation | Zion Creative",
+    "description": "Book a consultation with Zion Creative to discuss your branding, website or marketing project.",
     "blocks": [
       [
         {
           "tag": "h1",
-          "text": "Let\u2019s chat."
+          "text": "Let’s chat."
         }
       ],
       [
         {
           "tag": "p",
-          "text": "We\u2019re excited to hear about your project. Book a time below."
+          "text": "We’re excited to hear about your project. Book a time below."
         }
       ]
     ],
@@ -2064,8 +2064,8 @@
   },
   {
     "slug": "sample",
-    "title": "sample \u2014 Zion Creative",
-    "description": "Explore Zion Creative\u2019s design services and creative work in Springfield, Illinois.",
+    "title": "sample | Zion Creative",
+    "description": "Internal layout sample for the Zion Creative website.",
     "blocks": [],
     "faqs": [],
     "gallery": [],
