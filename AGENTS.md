@@ -2,7 +2,7 @@
 
 ## Goal and current status
 Keep the existing Squarespace site’s visual identity while optimizing and elevating sections, as explicitly authorized by Nick. Tighten typography, spacing, readability, responsive behavior and presentation.
-This repository contains the complete portfolio, case studies, services, About, reviews, consultation, and supporting public pages. The onboarding page uses one consolidated Client Onboarding Elfsight widget; Nick confirmed delivery on October 11, 2026. Launch is explicitly authorized and DNS migration is in progress. Cloudflare preview hosts remain noindexed. See README.md for launch status. Do not cancel Squarespace hosting without separate authorization.
+This repository contains the complete portfolio, case studies, services, About, reviews, consultation, and supporting public pages. The onboarding page uses one consolidated Client Onboarding Elfsight widget; Nick confirmed delivery on October 11, 2026. Launch was explicitly authorized and completed October 11, 2026 at https://www.zioncreative.co/, with HTTPS, canonical redirects, and restored DNSSEC verified. Cloudflare preview hosts remain noindexed. See README.md for launch status. Do not cancel Squarespace hosting without separate authorization.
 
 ## Working rules
 - Preserve the existing paths, substantive page copy, titles and descriptions unless a change is agreed.

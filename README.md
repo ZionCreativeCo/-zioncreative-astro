@@ -10,8 +10,8 @@ service pages, and local image/video assets. The full source is published to Git
 and deployed through Cloudflare Workers static assets.
 
 Launch authorized October 11, 2026. Contact and consolidated onboarding delivery
-are confirmed. Cloudflare nameservers have been saved at Squarespace; custom-domain
-activation, redirects, and replacement DNSSEC verification are in progress.
+are confirmed. Cloudflare nameservers are active. The custom domain, HTTPS enforcement, root-to-www
+redirect, and replacement DNSSEC are verified. The live site is https://www.zioncreative.co/.
 `PUBLIC_SITE_LIVE=true` is configured for production builds. Preview hosts carry
 an `X-Robots-Tag: noindex, nofollow` header. Squarespace hosting has not been canceled.
 
@@ -42,21 +42,21 @@ contain old preview links and native form configuration.
 - Original artwork and animation; no generated replacement project imagery.
 - Locally bundled DM Sans under SIL OFL; see `migration/licenses/DM-Sans-OFL.txt`.
 
-## Remaining launch work
+## Launch verification
 
-1. Confirm delivery for the consolidated Client Onboarding Elfsight form on
-   `/onboarding/`. The widget is installed; original questionnaire field schemas
-   remain archived in `migration/onboarding-form-fields.json`.
-2. Review new pages on desktop and mobile. Confirm original pricing and metrics.
-3. Confirm management-form delivery and scheduler behavior. Contact form already
-   tested by Nick; never submit unsolicited test leads.
-4. Verify live redirects and custom 404 behavior in Cloudflare. `_redirects`
-   preserves nine legacy routes (with and without trailing slash). `/cart` was
-   an empty Squarespace commerce route; it is intentionally not a fake checkout.
-5. Confirm analytics requirements and licensed brand-font files, if changing fonts.
-6. Obtain explicit launch approval before DNS/domain changes, indexing, or
-   Squarespace cancellation. Set `PUBLIC_SITE_LIVE=true` only for final production;
-   preview deployments stay false. Onboarding, sample, consultation and 404 remain
-   noindexed regardless. Utility pages are excluded from the sitemap.
+- Contact and consolidated onboarding delivery confirmed by Nick.
+- All 30 regular routes return 200 with titles and correct indexing rules.
+- Robots and sitemap publish the canonical www domain; utility pages stay noindexed.
+- Root redirects preserve paths and query strings; HTTP redirects to HTTPS.
+- Legacy portfolio/About routes return permanent redirects.
+- Custom missing-page response returns 404 and renders the designed page.
+- Live mobile portfolio and related cards navigate on one tap; no horizontal overflow.
+- Google email MX records and verification TXT preserved. DNSSEC restored and
+  confirmed active by Cloudflare and the domain registry.
+- Existing DNS caches may continue showing the previous site during propagation.
+
+No dedicated visitor analytics identifier has been configured. Add one when Nick
+chooses a tracking provider. Squarespace hosting cancellation remains a separate,
+explicitly authorized action.
 
 The `sample` route preserves the existing Elfsight widget and is not in navigation.
