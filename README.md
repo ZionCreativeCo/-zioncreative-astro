@@ -5,13 +5,15 @@ https://zioncreative-astro.weathered-art-4995.workers.dev/
 
 ## Current status
 
-The homepage, contact, portfolio index and Villas case study are approved.
-The remaining 17 case studies, four detailed service pages, Services, About,
-Testimonials, Brand Management, Consultation, Jobs and supporting pages are built
-for preview review. All portfolio cards now lead to local pages.
+The approved site contains 31 pages with responsive case studies, portfolio filters,
+service pages, and local image/video assets. The full source is published to GitHub
+and deployed through Cloudflare Workers static assets.
 
-**Not ready for the main-domain launch.** Previews remain noindexed. The existing
-Squarespace site and domain remain unchanged. Nick confirmed contact-form delivery.
+Launch authorized October 11, 2026. Contact and consolidated onboarding delivery
+are confirmed. Cloudflare nameservers have been saved at Squarespace; custom-domain
+activation, redirects, and replacement DNSSEC verification are in progress.
+`PUBLIC_SITE_LIVE=true` is configured for production builds. Preview hosts carry
+an `X-Robots-Tag: noindex, nofollow` header. Squarespace hosting has not been canceled.
 
 ## Development
 
