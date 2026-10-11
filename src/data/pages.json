@@ -19,12 +19,6 @@
       [
         {
           "tag": "p",
-          "text": "Date | Q4 2023"
-        }
-      ],
-      [
-        {
-          "tag": "p",
           "text": "Agency | Colossus"
         }
       ],
@@ -74,10 +68,6 @@
     "roles": "Shopify website · Development",
     "details": [
       {
-        "label": "Date",
-        "value": "Q4 2023"
-      },
-      {
         "label": "Agency",
         "value": "Colossus"
       },
@@ -106,12 +96,6 @@
         {
           "tag": "h1",
           "text": "Anvil & Forge"
-        }
-      ],
-      [
-        {
-          "tag": "p",
-          "text": "Date | Q2 2021"
         }
       ],
       [
@@ -147,11 +131,11 @@
     "gallery": [
       {
         "id": "6b1345f70aac",
-        "alt": "Screen+Shot+2019-10-24+at+6.25.10+PM.png"
+        "alt": "Anvil & Forge selected creative work"
       },
       {
         "id": "3e0a9ded3fab",
-        "alt": "Screen+Shot+2019-10-24+at+6.18.52+PM.png"
+        "alt": "Anvil & Forge selected creative work"
       },
       {
         "id": "66d1a1bd4a44",
@@ -163,7 +147,7 @@
       },
       {
         "id": "f73a1998d45d",
-        "alt": "Screen+Shot+2020-02-23+at+10.47.35+PM.png"
+        "alt": "Anvil & Forge selected creative work"
       },
       {
         "id": "eb3d42e9ffad",
@@ -209,10 +193,6 @@
     ],
     "roles": "Branding · Packaging · Web · Photography",
     "details": [
-      {
-        "label": "Date",
-        "value": "Q2 2021"
-      },
       {
         "label": "Category",
         "value": "Food & Bev"
@@ -335,12 +315,6 @@
       [
         {
           "tag": "p",
-          "text": "Date | Q3 2024"
-        }
-      ],
-      [
-        {
-          "tag": "p",
           "text": "Category | Professional Services"
         }
       ],
@@ -394,10 +368,6 @@
     "roles": "Website design",
     "details": [
       {
-        "label": "Date",
-        "value": "Q3 2024"
-      },
-      {
         "label": "Category",
         "value": "Professional Services"
       },
@@ -426,12 +396,6 @@
         {
           "tag": "h2",
           "text": "Evangel Church"
-        }
-      ],
-      [
-        {
-          "tag": "p",
-          "text": "Date | Q4 2023"
         }
       ],
       [
@@ -479,10 +443,6 @@
     ],
     "roles": "Website design",
     "details": [
-      {
-        "label": "Date",
-        "value": "Q4 2023"
-      },
       {
         "label": "Category",
         "value": "Non-Profit/Church"
@@ -912,23 +872,23 @@
       },
       {
         "id": "e0fe9ca6e68c",
-        "alt": "Screen Shot 2021-02-22 at 3.31.35 AM.png"
+        "alt": "Pillars selected creative work"
       },
       {
         "id": "6a84b0510e10",
-        "alt": "Screen Shot 2021-02-22 at 3.31.51 AM.png"
+        "alt": "Pillars selected creative work"
       },
       {
         "id": "8f7f276558d8",
-        "alt": "Screen Shot 2021-02-22 at 3.30.55 AM.png"
+        "alt": "Pillars selected creative work"
       },
       {
         "id": "9f2a01fa9505",
-        "alt": "Screen Shot 2021-02-22 at 3.31.06 AM.png"
+        "alt": "Pillars selected creative work"
       },
       {
         "id": "acaba8f5201b",
-        "alt": "Screen Shot 2021-02-22 at 3.31.18 AM.png"
+        "alt": "Pillars selected creative work"
       }
     ],
     "kind": "case",
@@ -1086,12 +1046,6 @@
       [
         {
           "tag": "p",
-          "text": "Date | Q4 2023"
-        }
-      ],
-      [
-        {
-          "tag": "p",
           "text": "Category | Hospitality"
         }
       ],
@@ -1183,10 +1137,6 @@
     "roles": "Website · Branding · Photo & video",
     "details": [
       {
-        "label": "Date",
-        "value": "Q4 2023"
-      },
-      {
         "label": "Category",
         "value": "Hospitality"
       }
@@ -1211,12 +1161,6 @@
         {
           "tag": "h2",
           "text": "KP"
-        }
-      ],
-      [
-        {
-          "tag": "p",
-          "text": "Date | Q3 2023"
         }
       ],
       [
@@ -1274,10 +1218,6 @@
     ],
     "roles": "Webflow website",
     "details": [
-      {
-        "label": "Date",
-        "value": "Q3 2023"
-      },
       {
         "label": "Category",
         "value": "Professional Services"
@@ -1838,11 +1778,11 @@
       },
       {
         "id": "cf03977085b5",
-        "alt": "Screenshot 2025-04-23 at 3.42.48 PM-min.png"
+        "alt": "Zion Creative selected creative work"
       },
       {
         "id": "f73a1998d45d",
-        "alt": "Screen+Shot+2020-02-23+at+10.47.35+PM.png",
+        "alt": "Anvil & Forge selected creative work",
         "href": "/anvil-and-forge",
         "project": "Anvil & Forge"
       },
@@ -1854,7 +1794,7 @@
       },
       {
         "id": "6a84b0510e10",
-        "alt": "Screen Shot 2021-02-22 at 3.31.51 AM.png",
+        "alt": "Pillars selected creative work",
         "href": "/pillars-yogurt",
         "project": "Pillars"
       },
@@ -1967,11 +1907,11 @@
       },
       {
         "id": "cf03977085b5",
-        "alt": "Screenshot 2025-04-23 at 3.42.48 PM-min.png"
+        "alt": "Zion Creative selected creative work"
       },
       {
         "id": "f73a1998d45d",
-        "alt": "Screen+Shot+2020-02-23+at+10.47.35+PM.png",
+        "alt": "Anvil & Forge selected creative work",
         "href": "/anvil-and-forge",
         "project": "Anvil & Forge"
       },
@@ -1983,7 +1923,7 @@
       },
       {
         "id": "6a84b0510e10",
-        "alt": "Screen Shot 2021-02-22 at 3.31.51 AM.png",
+        "alt": "Pillars selected creative work",
         "href": "/pillars-yogurt",
         "project": "Pillars"
       },
