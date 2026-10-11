@@ -1,0 +1,3 @@
+# Keep Cloudflare preview hosts out of search results.
+https://:version.:subdomain.workers.dev/*
+  X-Robots-Tag: noindex, nofollow
