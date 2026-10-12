@@ -4,14 +4,46 @@ interface Props {name:string;label:string;portrait?:boolean;src?:string;poster?:
 const {name,label,portrait=false,src=`/videos/colossus-${name}.mp4`,poster=`/images/colossus-${name}-poster.jpg`,width,height,address=name==='news-scroll'?'wearecolossus.com/news':'wearecolossus.com'}=Astro.props;
 const size=width&&height?{width,height}:dimensions[name as keyof typeof dimensions];
 ---
-<div class:list={['case-film',{'case-film-portrait':portrait}]}> <div class:list={['film-window',{'film-window-phone':portrait}]}>{!portrait&&<div class="film-browser-bar" aria-hidden="true"><span class="film-browser-dots"><i></i><i></i><i></i></span><span>{address}</span><span>↗</span></div>}<video class="case-demo-video" width={size.width} height={size.height} controls muted playsinline loop preload="none" poster={poster} aria-label={label}><source src={src} type="video/mp4" /></video></div></div>
+<div class:list={['case-film',{'case-film-portrait':portrait}]}> <div class:list={['film-window',{'film-window-phone':portrait}]}>{!portrait&&<div class="film-browser-bar" aria-hidden="true"><span class="film-browser-dots"><i></i><i></i><i></i></span><span>{address}</span><span>↗</span></div>}<video class="case-demo-video" width={size.width} height={size.height} controls autoplay muted playsinline loop preload="auto" poster={poster} aria-label={label}><source src={src} type="video/mp4" /></video></div></div>
 <script>
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const clips=[...document.querySelectorAll<HTMLVideoElement>('.case-demo-video')];
-const manuallyPaused=new WeakSet<HTMLVideoElement>();
-const automatic=new WeakSet<HTMLVideoElement>();
-clips.forEach(video=>{video.addEventListener('pause',()=>{if(video.getBoundingClientRect().top<innerHeight&&video.getBoundingClientRect().bottom>0&&automatic.has(video))manuallyPaused.add(video);});});
-const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{const video=entry.target as HTMLVideoElement;if(entry.isIntersecting&&!reduced.matches&&!manuallyPaused.has(video)){automatic.add(video);video.play().catch(()=>{});}else{automatic.delete(video);video.pause();}});},{threshold:.35});clips.forEach(video=>observer.observe(video));
-reduced.addEventListener('change',()=>{if(reduced.matches)clips.forEach(video=>{automatic.delete(video);video.pause();});});
+const blocked=new WeakSet<HTMLVideoElement>();
+function start(video:HTMLVideoElement){
+ if(reduced.matches||document.hidden)return;
+ blocked.delete(video);
+ video.play().catch(()=>{blocked.add(video);});
+}
+clips.forEach(video=>{
+ // Set the properties as well as attributes for inline mobile autoplay.
+ video.defaultMuted=true;
+ video.muted=true;
+ video.playsInline=true;
+ video.loop=true;
+ video.autoplay=!reduced.matches;
+ if(reduced.matches)video.pause();
+ else start(video);
+ video.addEventListener('play',()=>blocked.delete(video));
+ video.addEventListener('canplay',()=>{if(blocked.has(video))start(video);},{once:true});
+});
+// Retry browser-deferred playback when a clip becomes visible, without
+// restarting videos a visitor deliberately paused using the controls.
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{
+  const video=entry.target as HTMLVideoElement;
+  if(entry.isIntersecting&&blocked.has(video))start(video);
+ });
+},{threshold:0});
+clips.forEach(video=>observer.observe(video));
+function retryBlocked(){clips.forEach(video=>{if(blocked.has(video))start(video);});}
+document.addEventListener('visibilitychange',retryBlocked);
+window.addEventListener('pageshow',retryBlocked);
+reduced.addEventListener('change',()=>{
+ clips.forEach(video=>{
+  video.autoplay=!reduced.matches;
+  if(reduced.matches){blocked.delete(video);video.pause();}
+  else start(video);
+ });
+});
 </script>
 <style>.case-film{background:#e5e1d9;overflow:hidden;padding:clamp(20px,4.5vw,60px)}.film-window{border:1px solid #24251b38;border-radius:12px;overflow:hidden;background:#eeefea;box-shadow:0 24px 55px #20231c22;max-width:1168px;margin-inline:auto}.film-browser-bar{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;font-size:11px;color:#64665f;gap:15px}.film-browser-dots{display:flex;gap:5px}.film-browser-dots i{width:5px;height:5px;border-radius:50%;background:#77796e}.film-window-phone{border:0;border-radius:0;background:transparent;box-shadow:none;margin:0}.case-film video{display:block;width:100%;height:auto}.case-film-portrait{background:#dcd8cd;padding:45px;display:flex;justify-content:center;align-items:center}.case-film-portrait video{max-width:330px;border:8px solid #252525;border-radius:32px;background:#111;box-shadow:0 25px 55px #28251f25}.case-film-portrait .film-window{max-width:330px}@media(max-width:760px){.case-film:not(.case-film-portrait){padding:20px 12px}.film-browser-bar{padding:9px 12px;font-size:9px}.film-window{border-radius:9px}.case-film-portrait{padding:30px}.case-film-portrait video{max-width:280px}}</style>
