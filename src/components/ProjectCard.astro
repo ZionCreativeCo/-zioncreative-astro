@@ -1,8 +1,8 @@
 ---
 import { siteLink } from '../lib/links';
 import SeeMore from './SeeMore.astro';
-interface Props { name: string; category: string; image: string; alt: string; path: string; number: string; animatedImage?: string; filters?:string[]; }
-const {name,category,image,alt,path,number,animatedImage,filters=[]} = Astro.props;
+interface Props { name: string; category: string; image: string; alt: string; path: string; number: string; animatedImage?: string; filters?:string[]; industry?:string; showIndustry?:boolean; }
+const {name,category,image,alt,path,number,animatedImage,filters=[],industry,showIndustry=false} = Astro.props;
 ---
 <a class="project-card" data-project-filters={filters.join(" ")} href={siteLink(path)}>
   <div class="project-image">
@@ -12,5 +12,7 @@ const {name,category,image,alt,path,number,animatedImage,filters=[]} = Astro.pro
     </picture> : <img src={`/images/${image}-1280.webp`} srcset={`/images/${image}-640.webp 640w, /images/${image}-1280.webp 1280w`} sizes="(max-width: 760px) 100vw, 50vw" width="1280" height="960" loading="lazy" decoding="async" alt={alt} />}
     <SeeMore />
   </div>
-  <div class="project-caption"><div><h3>{name}</h3><p>{category}</p></div><span class="project-number" aria-hidden="true">{number}</span></div>
+  <div class="project-caption"><div><h3>{name}</h3><p>{category}</p>{showIndustry&&industry&&<span class="project-industry">{industry}</span>}</div><span class="project-number" aria-hidden="true">{number}</span></div>
 </a>
+
+<style>.project-industry{display:inline-block;margin-top:12px;padding:5px 10px;border:1px solid #ffffff30;border-radius:20px;font-size:11px;line-height:1.4;color:#c6c5bd;letter-spacing:.025em}</style>

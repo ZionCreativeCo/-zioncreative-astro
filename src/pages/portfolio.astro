@@ -19,7 +19,7 @@ const filters=[{id:'all',label:'All work'},{id:'websites',label:'Websites'},{id:
       <div class="container">
         <div class="collection-label"><p class="eyebrow">A collection of creative partnerships</p><span data-project-count role="status" aria-live="polite">{projects.length} projects</span></div>
         <div class="portfolio-filters" role="group" aria-label="Filter work by service" hidden>{filters.map(filter=><button type="button" data-work-filter={filter.id} aria-pressed={filter.id==='all'?'true':'false'} aria-controls="portfolio-projects">{filter.label}</button>)}</div>
-        <div class="projects-grid" id="portfolio-projects">{projects.map(project=><ProjectCard {...project} />)}</div>
+        <div class="projects-grid" id="portfolio-projects">{projects.map(project=><ProjectCard {...project} showIndustry />)}</div>
       </div>
     </section>
     <ProjectCTA />
