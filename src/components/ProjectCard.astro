@@ -8,7 +8,7 @@ const {name,category,image,alt,path,number,animatedImage,filters=[],industry,sho
   <div class="project-image">
     {animatedImage ? <picture>
       <source media="(prefers-reduced-motion: reduce)" srcset={`/images/${image}-1280.webp`} />
-      <img src={animatedImage} width="1080" height="608" loading="lazy" decoding="async" alt={alt} />
+      <img src={`/images/${image}-1280.webp`} width="1080" height="608" loading="lazy" decoding="async" alt={alt} />
     </picture> : <img src={`/images/${image}-1280.webp`} srcset={`/images/${image}-640.webp 640w, /images/${image}-1280.webp 1280w`} sizes="(max-width: 760px) 100vw, 50vw" width="1280" height="960" loading="lazy" decoding="async" alt={alt} />}
     <SeeMore />
   </div>

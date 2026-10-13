@@ -1,0 +1,62 @@
+---
+interface Props { id?:string; provider?:'Elfsight'|'Calendly'; kind?:string; fallback?:string; }
+const {id,provider='Elfsight',kind='contact form',fallback='mailto:hello@zioncreative.co'}=Astro.props;
+const privacy=provider==='Calendly'?'https://calendly.com/legal/privacy-notice':'https://elfsight.com/privacy-policy/';
+---
+{provider === 'Elfsight' ? (
+ <div class={`elfsight-app-${id}`} data-elfsight-app-lazy></div>
+) : (
+<section class="consent-embed" data-provider={provider} data-widget-id={id} data-kind={kind} aria-label={kind}>
+ <div class="embed-notice">
+  <h2>{kind==='client reviews'?'Read client reviews':kind==='scheduler'?'Book a conversation':'Send a project inquiry'}</h2>
+  <p>This {kind} is provided by {provider}. Loading it connects your browser to {provider}, which may use cookies or similar storage and receive your IP address and browser information.</p>
+  <p><a href="/privacy">Website privacy policy</a> · <a href={privacy}>{provider} privacy policy</a></p>
+  {kind!=='client reviews'&&<p>Share only the contact and project details needed for your inquiry. Please do not send passwords, payment details, or sensitive personal information. Sending an inquiry asks for a response about your project; it does not give permission for unrelated marketing.</p>}
+  <button type="button" class="embed-load">Allow {provider} and load {kind}</button>
+  <p>Prefer another way? <a href={fallback}>{provider==='Calendly'?'Book on Calendly':kind==='client reviews'?'Read reviews on Squarespace':fallback.startsWith('mailto:')?'Send an email':'Call about your project'}</a>.</p>
+  <noscript><p>JavaScript is needed for the embedded {kind}. Please use the alternative link above.</p></noscript>
+ </div>
+ <p class="embed-status" role="status" aria-live="polite"></p>
+ <div class="embed-mount"></div>
+ <button type="button" class="embed-reset" hidden>Disable optional embeds and reload</button>
+</section>
+)}
+{provider==='Elfsight'&&<script is:inline src="https://elfsightcdn.com/platform.js" async></script>}
+<script>
+document.querySelectorAll<HTMLElement>('.consent-embed').forEach(root=>{
+ const button=root.querySelector<HTMLButtonElement>('.embed-load')!;
+ const status=root.querySelector<HTMLElement>('.embed-status')!;
+ const mount=root.querySelector<HTMLElement>('.embed-mount')!;
+ const reset=root.querySelector<HTMLButtonElement>('.embed-reset')!;
+ reset.addEventListener('click',()=>location.reload());
+ button.addEventListener('click',()=>{
+  button.disabled=true;
+  status.textContent=`Loading ${root.dataset.kind}. If it does not appear, please use the alternative link above.`;
+  reset.hidden=false;
+  const calendly=root.dataset.provider==='Calendly';
+  if(calendly){
+   const frame=document.createElement('iframe');
+   frame.src='https://calendly.com/zioncreative/discovery?embed_type=Inline&hide_event_type_details=1';
+   frame.title='Book a consultation with Zion Creative';
+   frame.style.cssText='width:100%;height:760px;border:0';
+   frame.addEventListener('load',()=>{status.textContent='Scheduler loaded below. Use Tab to continue.';});
+   mount.append(frame);
+  }else{
+   const widget=document.createElement('div');
+   widget.className=`elfsight-app-${root.dataset.widgetId}`;
+   mount.append(widget);
+   let script=document.querySelector<HTMLScriptElement>('script[data-optional-elfsight]');
+   if(!script){
+    script=document.createElement('script');
+    script.src='https://elfsightcdn.com/platform.js';script.async=true;
+    script.dataset.optionalElfsight='true';
+    script.addEventListener('error',()=>{status.textContent='The embedded service could not load. Please use the alternative link above.';button.disabled=false;mount.replaceChildren();script?.remove();});
+    document.body.append(script);
+   }
+  }
+ });
+});
+</script>
+<style>
+.consent-embed{color:#24251b;background:#f8f7f3;border:1px solid #76766d;border-radius:12px;padding:clamp(20px,4vw,36px);text-align:left;overflow-wrap:anywhere}.embed-notice{max-width:750px}.embed-notice h2{font-family:Arial,sans-serif;font-size:26px;line-height:1.25;letter-spacing:normal;margin:0 0 16px}.embed-notice p,.embed-status{font-size:16px;line-height:1.6;margin:14px 0}.embed-notice a{color:#24251b;text-decoration:underline;text-underline-offset:3px}.embed-load,.embed-reset{font:600 16px/1.4 Arial,sans-serif;padding:14px 20px;min-height:44px;border:2px solid #24251b;border-radius:5px;cursor:pointer;background:#24251b;color:#fff;white-space:normal}.embed-load:disabled{background:#555;color:#fff;cursor:default}.embed-reset{margin-top:18px;background:#fff;color:#24251b}.embed-reset[hidden]{display:none}.embed-mount{min-width:0}
+</style>
