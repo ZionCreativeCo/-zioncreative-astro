@@ -3,7 +3,7 @@ interface Props { id?:string; provider?:'Elfsight'|'Calendly'; kind?:string; fal
 const {id,provider='Elfsight',kind='contact form',fallback='mailto:hello@zioncreative.co'}=Astro.props;
 const privacy=provider==='Calendly'?'https://calendly.com/legal/privacy-notice':'https://elfsight.com/privacy-policy/';
 ---
-{kind === 'contact form' && provider === 'Elfsight' ? (
+{provider === 'Elfsight' ? (
  <div class={`elfsight-app-${id}`} data-elfsight-app-lazy></div>
 ) : (
 <section class="consent-embed" data-provider={provider} data-widget-id={id} data-kind={kind} aria-label={kind}>
