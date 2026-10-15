@@ -4,6 +4,12 @@ interface Props { title: string; description: string; noindex?: boolean; }
 const { title, description, noindex = false } = Astro.props;
 const live = import.meta.env.PUBLIC_SITE_LIVE === 'true' && !noindex;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const website = {
+ '@context':'https://schema.org', '@type':'WebSite',
+ '@id':'https://www.zioncreative.co/#website', name:'Zion Creative',
+ url:'https://www.zioncreative.co/', inLanguage:'en-US',
+ publisher:{'@id':'https://www.zioncreative.co/#organization'}
+};
 const organization = {
  '@context':'https://schema.org', '@type':'Organization',
  '@id':'https://www.zioncreative.co/#organization', name:'Zion Creative',
@@ -22,13 +28,16 @@ const organization = {
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content={description} />
+    {Astro.url.pathname === '/' && <meta name="msvalidate.01" content="02B6A1353FB71ABB0855375FEC11910C" />}
     <meta name="robots" content={live ? 'index,follow' : 'noindex,nofollow'} />
     <link rel="canonical" href={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Zion Creative" />
     {Astro.url.pathname === "/" && <script type="application/ld+json" set:html={JSON.stringify(organization)} />}
+    {Astro.url.pathname === "/" && <script type="application/ld+json" set:html={JSON.stringify(website)} />}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
