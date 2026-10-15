@@ -1,4 +1,5 @@
 ---
 import Arrow from './Arrow.astro';
+const {label='See more'}=Astro.props;
 ---
-<span class="see-more">See more <Arrow /></span>
+<span class="see-more">{label} <Arrow /></span>

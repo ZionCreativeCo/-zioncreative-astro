@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import normalFont from '@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url';
+import italicFont from '@fontsource-variable/dm-sans/files/dm-sans-latin-wght-italic.woff2?url';
 import shareImages from '../data/share-images.json';
 interface Props { title: string; description: string; noindex?: boolean; }
 const { title, description, noindex = false } = Astro.props;
@@ -14,9 +16,18 @@ const website = {
  url:'https://www.zioncreative.co/', inLanguage:'en-US',
  publisher:{'@id':'https://www.zioncreative.co/#organization'}
 };
+const webpage = {
+ '@context':'https://schema.org', '@type':'WebPage',
+ '@id':`${canonical}#webpage`, url:canonical.toString(), name:title,
+ description, inLanguage:'en-US',
+ isPartOf:{'@id':'https://www.zioncreative.co/#website'},
+ publisher:{'@id':'https://www.zioncreative.co/#organization'},
+ primaryImageOfPage:{'@type':'ImageObject',url:shareImageUrl.toString(),width:shareImage.width,height:shareImage.height}
+};
 const organization = {
  '@context':'https://schema.org', '@type':'Organization',
  '@id':'https://www.zioncreative.co/#organization', name:'Zion Creative',
+ sameAs:['https://www.google.com/maps/place/Zion+Creative/data=!4m2!3m1!1s0x0:0x4943753823e7bc66'],
  url:'https://www.zioncreative.co/', logo:'https://www.zioncreative.co/images/logo.webp',
  description:'Independent design studio based in Springfield, Illinois, providing branding, website design, graphic design, and ongoing creative support.',
  email:'hello@zioncreative.co', telephone:'+1-217-725-2031', foundingDate:'2017',
@@ -30,6 +41,8 @@ const organization = {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
+    <link rel="preload" href={normalFont} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={italicFont} as="font" type="font/woff2" crossorigin />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content={description} />
     {Astro.url.pathname === '/' && <meta name="msvalidate.01" content="02B6A1353FB71ABB0855375FEC11910C" />}
@@ -52,6 +65,7 @@ const organization = {
     <meta name="twitter:image:alt" content={shareImage.alt} />
     {Astro.url.pathname === "/" && <script type="application/ld+json" set:html={JSON.stringify(organization)} />}
     {Astro.url.pathname === "/" && <script type="application/ld+json" set:html={JSON.stringify(website)} />}
+    {live && <script type="application/ld+json" set:html={JSON.stringify(webpage)} />}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

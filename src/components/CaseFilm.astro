@@ -1,16 +1,27 @@
 ---
 import dimensions from '../data/colossus-video-dimensions.json';
+import {existsSync} from 'node:fs';
 interface Props {name:string;label:string;portrait?:boolean;src?:string;poster?:string;width?:number;height?:number;address?:string;}
 const {name,label,portrait=false,src=`/videos/colossus-${name}.mp4`,poster=`/images/colossus-${name}-poster.jpg`,width,height,address=name==='news-scroll'?'wearecolossus.com/news':'wearecolossus.com'}=Astro.props;
+const mobileSrc=src.replace(/\.mp4$/, '-mobile.mp4');
+const hasMobile=existsSync(`public${mobileSrc}`);
+const optimizedPoster=poster.replace(/\.jpg$/, '-optimized.webp');
+const displayPoster=existsSync(`public${optimizedPoster}`)?optimizedPoster:poster;
+const eager=Astro.props.slot==='hero';
 const size=width&&height?{width,height}:dimensions[name as keyof typeof dimensions];
 ---
-<div class:list={['case-film',{'case-film-portrait':portrait}]}> <div class:list={['film-window',{'film-window-phone':portrait}]}>{!portrait&&<div class="film-browser-bar" aria-hidden="true"><span class="film-browser-dots"><i></i><i></i><i></i></span><span>{address}</span><span>↗</span></div>}<video class="case-demo-video" width={size.width} height={size.height} controls autoplay muted playsinline loop preload="auto" poster={poster} aria-label={label}><source src={src} type="video/mp4" /></video></div></div>
+{eager&&<link rel="preload" as="image" href={displayPoster} fetchpriority="high" />}
+<div class:list={['case-film',{'case-film-portrait':portrait}]}> <div class:list={['film-window',{'film-window-phone':portrait}]}>{!portrait&&<div class="film-browser-bar" aria-hidden="true"><span class="film-browser-dots"><i></i><i></i><i></i></span><span>{address}</span><span>↗</span></div>}<video class="case-demo-video" width={size.width} height={size.height} controls autoplay={eager} data-eager={eager?'true':undefined} muted playsinline loop preload={eager?'auto':'none'} poster={displayPoster} aria-label={label}>{hasMobile&&<source src={mobileSrc} media="(max-width: 760px)" type="video/mp4" />}<source src={src} type="video/mp4" /></video></div></div>
 <script>
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const clips=[...document.querySelectorAll<HTMLVideoElement>('.case-demo-video')];
 const blocked=new WeakSet<HTMLVideoElement>();
+const attempted=new WeakSet<HTMLVideoElement>();
+const near=new WeakSet<HTMLVideoElement>();
 function start(video:HTMLVideoElement){
  if(reduced.matches||document.hidden)return;
+ attempted.add(video);
+ video.autoplay=true;
  blocked.delete(video);
  video.play().catch(()=>{blocked.add(video);});
 }
@@ -20,29 +31,30 @@ clips.forEach(video=>{
  video.muted=true;
  video.playsInline=true;
  video.loop=true;
- video.autoplay=!reduced.matches;
+ video.autoplay=!reduced.matches&&video.dataset.eager==='true';
  if(reduced.matches)video.pause();
- else start(video);
+ else if(video.dataset.eager==='true')start(video);
  video.addEventListener('play',()=>blocked.delete(video));
- video.addEventListener('canplay',()=>{if(blocked.has(video))start(video);},{once:true});
+ video.addEventListener('canplay',()=>{if(near.has(video)&&blocked.has(video))start(video);},{once:true});
 });
 // Retry browser-deferred playback when a clip becomes visible, without
 // restarting videos a visitor deliberately paused using the controls.
 const observer=new IntersectionObserver(entries=>{
  entries.forEach(entry=>{
   const video=entry.target as HTMLVideoElement;
-  if(entry.isIntersecting&&blocked.has(video))start(video);
+  if(entry.isIntersecting){near.add(video);if(!attempted.has(video)||blocked.has(video))start(video);}
+  else near.delete(video);
  });
-},{threshold:0});
+},{threshold:0,rootMargin:'300px 0px'});
 clips.forEach(video=>observer.observe(video));
-function retryBlocked(){clips.forEach(video=>{if(blocked.has(video))start(video);});}
+function retryBlocked(){clips.forEach(video=>{if(near.has(video)&&blocked.has(video))start(video);});}
 document.addEventListener('visibilitychange',retryBlocked);
 window.addEventListener('pageshow',retryBlocked);
 reduced.addEventListener('change',()=>{
  clips.forEach(video=>{
-  video.autoplay=!reduced.matches;
+  video.autoplay=!reduced.matches&&(near.has(video)||video.dataset.eager==='true');
   if(reduced.matches){blocked.delete(video);video.pause();}
-  else start(video);
+  else if(near.has(video)||video.dataset.eager==='true')start(video);
  });
 });
 </script>
