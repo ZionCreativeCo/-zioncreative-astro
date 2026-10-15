@@ -1,0 +1,40 @@
+---
+interface Props { measurementId:string; }
+const {measurementId}=Astro.props;
+---
+<aside class="analytics-choice" aria-label="Optional analytics" hidden>
+ <p>Help us improve this website with optional Google Analytics. <a href="/cookies/">Privacy choices</a></p>
+ <div><button type="button" data-analytics-choice="denied">No thanks</button><button type="button" data-analytics-choice="granted">Allow analytics</button></div>
+</aside>
+<script is:inline define:vars={{measurementId}}>
+(()=>{
+ if(location.hostname!=='www.zioncreative.co')return;
+ const key='zion-analytics-choice-v1';
+ const panel=document.querySelector('.analytics-choice');
+ let loaded=false;
+ function readChoice(){try{return localStorage.getItem(key);}catch{return null;}}
+ function start(){
+  if(loaded||navigator.globalPrivacyControl===true)return;loaded=true;
+  window['ga-disable-'+measurementId]=false;
+  window.dataLayer=window.dataLayer||[];
+  window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
+  window.gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+  window.gtag('js',new Date());
+  window.gtag('config',measurementId,{allow_google_signals:false,allow_ad_personalization_signals:false,page_location:location.origin+location.pathname,page_referrer:document.referrer?new URL(document.referrer).origin:'',cookie_expires:60*60*24*90});
+  const script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(measurementId);document.head.append(script);
+  document.addEventListener('click',event=>{
+   const link=event.target instanceof Element?event.target.closest('a[href]'):null;
+   const href=link?.getAttribute('href')||'';
+   if(href.startsWith('mailto:')||href.startsWith('tel:'))window.gtag('event','contact_click',{contact_method:href.startsWith('tel:')?'phone':'email',page_path:location.pathname});
+  });
+ }
+ function choose(choice){try{localStorage.setItem(key,choice);}catch{} panel.hidden=true;if(choice==='granted')start();else{window['ga-disable-'+measurementId]=true;if(loaded)location.reload();}}
+ document.querySelectorAll('[data-analytics-choice]').forEach(button=>button.addEventListener('click',()=>choose(button.dataset.analyticsChoice)));
+ document.querySelectorAll('[data-analytics-settings]').forEach(button=>button.addEventListener('click',()=>{panel.hidden=false;panel.querySelector('button')?.focus();}));
+ if(readChoice()==='granted'&&navigator.globalPrivacyControl!==true)start();
+ else if(!readChoice()&&navigator.globalPrivacyControl!==true)panel.hidden=false;
+})();
+</script>
+<style>
+.analytics-choice{position:fixed;bottom:20px;left:20px;z-index:1000;width:min(460px,calc(100% - 40px));background:#f7f6ef;color:#24251b;padding:20px;border:1px solid #24251b55;border-radius:8px;box-shadow:0 8px 35px #0002}.analytics-choice[hidden]{display:none}.analytics-choice p{font-size:14px;line-height:1.5;margin:0 0 14px}.analytics-choice a{text-decoration:underline}.analytics-choice div{display:flex;gap:12px;flex-wrap:wrap}.analytics-choice button{background:#24251b;color:white;border:1px solid #24251b;border-radius:5px;padding:10px 15px;font:inherit;font-size:14px;min-height:44px;cursor:pointer}.analytics-choice button:first-child{background:transparent;color:#24251b}
+</style>

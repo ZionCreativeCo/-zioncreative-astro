@@ -3,6 +3,7 @@ import '../styles/global.css';
 import normalFont from '@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url';
 import italicFont from '@fontsource-variable/dm-sans/files/dm-sans-latin-wght-italic.woff2?url';
 import shareImages from '../data/share-images.json';
+import Analytics from '../components/Analytics.astro';
 interface Props { title: string; description: string; noindex?: boolean; }
 const { title, description, noindex = false } = Astro.props;
 const live = import.meta.env.PUBLIC_SITE_LIVE === 'true' && !noindex;
@@ -70,5 +71,6 @@ const organization = {
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <slot />
+    {import.meta.env.PUBLIC_SITE_LIVE === 'true' && <Analytics measurementId="G-CTDJKCD43Y" />}
   </body>
 </html>

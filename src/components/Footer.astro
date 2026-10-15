@@ -10,4 +10,6 @@ import { siteLink } from '../lib/links';
     </div>
     <div class="footer-bottom"><a href="/" aria-label="Zion Creative home"><img src="/images/logo.webp" width="112" height="60" alt="Zion Creative" /></a><p>Springfield, Illinois. Creating everywhere.</p><small>© {new Date().getFullYear()} Zion Creative</small></div>
   </div>
-<nav class="policy-links container" aria-label="Policies"><a href="/privacy">Privacy policy</a><a href="/cookies">Cookies &amp; privacy choices</a><a href="/terms">Terms &amp; conditions</a><a href="/refunds">Cancellations &amp; refunds</a></nav></footer>
+<nav class="policy-links container" aria-label="Policies"><a href="/privacy">Privacy policy</a><a href="/cookies">Cookies &amp; privacy choices</a><button type="button" data-analytics-settings>Analytics choices</button><a href="/terms">Terms &amp; conditions</a><a href="/refunds">Cancellations &amp; refunds</a></nav></footer>
+
+<style>.policy-links button{border:0;background:none;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:10px 0;min-height:44px}</style>
