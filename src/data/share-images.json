@@ -1,0 +1,104 @@
+{
+  "/koke-mill-church": {
+    "src": "/images/work-koke-mill-church-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Custom website design for Koke Mill Church in Springfield, Illinois"
+  },
+  "/wholemoon": {
+    "src": "/images/work-wholemoon-1280.webp",
+    "width": 1280,
+    "height": 816,
+    "alt": "WholeMoon, selected creative work by Zion Creative"
+  },
+  "/anvil-and-forge": {
+    "src": "/images/work-anvil-and-forge-1280.webp",
+    "width": 1280,
+    "height": 727,
+    "alt": "Brand and packaging design for Anvil & Forge brewery in Springfield, Illinois"
+  },
+  "/the-villas": {
+    "src": "/images/work-the-villas-1280.webp",
+    "width": 894,
+    "height": 571,
+    "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois"
+  },
+  "/bfg": {
+    "src": "/images/work-bfg-1280.webp",
+    "width": 720,
+    "height": 405,
+    "alt": "Beat, selected creative work by Zion Creative"
+  },
+  "/project/vpne": {
+    "src": "/images/work-project-vpne-1280.webp",
+    "width": 1280,
+    "height": 808,
+    "alt": "VPNE, selected creative work by Zion Creative"
+  },
+  "/evangel": {
+    "src": "/images/work-evangel-1280.webp",
+    "width": 1280,
+    "height": 816,
+    "alt": "Evangel Church, selected creative work by Zion Creative"
+  },
+  "/pf-flyers": {
+    "src": "/images/work-pf-flyers-1280.webp",
+    "width": 1280,
+    "height": 800,
+    "alt": "PF Flyers heritage-inspired website experience"
+  },
+  "/garrison-group": {
+    "src": "/images/work-garrison-group-1280.webp",
+    "width": 1280,
+    "height": 587,
+    "alt": "Garrison Group, selected creative work by Zion Creative"
+  },
+  "/little-pond": {
+    "src": "/images/work-little-pond-1280.webp",
+    "width": 1280,
+    "height": 713,
+    "alt": "Little Pond, selected creative work by Zion Creative"
+  },
+  "/lingk": {
+    "src": "/images/work-lingk-1280.webp",
+    "width": 1280,
+    "height": 887,
+    "alt": "Lingk, selected creative work by Zion Creative"
+  },
+  "/pillars-yogurt": {
+    "src": "/images/work-pillars-yogurt-1280.webp",
+    "width": 1280,
+    "height": 719,
+    "alt": "Pillars, selected creative work by Zion Creative"
+  },
+  "/logo-design-springfield-il": {
+    "src": "/images/work-logo-design-springfield-il-1280.webp",
+    "width": 1080,
+    "height": 608,
+    "alt": "Brand identities, selected creative work by Zion Creative"
+  },
+  "/project/equiventures-east": {
+    "src": "/images/work-project-equiventures-east-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Equiventures East, selected creative work by Zion Creative"
+  },
+  "/project/kp": {
+    "src": "/images/work-project-kp-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "KP, selected creative work by Zion Creative"
+  },
+  "/colossus": {
+    "src": "/images/work-colossus-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Colossus website, designed by Colossus and developed by Zion Creative"
+  },
+  "default": {
+    "src": "/images/marketing-hero.webp",
+    "width": 1448,
+    "height": 1086,
+    "alt": "Brand and marketing design by Zion Creative in Springfield, Illinois"
+  }
+}
