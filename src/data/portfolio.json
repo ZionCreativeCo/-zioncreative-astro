@@ -1,23 +1,11 @@
 [
   {
-    "name": "Koke Mill Church",
+    "name": "Dolce Anna",
     "category": "Custom Squarespace website",
-    "image": "work-koke-mill-church",
-    "alt": "Custom website design for Koke Mill Church in Springfield, Illinois",
-    "path": "/koke-mill-church",
-    "number": "21",
-    "filters": [
-      "websites"
-    ],
-    "industry": "Faith & Community"
-  },
-  {
-    "name": "WholeMoon",
-    "category": "Shopify website \u00b7 Development",
-    "image": "work-wholemoon",
-    "alt": "WholeMoon, selected creative work by Zion Creative",
-    "path": "/wholemoon",
-    "number": "01",
+    "image": "work-dolce-anna",
+    "alt": "Custom gelateria website design for Dolce Anna in Riverton, Illinois",
+    "path": "/dolce-anna",
+    "number": "22",
     "filters": [
       "websites"
     ],
@@ -25,7 +13,7 @@
   },
   {
     "name": "Anvil & Forge",
-    "category": "Branding \u00b7 Packaging \u00b7 Web \u00b7 Photography",
+    "category": "Branding · Packaging · Web · Photography",
     "image": "work-anvil-and-forge",
     "alt": "Brand and packaging design for Anvil & Forge brewery in Springfield, Illinois",
     "path": "/anvil-and-forge",
@@ -38,22 +26,8 @@
     "industry": "Food & Beverage"
   },
   {
-    "name": "The Villas",
-    "category": "Brand direction \u00b7 Web \u00b7 Photography \u00b7 Social",
-    "image": "work-the-villas",
-    "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois",
-    "path": "/the-villas",
-    "number": "03",
-    "filters": [
-      "websites",
-      "branding",
-      "marketing"
-    ],
-    "industry": "Senior Living & Healthcare"
-  },
-  {
     "name": "Beat",
-    "category": "Identity \u00b7 Animation \u00b7 Messaging \u00b7 Collateral",
+    "category": "Identity · Animation · Messaging · Collateral",
     "image": "work-bfg",
     "alt": "Beat, selected creative work by Zion Creative",
     "path": "/bfg",
@@ -66,28 +40,67 @@
     "industry": "Creative Agency"
   },
   {
-    "name": "VPNE",
-    "category": "Website design",
-    "image": "work-project-vpne",
-    "alt": "VPNE, selected creative work by Zion Creative",
-    "path": "/project/vpne",
-    "number": "05",
+    "name": "Pillars",
+    "category": "Art direction · Packaging",
+    "image": "work-pillars-yogurt",
+    "alt": "Pillars, selected creative work by Zion Creative",
+    "path": "/pillars-yogurt",
+    "number": "13",
     "filters": [
-      "websites"
+      "branding"
     ],
-    "industry": "Parking & Support Services"
+    "industry": "Food & Beverage"
   },
   {
-    "name": "Evangel Church",
-    "category": "Website design",
-    "image": "work-evangel",
-    "alt": "Evangel Church, selected creative work by Zion Creative",
-    "path": "/evangel",
-    "number": "07",
+    "name": "Koke Mill Church",
+    "category": "Custom Squarespace website",
+    "image": "work-koke-mill-church",
+    "alt": "Custom website design for Koke Mill Church in Springfield, Illinois",
+    "path": "/koke-mill-church",
+    "number": "21",
     "filters": [
       "websites"
     ],
     "industry": "Faith & Community"
+  },
+  {
+    "name": "The Villas",
+    "category": "Brand direction · Web · Photography · Social",
+    "image": "work-the-villas",
+    "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois",
+    "path": "/the-villas",
+    "number": "03",
+    "filters": [
+      "websites",
+      "branding",
+      "marketing"
+    ],
+    "industry": "Senior Living & Healthcare"
+  },
+  {
+    "name": "Ricco’s Pizza",
+    "category": "Squarespace website redesign",
+    "image": "work-riccos-pizza",
+    "alt": "Ricco’s Pizza custom website redesign in Sherman, Illinois",
+    "path": "/riccos-pizza",
+    "number": "23",
+    "filters": [
+      "websites"
+    ],
+    "industry": "Food & Beverage"
+  },
+  {
+    "name": "Little Pond",
+    "category": "Art direction · Identity · Web",
+    "image": "work-little-pond",
+    "alt": "Little Pond, selected creative work by Zion Creative",
+    "path": "/little-pond",
+    "number": "10",
+    "filters": [
+      "websites",
+      "branding"
+    ],
+    "industry": "Childcare"
   },
   {
     "name": "PF Flyers",
@@ -102,33 +115,8 @@
     "industry": "Footwear & Retail"
   },
   {
-    "name": "Garrison Group",
-    "category": "Creative direction \u00b7 Brand identity",
-    "image": "work-garrison-group",
-    "alt": "Garrison Group, selected creative work by Zion Creative",
-    "path": "/garrison-group",
-    "number": "08",
-    "filters": [
-      "branding"
-    ],
-    "industry": "Commercial Real Estate"
-  },
-  {
-    "name": "Little Pond",
-    "category": "Art direction \u00b7 Identity \u00b7 Web",
-    "image": "work-little-pond",
-    "alt": "Little Pond, selected creative work by Zion Creative",
-    "path": "/little-pond",
-    "number": "10",
-    "filters": [
-      "websites",
-      "branding"
-    ],
-    "industry": "Childcare"
-  },
-  {
     "name": "Lingk",
-    "category": "Identity \u00b7 Illustration \u00b7 Web",
+    "category": "Identity · Illustration · Web",
     "image": "work-lingk",
     "alt": "Lingk, selected creative work by Zion Creative",
     "path": "/lingk",
@@ -142,16 +130,78 @@
     "industry": "Technology"
   },
   {
-    "name": "Pillars",
-    "category": "Art direction \u00b7 Packaging",
-    "image": "work-pillars-yogurt",
-    "alt": "Pillars, selected creative work by Zion Creative",
-    "path": "/pillars-yogurt",
-    "number": "13",
+    "name": "KP",
+    "category": "Webflow website",
+    "image": "work-project-kp",
+    "alt": "KP, selected creative work by Zion Creative",
+    "path": "/project/kp",
+    "number": "19",
+    "filters": [
+      "websites"
+    ],
+    "industry": "Print & Marketing Services"
+  },
+  {
+    "name": "WholeMoon",
+    "category": "Shopify website · Development",
+    "image": "work-wholemoon",
+    "alt": "WholeMoon, selected creative work by Zion Creative",
+    "path": "/wholemoon",
+    "number": "01",
+    "filters": [
+      "websites"
+    ],
+    "industry": "Food & Beverage"
+  },
+  {
+    "name": "Colossus",
+    "category": "Custom Webflow development",
+    "image": "work-colossus",
+    "alt": "Colossus website, designed by Colossus and developed by Zion Creative",
+    "path": "/colossus",
+    "number": "20",
+    "filters": [
+      "websites"
+    ],
+    "industry": "Creative Agency"
+  },
+  {
+    "name": "Garrison Group",
+    "category": "Creative direction · Brand identity",
+    "image": "work-garrison-group",
+    "alt": "Garrison Group, selected creative work by Zion Creative",
+    "path": "/garrison-group",
+    "number": "08",
     "filters": [
       "branding"
     ],
-    "industry": "Food & Beverage"
+    "industry": "Commercial Real Estate"
+  },
+  {
+    "name": "Evangel Church",
+    "category": "Website design",
+    "image": "work-evangel",
+    "alt": "Evangel Church, selected creative work by Zion Creative",
+    "path": "/evangel",
+    "number": "07",
+    "filters": [
+      "websites"
+    ],
+    "industry": "Faith & Community"
+  },
+  {
+    "name": "Equiventures East",
+    "category": "Website · Branding · Photo & video",
+    "image": "work-project-equiventures-east",
+    "alt": "Equiventures East, selected creative work by Zion Creative",
+    "path": "/project/equiventures-east",
+    "number": "18",
+    "filters": [
+      "websites",
+      "branding",
+      "marketing"
+    ],
+    "industry": "Equestrian"
   },
   {
     "name": "Brand identities",
@@ -167,41 +217,15 @@
     "industry": "Across Industries"
   },
   {
-    "name": "Equiventures East",
-    "category": "Website \u00b7 Branding \u00b7 Photo & video",
-    "image": "work-project-equiventures-east",
-    "alt": "Equiventures East, selected creative work by Zion Creative",
-    "path": "/project/equiventures-east",
-    "number": "18",
-    "filters": [
-      "websites",
-      "branding",
-      "marketing"
-    ],
-    "industry": "Equestrian"
-  },
-  {
-    "name": "KP",
-    "category": "Webflow website",
-    "image": "work-project-kp",
-    "alt": "KP, selected creative work by Zion Creative",
-    "path": "/project/kp",
-    "number": "19",
+    "name": "VPNE",
+    "category": "Website design",
+    "image": "work-project-vpne",
+    "alt": "VPNE, selected creative work by Zion Creative",
+    "path": "/project/vpne",
+    "number": "05",
     "filters": [
       "websites"
     ],
-    "industry": "Print & Marketing Services"
-  },
-  {
-    "name": "Colossus",
-    "category": "Custom Webflow development",
-    "image": "work-colossus",
-    "alt": "Colossus website, designed by Colossus and developed by Zion Creative",
-    "path": "/colossus",
-    "number": "20",
-    "filters": [
-      "websites"
-    ],
-    "industry": "Creative Agency"
+    "industry": "Parking & Support Services"
   }
 ]

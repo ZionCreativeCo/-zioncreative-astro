@@ -60,5 +60,43 @@ export const industryPages = {
    {q:'How much does a senior living website cost?',a:'Our custom Squarespace website packages start at $2,500. Multiple communities, larger service libraries, photography, and integrations may require a broader scope. AI-built website hosting and care starts at $75 per month, with the initial build quoted separately.'},
    {q:'Can our team update the site after launch?',a:'Yes. We provide recorded training for the agreed platform and establish a practical content structure. Your team can maintain approved community information, or we can discuss ongoing support.'}
   ]
+ },
+ food: {
+  slug:'food-and-beverage-web-design', title:'Restaurant Website Design Springfield IL | Zion Creative',
+  description:'Restaurant website design in Springfield, Illinois, with clear menus, mobile layouts, and ordering links. Custom sites for restaurants, cafes, and food brands.',
+  name:'Restaurant & food website design',audience:'food and beverage businesses',location:'Springfield, Illinois · Serving food & beverage businesses nationwide',
+  headline:'Restaurant website design.',emphasis:'Worth savoring.',
+  intro:'Custom restaurant websites that bring your food and personality forward. From pizza spots and cafes to gelaterias, breweries, and food brands, we create clear, mobile-friendly experiences that help people explore your menu, plan a visit, or place an order.',
+  cta:'Talk about your restaurant website',hero:'/images/work-dolce-anna-1280.webp',heroMobile:'/images/work-dolce-anna-640.webp',heroAlt:'Custom Dolce Anna gelateria website design featuring Italian gelato',heroCaption:'Dolce Anna · Custom Squarespace website',heroLink:'/dolce-anna',
+  introTitle:'Lead with the food.',introEmphasis:'Make the next step easy.',
+  introParagraphs:['Someone looking for dinner needs a useful menu and a simple way to order. A first-time visitor to a gelateria wants a sense of the flavors and where to find the shop. A shopper discovering a packaged food or beverage needs to understand the product and how to buy it.', 'We shape the website around those different needs. Distinctive art direction brings your brand forward, while clear content and practical navigation help visitors move from interest to a visit, an order, or a conversation.'],
+  features:[
+   {icon:'photo',title:'The product, front and center.',text:'Give your food, drinks, or packaged products room to stand out. Use approved product photography and a visual direction that feels specific to your business.'},
+   {icon:'web',title:'Menus people can actually browse.',text:'Organize dishes, flavors, and product ranges into readable website content. Plan clear categories and an update workflow so your team can keep the information useful.'},
+   {icon:'campaign',title:'A clear route to the next step.',text:'Connect the website with your existing ordering, reservations, retail, or inquiry process. We review what each provider supports and agree on the integrations before the build.'},
+   {icon:'strategy',title:'Local details in the right places.',text:'Bring together your actual location, hours, contact information, and relevant content. Give customers useful information when they search for your business or plan a visit.'},
+   {icon:'branding',title:'A brand experience beyond the label.',text:'Carry your identity into product pages, the business story, and seasonal features. For packaged brands, connect the visual personality with clear product information and purchasing paths.'},
+   {icon:'management',title:'Ready for the next special.',text:'Build manageable sections for menu updates, product changes, events, and new offerings. Provide training or ongoing support that fits the people maintaining the site.'}
+  ],
+  workTitle:'Different flavors.',workEmphasis:'Distinct digital homes.',workIntro:'From a first website to a fresh direction for an existing business, explore food and beverage work with its own personality.',
+  projects:[
+   {name:'Dolce Anna',path:'/dolce-anna',image:'work-dolce-anna',text:'A first website for a Riverton gelateria, with product-led design and a warm, personal story.',alt:'Dolce Anna custom Squarespace gelateria website'},
+   {name:'Ricco’s Pizza',path:'/riccos-pizza',image:'work-riccos-pizza',text:'A bold Squarespace redesign for a Sherman pizza restaurant, with a clear menu and call-to-order paths.',alt:'Ricco’s Pizza website redesign'},
+   {name:'Anvil & Forge',path:'/anvil-and-forge',image:'work-anvil-and-forge',text:'Website and creative work that bring a Springfield brewery’s personality into its digital presence.',alt:'Anvil and Forge brewery branding and website work'},
+   {name:'WholeMoon',path:'/wholemoon',image:'work-wholemoon',text:'Shopify development with design assistance for a distinctive plant-based beverage brand.',alt:'WholeMoon Shopify website development'}
+  ],
+  localTitle:'Restaurant web design.',localEmphasis:'Rooted in Springfield.',
+  localParagraphs:['Zion Creative provides restaurant website design from Springfield, Illinois, working with local businesses and food and beverage brands nationwide. Our work includes Dolce Anna in Riverton, Ricco’s Pizza in Sherman, and Anvil & Forge in Springfield, alongside work for brands beyond Central Illinois.', 'We start with your actual business: what you serve or sell, who you want to reach, and how people take the next step. Page structure, local information, mobile layouts, and search metadata are planned together rather than added as an afterthought.'],
+  steps:[{title:'Get to know the business',text:'Review your brand, food or product range, audience, and the ways customers order, visit, or shop.'},{title:'Plan the experience',text:'Map the menu or product information and develop a visual direction around your identity.'},{title:'Build and connect',text:'Develop responsive pages and agreed integrations, reviewing the details with your team.'},{title:'Launch and keep it fresh',text:'Check the customer journeys, prepare the domain, and hand over training or a plan for ongoing care.'}],
+  faqs:[
+   {q:'Do you design websites for restaurants, cafes, and breweries?',a:'Yes. We can build around the needs of a restaurant, cafe, gelateria, brewery, or other food and beverage business. Dolce Anna, Ricco’s Pizza, and Anvil & Forge show different approaches to presenting a local business online.'},
+   {q:'Can you connect online ordering or reservations?',a:'We can connect supported links and embeds from the ordering or reservation service you use. We review the provider’s capabilities, mobile experience, and any subscription costs before confirming the integration. Custom connections are scoped separately.'},
+   {q:'Can you build a Shopify website for a food or beverage brand?',a:'Yes. Our WholeMoon project centers on Shopify development with design assistance. We discuss the product catalog, purchasing requirements, content, and platform needs before recommending a scope. Shopify subscriptions and paid apps are separate from the build.'},
+   {q:'Can we update menus, flavors, and hours ourselves?',a:'Yes. We plan a manageable content structure and provide training for the agreed platform. Your team can keep approved menu and business information up to date, or we can discuss ongoing support.'},
+   {q:'How much does restaurant website design cost?',a:'Our custom Squarespace website packages start at $2,500. Ecommerce, larger catalogs, photography, and integrations can change the scope. AI-built website hosting and care starts at $75 per month, with an initial build quoted separately. We confirm deliverables and pricing before work begins.'},
+   {q:'Do you work with restaurants outside Springfield, Illinois?',a:'Yes. Zion Creative is based in Springfield and works with restaurants and food and beverage businesses nationwide. We review your menu, brand, customer journeys, and existing systems through a collaborative remote process.'},
+   {q:'Can you refresh an older website or create our first one?',a:'Yes. Dolce Anna is an example of a first website, while Ricco’s Pizza began with an existing legacy Squarespace site. We review your starting point, the content to retain, and any URLs or integrations that need attention before planning the new experience.'}
+  ]
  }
+
 };

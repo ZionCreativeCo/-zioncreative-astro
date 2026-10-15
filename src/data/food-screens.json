@@ -1,0 +1,27 @@
+{
+  "dolce-anna-home": {
+    "src": "/images/dolce-anna-home.webp",
+    "width": 1600,
+    "height": 4838
+  },
+  "dolce-anna-flavors": {
+    "src": "/images/dolce-anna-flavors.webp",
+    "width": 1600,
+    "height": 2359
+  },
+  "riccos-pizza-home": {
+    "src": "/images/riccos-pizza-home.webp",
+    "width": 1600,
+    "height": 3202
+  },
+  "riccos-pizza-menu": {
+    "src": "/images/riccos-pizza-menu.webp",
+    "width": 1600,
+    "height": 3353
+  },
+  "riccos-pizza-about": {
+    "src": "/images/riccos-pizza-about.webp",
+    "width": 1600,
+    "height": 1801
+  }
+}

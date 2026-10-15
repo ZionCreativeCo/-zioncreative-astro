@@ -112,5 +112,23 @@
     "width": 894,
     "height": 571,
     "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois"
+  },
+  "/dolce-anna": {
+    "src": "/images/work-dolce-anna-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Dolce Anna custom Squarespace website design"
+  },
+  "/riccos-pizza": {
+    "src": "/images/work-riccos-pizza-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Ricco’s Pizza custom Squarespace website redesign"
+  },
+  "/food-and-beverage-web-design": {
+    "src": "/images/work-dolce-anna-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Food and beverage website design by Zion Creative"
   }
 }
