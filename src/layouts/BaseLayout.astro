@@ -4,6 +4,15 @@ interface Props { title: string; description: string; noindex?: boolean; }
 const { title, description, noindex = false } = Astro.props;
 const live = import.meta.env.PUBLIC_SITE_LIVE === 'true' && !noindex;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const organization = {
+ '@context':'https://schema.org', '@type':'Organization',
+ '@id':'https://www.zioncreative.co/#organization', name:'Zion Creative',
+ url:'https://www.zioncreative.co/', logo:'https://www.zioncreative.co/images/logo.webp',
+ description:'Independent design studio based in Springfield, Illinois, providing branding, website design, graphic design, and ongoing creative support.',
+ email:'hello@zioncreative.co', telephone:'+1-217-725-2031', foundingDate:'2017',
+ areaServed:[{'@type':'City',name:'Springfield, Illinois'},{'@type':'City',name:'Sherman, Illinois'}],
+ knowsAbout:['Brand identity design','Website design and development','Graphic design','Digital marketing']
+};
 ---
 <!doctype html>
 <html lang="en">
@@ -19,6 +28,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
+    {Astro.url.pathname === "/" && <script type="application/ld+json" set:html={JSON.stringify(organization)} />}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

@@ -17,3 +17,6 @@
 /home-work-examples/the-villas/ /the-villas/ 301
 /home-work-examples/various-logo-design-amp-branding /logo-design-springfield-il/ 301
 /home-work-examples/various-logo-design-amp-branding/ /logo-design-springfield-il/ 301
+
+# Keep the conventional sitemap URL working for existing submissions.
+/sitemap.xml /sitemap-index.xml 301
