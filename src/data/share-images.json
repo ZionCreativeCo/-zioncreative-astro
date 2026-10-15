@@ -100,5 +100,17 @@
     "width": 1448,
     "height": 1086,
     "alt": "Brand and marketing design by Zion Creative in Springfield, Illinois"
+  },
+  "/church-web-design": {
+    "src": "/images/work-koke-mill-church-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Custom website design for Koke Mill Church in Springfield, Illinois"
+  },
+  "/senior-living-web-design": {
+    "src": "/images/work-the-villas-1280.webp",
+    "width": 894,
+    "height": 571,
+    "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois"
   }
 }
