@@ -1,4 +1,6 @@
+import {specialtyPages} from './specialty-pages';
 export const industryPages = {
+ ...specialtyPages,
  church: {
   slug:'church-web-design', title:'Church Website Design in Springfield, IL | Zion Creative',
   description:'Custom church website design in Springfield, Illinois. Welcome first-time visitors, connect your community, and explore our work for Koke Mill and Evangel.',

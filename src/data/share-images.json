@@ -130,5 +130,23 @@
     "width": 1280,
     "height": 960,
     "alt": "Food and beverage website design by Zion Creative"
+  },
+  "/webflow-development-for-agencies": {
+    "src": "/images/work-colossus-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Colossus website, designed by Colossus and developed in Webflow by Zion Creative"
+  },
+  "/shopify-food-beverage-brands": {
+    "src": "/images/work-wholemoon-1280.webp",
+    "width": 1280,
+    "height": 816,
+    "alt": "WholeMoon plant-based beverage website developed on Shopify with design assistance from Zion Creative"
+  },
+  "/equestrian-web-design": {
+    "src": "/images/work-project-equiventures-east-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Equiventures East equestrian vacation website, branding, and photography by Zion Creative"
   }
 }
