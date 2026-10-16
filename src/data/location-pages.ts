@@ -1,3 +1,4 @@
+import {nextLocationPages} from './next-location-pages';
 import {expansionPages} from './expansion-pages';
 import {regionalPages} from './regional-pages';
 import {floridaServicePages} from './florida-service-pages';
@@ -5,6 +6,7 @@ export const locationPages = {
   ...floridaServicePages,
   ...regionalPages,
   ...expansionPages,
+  ...nextLocationPages,
   "newSmyrna": {
     "slug": "web-design-new-smyrna-beach",
     "title": "New Smyrna Beach Website Design | Zion Creative",
