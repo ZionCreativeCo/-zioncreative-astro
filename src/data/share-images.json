@@ -202,5 +202,167 @@
     "width": 1280,
     "height": 727,
     "alt": "Brand and packaging design for Anvil & Forge brewery in Springfield, Illinois"
+  },
+  "/web-design-bloomington-il": {
+    "src": "/images/work-koke-mill-church-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Custom website design for Koke Mill Church in Springfield, Illinois"
+  },
+  "/logo-design-bloomington-il": {
+    "src": "/images/work-garrison-group-1280.webp",
+    "width": 1280,
+    "height": 587,
+    "alt": "Garrison Group, selected creative work by Zion Creative"
+  },
+  "/marketing-bloomington-il": {
+    "src": "/images/work-the-villas-1280.webp",
+    "width": 894,
+    "height": 571,
+    "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois"
+  },
+  "/web-design-decatur-il": {
+    "src": "/images/work-project-kp-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "KP, selected creative work by Zion Creative"
+  },
+  "/logo-design-decatur-il": {
+    "src": "/images/work-garrison-group-1280.webp",
+    "width": 1280,
+    "height": 587,
+    "alt": "Garrison Group, selected creative work by Zion Creative"
+  },
+  "/marketing-decatur-il": {
+    "src": "/images/work-garrison-group-1280.webp",
+    "width": 1280,
+    "height": 587,
+    "alt": "Garrison Group, selected creative work by Zion Creative"
+  },
+  "/web-design-champaign-il": {
+    "src": "/images/work-lingk-1280.webp",
+    "width": 1280,
+    "height": 887,
+    "alt": "Lingk, selected creative work by Zion Creative"
+  },
+  "/logo-design-champaign-il": {
+    "src": "/images/work-lingk-1280.webp",
+    "width": 1280,
+    "height": 887,
+    "alt": "Lingk, selected creative work by Zion Creative"
+  },
+  "/marketing-champaign-il": {
+    "src": "/images/work-bfg-1280.webp",
+    "width": 720,
+    "height": 405,
+    "alt": "Beat, selected creative work by Zion Creative"
+  },
+  "/web-design-peoria-il": {
+    "src": "/images/work-the-villas-1280.webp",
+    "width": 894,
+    "height": 571,
+    "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois"
+  },
+  "/logo-design-peoria-il": {
+    "src": "/images/work-garrison-group-1280.webp",
+    "width": 1280,
+    "height": 587,
+    "alt": "Garrison Group, selected creative work by Zion Creative"
+  },
+  "/marketing-peoria-il": {
+    "src": "/images/work-the-villas-1280.webp",
+    "width": 894,
+    "height": 571,
+    "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois"
+  },
+  "/web-design-st-louis-mo": {
+    "src": "/images/work-riccos-pizza-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Ricco’s Pizza custom website redesign in Sherman, Illinois"
+  },
+  "/logo-design-st-louis-mo": {
+    "src": "/images/work-anvil-and-forge-1280.webp",
+    "width": 1280,
+    "height": 727,
+    "alt": "Brand and packaging design for Anvil & Forge brewery in Springfield, Illinois"
+  },
+  "/marketing-st-louis-mo": {
+    "src": "/images/work-anvil-and-forge-1280.webp",
+    "width": 1280,
+    "height": 727,
+    "alt": "Brand and packaging design for Anvil & Forge brewery in Springfield, Illinois"
+  },
+  "/web-design-chicago-il": {
+    "src": "/images/work-colossus-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Colossus website, designed by Colossus and developed by Zion Creative"
+  },
+  "/logo-design-chicago-il": {
+    "src": "/images/work-anvil-and-forge-1280.webp",
+    "width": 1280,
+    "height": 727,
+    "alt": "Brand and packaging design for Anvil & Forge brewery in Springfield, Illinois"
+  },
+  "/marketing-chicago-il": {
+    "src": "/images/work-bfg-1280.webp",
+    "width": 720,
+    "height": 405,
+    "alt": "Beat, selected creative work by Zion Creative"
+  },
+  "/web-design-rockford-il": {
+    "src": "/images/work-project-kp-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "KP, selected creative work by Zion Creative"
+  },
+  "/logo-design-rockford-il": {
+    "src": "/images/work-garrison-group-1280.webp",
+    "width": 1280,
+    "height": 587,
+    "alt": "Garrison Group, selected creative work by Zion Creative"
+  },
+  "/marketing-rockford-il": {
+    "src": "/images/work-garrison-group-1280.webp",
+    "width": 1280,
+    "height": 587,
+    "alt": "Garrison Group, selected creative work by Zion Creative"
+  },
+  "/web-design-sherman-il": {
+    "src": "/images/work-riccos-pizza-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Ricco’s Pizza custom website redesign in Sherman, Illinois"
+  },
+  "/logo-design-sherman-il": {
+    "src": "/images/work-the-villas-1280.webp",
+    "width": 894,
+    "height": 571,
+    "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois"
+  },
+  "/marketing-sherman-il": {
+    "src": "/images/work-the-villas-1280.webp",
+    "width": 894,
+    "height": 571,
+    "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois"
+  },
+  "/web-design-riverton-il": {
+    "src": "/images/work-dolce-anna-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Custom gelateria website design for Dolce Anna in Riverton, Illinois"
+  },
+  "/logo-design-riverton-il": {
+    "src": "/images/work-little-pond-1280.webp",
+    "width": 1280,
+    "height": 713,
+    "alt": "Little Pond, selected creative work by Zion Creative"
+  },
+  "/marketing-riverton-il": {
+    "src": "/images/work-dolce-anna-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Custom gelateria website design for Dolce Anna in Riverton, Illinois"
   }
 }

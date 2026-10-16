@@ -34,5 +34,9 @@ for(const file of htmlFiles){
  }
 }
 if(sitemap.length!==new Set(sitemap).size)errors.push('Duplicate sitemap URLs');
+const directory=await readFile(path.join(root,'sitemap','index.html'),'utf8');
+const directoryMain=directory.match(/<main[\s>][\s\S]*?<\/main>/)?.[0]??'';
+const directoryLinks=new Set([...directoryMain.matchAll(/<a\s[^>]*>/g)].map(tag=>attrs(tag[0]).href).filter(href=>href?.startsWith('/')).map(href=>new URL(href,'https://www.zioncreative.co').pathname.replace(/\/$/,'')||'/'));
+for(const route of sitemap)if(route!=='/sitemap'&&!directoryLinks.has(route))errors.push(`HTML sitemap missing public page: ${route}`);
 if(errors.length){console.error(errors.join('\n'));process.exit(1);}
 console.log(`SEO checks passed: ${htmlFiles.length} pages, ${sitemap.length} public URLs, unique metadata, valid schema, image descriptions and local media references.`);

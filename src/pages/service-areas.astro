@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ServiceAreaDirectory from '../components/ServiceAreaDirectory.astro';
+import {serviceAreas} from '../data/service-areas';
+const regions=['Illinois & Missouri','Florida'];
+---
+<BaseLayout title="Service Areas | Illinois, St. Louis & Florida | Zion Creative" description="Explore Zion Creative’s website design, branding, and marketing services across Illinois, St. Louis, and Florida. Independent studio based in Springfield, IL.">
+<Header/><main id="main">
+<section class="area-hero section-dark"><div class="container"><p class="eyebrow">Independent studio. Connected work.</p><h1>Based in Springfield.<br/><em>Built around your business.</em></h1><p>Website design, brand identity, and ongoing marketing for businesses across Illinois, St. Louis, and beyond. Explore the services and project examples relevant to your area.</p><a class="button button-lime" href="/contact">Talk about your project</a></div></section>
+<section class="container area-intro"><h2>Direct collaboration.<br/><em>Wherever the work takes us.</em></h2><div><p>Zion Creative is an independent studio based in Springfield, Illinois. Our local portfolio includes Koke Mill Church and Anvil &amp; Forge in Springfield, The Villas and Ricco’s Pizza in Sherman, and Dolce Anna in Riverton.</p><p>We also work remotely with businesses and creative teams elsewhere. These service pages describe how we can help in each area; meetings, photography, travel, and any on-site work are agreed as part of the project.</p></div></section>
+{regions.map(region=><section class="container area-region" aria-labelledby={region==='Florida'?'florida-title':'midwest-title'}><h2 id={region==='Florida'?'florida-title':'midwest-title'}>{region}</h2><ServiceAreaDirectory areas={serviceAreas.filter(area=>area.region===region)}/></section>)}
+</main><Footer/>
+</BaseLayout>
+<style>
+.area-hero{padding-block:80px}.area-hero h1{font-size:clamp(40px,5vw,70px);line-height:1.1;letter-spacing:-.04em;margin:24px 0 30px}.area-hero .container>p:not(.eyebrow){max-width:640px;font-size:18px;line-height:1.75;color:#d4d0c6}.area-hero .button{margin-top:30px}.area-intro{display:grid;grid-template-columns:1fr 1.2fr;gap:70px;padding-block:75px}.area-intro h2,.area-region>h2{font-size:clamp(32px,4vw,48px);line-height:1.15}.area-intro p{font-size:17px;line-height:1.8;color:#59574f}.area-intro p+p{margin-top:20px}.area-region{padding-block:0 75px}.area-region>h2{margin-bottom:35px}.area-region :global(.area-directory){grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:1000px){.area-region :global(.area-directory){grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.area-hero{padding-block:45px}.area-intro{grid-template-columns:1fr;gap:24px;padding-block:45px}.area-region{padding-bottom:45px}.area-region :global(.area-directory){grid-template-columns:1fr}}
+</style>
