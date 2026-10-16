@@ -154,5 +154,53 @@
     "width": 1280,
     "height": 960,
     "alt": "Custom Dolce Anna gelateria website displayed on a desktop monitor"
+  },
+  "/logo-design-new-smyrna-beach": {
+    "src": "/images/work-anvil-and-forge-1280.webp",
+    "width": 1280,
+    "height": 727,
+    "alt": "Brand and packaging design for Anvil & Forge brewery in Springfield, Illinois"
+  },
+  "/marketing-new-smyrna-beach": {
+    "src": "/images/work-the-villas-1280.webp",
+    "width": 894,
+    "height": 571,
+    "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois"
+  },
+  "/web-design-port-orange": {
+    "src": "/images/work-riccos-pizza-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Ricco’s Pizza custom website redesign in Sherman, Illinois"
+  },
+  "/logo-design-port-orange": {
+    "src": "/images/work-garrison-group-1280.webp",
+    "width": 1280,
+    "height": 587,
+    "alt": "Garrison Group, selected creative work by Zion Creative"
+  },
+  "/marketing-port-orange": {
+    "src": "/images/work-the-villas-1280.webp",
+    "width": 894,
+    "height": 571,
+    "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois"
+  },
+  "/web-design-ormond-beach": {
+    "src": "/images/work-project-equiventures-east-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Equiventures East, selected creative work by Zion Creative"
+  },
+  "/logo-design-ormond-beach": {
+    "src": "/images/work-garrison-group-1280.webp",
+    "width": 1280,
+    "height": 587,
+    "alt": "Garrison Group, selected creative work by Zion Creative"
+  },
+  "/marketing-ormond-beach": {
+    "src": "/images/work-anvil-and-forge-1280.webp",
+    "width": 1280,
+    "height": 727,
+    "alt": "Brand and packaging design for Anvil & Forge brewery in Springfield, Illinois"
   }
 }

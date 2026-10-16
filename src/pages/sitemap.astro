@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import portfolio from '../data/portfolio.json';
+import pages from '../data/pages.json';
+import {industryPages} from '../data/industry-pages';
+import {locationPages} from '../data/location-pages';
+const locationSlugs=new Set(Object.values(locationPages).map(page=>page.slug));
+const groups=[
+ {id:'explore',name:'Explore Zion',description:'Meet the studio, browse the work, and start a conversation.',links:[{href:'/',label:'Home'},{href:'/portfolio',label:'Our work'},{href:'/services',label:'Services'},{href:'/pricing',label:'Pricing'},{href:'/about-us',label:'About Zion'},{href:'/testimonials',label:'Client reviews'},{href:'/contact',label:'Contact'},{href:'/jobs',label:'Creative opportunities'}]},
+ {id:'services',name:'Design & marketing',description:'Explore the ways we can work together.',links:pages.filter(page=>page.slug.endsWith('-design-springfield-il')||['brand-management-services','digital-marketing-springfield-il'].includes(page.slug)).map(page=>({href:`/${page.slug}`,label:page.title.split(' | ')[0]}))},
+ {id:'specialties',name:'Industries & specialties',description:'Website experiences shaped around a particular audience or platform.',links:[{href:'/law-firm-web-design',label:'Law firm website design'},...Object.values(industryPages).filter(page=>!locationSlugs.has(page.slug)).map(page=>({href:`/${page.slug}`,label:page.title.split(' | ')[0]}))]},
+ ...['New Smyrna Beach','Port Orange','Ormond Beach'].map(city=>({id:city.toLowerCase().replaceAll(' ','-'),name:city,description:'Website design, brand identity, and ongoing marketing services.',links:Object.values(locationPages).filter(page=>page.headline===city).sort((a,b)=>['web-design','logo-design','marketing'].findIndex(prefix=>a.slug.startsWith(prefix))-['web-design','logo-design','marketing'].findIndex(prefix=>b.slug.startsWith(prefix))).map(page=>({href:`/${page.slug}`,label:page.title.split(' | ')[0]}))})),
+ {id:'case-studies',name:'Case studies',description:'A closer look at the strategy, design, and development behind the work.',links:portfolio.filter(project=>project.path!=='/logo-design-springfield-il').map(project=>({href:project.path,label:project.path==='/project/kp'?'KP Corp':project.name}))},
+ {id:'policies',name:'Policies & privacy',description:'Information about using this website and working with Zion Creative.',links:[{href:'/privacy',label:'Privacy policy'},{href:'/cookies',label:'Cookies & privacy choices'},{href:'/terms',label:'Terms & conditions'},{href:'/refunds',label:'Cancellations & refunds'}]}
+];
+---
+<BaseLayout title="Sitemap | Explore Zion Creative" description="Find every public Zion Creative page: services, case studies, industry websites, Florida service areas, studio information, and website policies.">
+<Header/>
+<main id="main">
+ <section class="directory-hero section-dark"><div class="container"><p class="eyebrow">The whole picture</p><h1>A place for<br/><em>every page.</em></h1><p>Explore our services, project stories, and the ways we help businesses bring their brands to life.</p><nav aria-label="Sitemap sections">{groups.map(group=><a href={`#${group.id}`}>{group.name}</a>)}</nav></div></section>
+ <div class="container directory-sections">{groups.map(group=><section class="directory-group" id={group.id} aria-labelledby={`${group.id}-title`}><div><h2 id={`${group.id}-title`}>{group.name}</h2><p>{group.description}</p></div><ul>{group.links.map(link=><li><a href={link.href}>{link.label}</a></li>)}</ul></section>)}</div>
+</main>
+<Footer/>
+</BaseLayout>
+<style>
+.directory-hero{padding-block:80px}.directory-hero h1{font-size:clamp(48px,6vw,84px);line-height:1.07;letter-spacing:-.045em;margin:22px 0 30px}.directory-hero>.container>p:not(.eyebrow){max-width:540px;color:#d4d0c6;font-size:18px;line-height:1.7}.directory-hero nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:35px}.directory-hero nav a{border:1px solid #ffffff45;border-radius:6px;padding:12px 16px;font-size:14px}.directory-sections{padding-block:20px 70px}.directory-group{display:grid;grid-template-columns:.85fr 1.5fr;gap:70px;padding-block:60px;border-bottom:1px solid #c9c3b9;scroll-margin-top:30px}.directory-group:last-child{border-bottom:0}.directory-group h2{font-size:clamp(28px,3vw,42px);line-height:1.15;margin-bottom:20px}.directory-group p{max-width:320px;color:#59574f;line-height:1.7}.directory-group ul{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px;align-content:start;margin:0;padding:0}.directory-group a{display:block;padding:17px 0;border-bottom:1px solid #c9c3b9;font-size:17px;line-height:1.5;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:5px;overflow-wrap:anywhere}.directory-group a:focus-visible,.directory-hero nav a:focus-visible{outline:3px solid #7d8527;outline-offset:5px}@media(hover:hover) and (pointer:fine){.directory-group a:hover{text-decoration-color:currentColor}.directory-hero nav a:hover{background:var(--lime);color:var(--ink);border-color:var(--lime)}}@media(max-width:760px){.directory-hero{padding-block:45px}.directory-hero nav{gap:10px}.directory-group{grid-template-columns:1fr;gap:22px;padding-block:35px}.directory-group ul{grid-template-columns:1fr}.directory-group p{max-width:100%}.directory-sections{padding-block:10px 35px}}
+</style>

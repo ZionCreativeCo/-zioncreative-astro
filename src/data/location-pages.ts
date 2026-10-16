@@ -1,4 +1,6 @@
+import {floridaServicePages} from './florida-service-pages';
 export const locationPages = {
+  ...floridaServicePages,
   "newSmyrna": {
     "slug": "web-design-new-smyrna-beach",
     "title": "New Smyrna Beach Website Design | Zion Creative",
@@ -166,25 +168,25 @@ export const locationPages = {
       },
       "explore": [
         {
+          "href": "/logo-design-new-smyrna-beach",
+          "title": "Logo & brand design",
+          "text": "A recognizable identity across your storefront, packaging, and digital presence.",
+          "image": "work-anvil-and-forge",
+          "alt": "Anvil and Forge brand and packaging design"
+        },
+        {
+          "href": "/marketing-new-smyrna-beach",
+          "title": "Marketing support",
+          "text": "Connect social creative, email, and website updates with a practical plan.",
+          "image": "work-the-villas",
+          "alt": "The Villas brand and website creative"
+        },
+        {
           "href": "/food-and-beverage-web-design",
           "title": "Restaurant websites",
           "text": "Menus, food imagery, and a clear route to ordering.",
           "image": "work-dolce-anna",
-          "alt": "Dolce Anna restaurant and gelateria website"
-        },
-        {
-          "href": "/shopify-food-beverage-brands",
-          "title": "Product brand websites",
-          "text": "Shopify development and a digital home for your range.",
-          "image": "work-wholemoon",
-          "alt": "WholeMoon Shopify beverage website"
-        },
-        {
-          "href": "/brand-management-services",
-          "title": "Ongoing marketing",
-          "text": "Keep your website, content, and creative connected.",
-          "image": "work-anvil-and-forge",
-          "alt": "Anvil and Forge branding and marketing creative"
+          "alt": "Dolce Anna gelateria website on a desktop monitor"
         }
       ]
     }
