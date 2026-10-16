@@ -1,7 +1,9 @@
+import {sectorPages} from './sector-pages';
 import {locationPages} from './location-pages';
 import {specialtyPages} from './specialty-pages';
 export const industryPages = {
  ...specialtyPages,
+ ...sectorPages,
  ...locationPages,
  church: {
   slug:'church-web-design', title:'Church Website Design in Springfield, IL | Zion Creative',

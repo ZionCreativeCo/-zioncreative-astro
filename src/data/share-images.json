@@ -460,5 +460,29 @@
     "width": 1280,
     "height": 960,
     "alt": "Equiventures East equestrian vacation website, branding, and photography by Zion Creative"
+  },
+  "/food-beverage-branding": {
+    "src": "/images/work-anvil-and-forge-1280.webp",
+    "width": 1280,
+    "height": 727,
+    "alt": "Brand and packaging design for Anvil & Forge brewery in Springfield, Illinois"
+  },
+  "/b2b-website-design": {
+    "src": "/images/work-project-kp-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "KP, selected creative work by Zion Creative"
+  },
+  "/commercial-real-estate-branding": {
+    "src": "/images/work-garrison-group-1280.webp",
+    "width": 1280,
+    "height": 587,
+    "alt": "Garrison Group, selected creative work by Zion Creative"
+  },
+  "/nonprofit-web-design": {
+    "src": "/images/work-koke-mill-church-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Custom website design for Koke Mill Church in Springfield, Illinois"
   }
 }
