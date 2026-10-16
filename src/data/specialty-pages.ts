@@ -469,11 +469,11 @@ export const specialtyPages = {
           "alt": "Anvil and Forge creative work"
         },
         {
-          "href": "/portfolio",
-          "title": "More partnerships",
-          "text": "Explore website and brand work across industries.",
-          "image": "work-the-villas",
-          "alt": "The Villas website and brand work"
+          "href": "/equestrian-web-design-ocala-fl",
+          "title": "Ocala equestrian websites",
+          "text": "Website design and branding for Ocala horse businesses and equestrian destinations.",
+          "image": "work-project-equiventures-east",
+          "alt": "Equiventures East equestrian website and brand presentation"
         }
       ]
     }
