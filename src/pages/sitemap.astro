@@ -7,13 +7,18 @@ import pages from '../data/pages.json';
 import {industryPages} from '../data/industry-pages';
 import {locationPages} from '../data/location-pages';
 import {serviceAreas} from '../data/service-areas';
-import ServiceAreaDirectory from '../components/ServiceAreaDirectory.astro';
 const locationSlugs=new Set(Object.values(locationPages).map(page=>page.slug));
+const areaLinks=serviceAreas.flatMap(area=>area.links.map(link=>({...link,label:`${link.label} (${area.state==='Florida'?'FL':area.state==='Missouri'?'MO':'IL'})`})));
+const areaPaths=new Set(areaLinks.map(link=>link.href));
+for(const page of pages.filter(page=>page.slug.endsWith('-springfield-il'))){
+ if(!areaPaths.has(`/${page.slug}`))areaLinks.push({href:`/${page.slug}`,label:`Springfield ${page.title.split(' in ')[0].toLowerCase()} (IL)`});
+}
+areaLinks.sort((a,b)=>a.label.localeCompare(b.label));
 const groups=[
- {id:'explore',name:'Explore Zion',description:'Meet the studio, browse the work, and start a conversation.',links:[{href:'/',label:'Home'},{href:'/portfolio',label:'Our work'},{href:'/services',label:'Services'},{href:'/pricing',label:'Pricing'},{href:'/about-us',label:'About Zion'},{href:'/testimonials',label:'Client reviews'},{href:'/contact',label:'Contact'},{href:'/service-areas',label:'Service areas'},{href:'/jobs',label:'Creative opportunities'}]},
+ {id:'explore',name:'Explore Zion',description:'Meet the studio, browse the work, and start a conversation.',links:[{href:'/',label:'Home'},{href:'/portfolio',label:'Our work'},{href:'/services',label:'Services'},{href:'/pricing',label:'Pricing'},{href:'/about-us',label:'About Zion'},{href:'/testimonials',label:'Client reviews'},{href:'/contact',label:'Contact'},{href:'/jobs',label:'Creative opportunities'}]},
  {id:'services',name:'Design & marketing',description:'Explore the ways we can work together.',links:pages.filter(page=>page.slug.endsWith('-design-springfield-il')||['brand-management-services','digital-marketing-springfield-il'].includes(page.slug)).map(page=>({href:`/${page.slug}`,label:page.title.split(' | ')[0]}))},
  {id:'specialties',name:'Industries & specialties',description:'Design, branding, and website services shaped around a particular audience.',links:[{href:'/law-firm-web-design',label:'Law firm website design'},...Object.values(industryPages).filter(page=>!locationSlugs.has(page.slug)).map(page=>({href:`/${page.slug}`,label:page.title.split(' | ')[0]}))]},
- ...['Illinois & Missouri','Florida'].map(region=>({id:region==='Florida'?'florida':'illinois-missouri',name:region,description:'Website design, brand identity, and marketing services by area.',areas:serviceAreas.filter(area=>area.region===region)})),
+ {id:'service-areas',name:'Service areas',description:'Website design, branding, and marketing pages for the places we serve.',links:areaLinks},
  {id:'case-studies',name:'Case studies',description:'A closer look at the strategy, design, and development behind the work.',links:portfolio.filter(project=>project.path!=='/logo-design-springfield-il').map(project=>({href:project.path,label:project.path==='/project/kp'?'KP Corp':project.name}))},
  {id:'policies',name:'Policies & privacy',description:'Information about using this website and working with Zion Creative.',links:[{href:'/privacy',label:'Privacy policy'},{href:'/cookies',label:'Cookies & privacy choices'},{href:'/terms',label:'Terms & conditions'},{href:'/refunds',label:'Cancellations & refunds'}]}
 ];
@@ -22,7 +27,7 @@ const groups=[
 <Header/>
 <main id="main">
  <section class="directory-hero section-dark"><div class="container"><p class="eyebrow">The whole picture</p><h1>A place for<br/><em>every page.</em></h1><p>Explore our services, project stories, and the ways we help businesses bring their brands to life.</p><nav aria-label="Sitemap sections">{groups.map(group=><a href={`#${group.id}`}>{group.name}</a>)}</nav></div></section>
- <div class="container directory-sections">{groups.map(group=><section class="directory-group" id={group.id} aria-labelledby={`${group.id}-title`}><div><h2 id={`${group.id}-title`}>{group.name}</h2><p>{group.description}</p></div>{'areas' in group?<ServiceAreaDirectory areas={group.areas}/>:<ul>{group.links.map(link=><li><a href={link.href}>{link.label}</a></li>)}</ul>}</section>)}</div>
+ <div class="container directory-sections">{groups.map(group=><section class="directory-group" id={group.id} aria-labelledby={`${group.id}-title`}><div><h2 id={`${group.id}-title`}>{group.name}</h2><p>{group.description}</p></div><ul>{group.links.map(link=><li><a href={link.href}>{link.label}</a></li>)}</ul></section>)}</div>
 </main>
 <Footer/>
 </BaseLayout>

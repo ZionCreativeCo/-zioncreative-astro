@@ -223,7 +223,7 @@ export const expansionPages = {
           "alt": "The Villas brand and website creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-koke-mill-church",
@@ -409,7 +409,7 @@ export const expansionPages = {
           "alt": "The Villas brand and website creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-garrison-group",
@@ -595,7 +595,7 @@ export const expansionPages = {
           "alt": "Anvil and Forge brand and packaging design"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-the-villas",
@@ -789,7 +789,7 @@ export const expansionPages = {
           "alt": "The Villas brand and website creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-riccos-pizza",
@@ -983,7 +983,7 @@ export const expansionPages = {
           "alt": "The Villas brand and website creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-garrison-group",
@@ -1177,7 +1177,7 @@ export const expansionPages = {
           "alt": "Anvil and Forge brand and packaging design"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-anvil-and-forge",
@@ -1363,7 +1363,7 @@ export const expansionPages = {
           "alt": "The Villas brand and website creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-project-kp",
@@ -1549,7 +1549,7 @@ export const expansionPages = {
           "alt": "The Villas brand and website creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-garrison-group",
@@ -1735,7 +1735,7 @@ export const expansionPages = {
           "alt": "Anvil and Forge brand and packaging design"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-bfg",
@@ -1921,7 +1921,7 @@ export const expansionPages = {
           "alt": "The Villas brand and website creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-riccos-pizza",
@@ -2107,7 +2107,7 @@ export const expansionPages = {
           "alt": "The Villas brand and website creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-anvil-and-forge",
@@ -2293,7 +2293,7 @@ export const expansionPages = {
           "alt": "Anvil and Forge brand and packaging design"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-anvil-and-forge",
@@ -2479,7 +2479,7 @@ export const expansionPages = {
           "alt": "The Villas brand and website creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-dolce-anna",
@@ -2665,7 +2665,7 @@ export const expansionPages = {
           "alt": "The Villas brand and website creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-little-pond",
@@ -2851,7 +2851,7 @@ export const expansionPages = {
           "alt": "Anvil and Forge brand and packaging design"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Illinois & beyond",
           "text": "Explore the studio’s service areas and the ways we can work together.",
           "image": "work-the-villas",
@@ -3006,7 +3006,7 @@ export const expansionPages = {
           "alt": "Equiventures East custom equestrian website"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Across Florida & beyond",
           "text": "Explore the studio’s website, brand, and marketing service areas.",
           "image": "work-the-villas",

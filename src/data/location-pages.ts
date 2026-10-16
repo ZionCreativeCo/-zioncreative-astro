@@ -1,8 +1,10 @@
+import {demandLocationPages} from './demand-location-pages';
 import {nextLocationPages} from './next-location-pages';
 import {expansionPages} from './expansion-pages';
 import {regionalPages} from './regional-pages';
 import {floridaServicePages} from './florida-service-pages';
 export const locationPages = {
+  ...demandLocationPages,
   ...floridaServicePages,
   ...regionalPages,
   ...expansionPages,

@@ -20,3 +20,7 @@
 
 # Keep the conventional sitemap URL working for existing submissions.
 /sitemap.xml /sitemap-index.xml 301
+
+# Consolidate the retired location directory into the sitemap.
+/service-areas /sitemap/#service-areas 301
+/service-areas/ /sitemap/#service-areas 301

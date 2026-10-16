@@ -298,7 +298,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-koke-mill-church",
@@ -485,7 +485,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-koke-mill-church",
@@ -672,7 +672,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-dolce-anna",
@@ -859,7 +859,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-project-kp",
@@ -1046,7 +1046,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-project-kp",
@@ -1233,7 +1233,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-riccos-pizza",
@@ -1420,7 +1420,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-project-kp",
@@ -1607,7 +1607,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-project-kp",
@@ -1794,7 +1794,7 @@ export const nextLocationPages = {
           "alt": "Food & beverage branding by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-riccos-pizza",
@@ -1974,7 +1974,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-garrison-group",
@@ -2161,7 +2161,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-project-kp",
@@ -2348,7 +2348,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-koke-mill-church",
@@ -2535,7 +2535,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-project-kp",
@@ -2722,7 +2722,7 @@ export const nextLocationPages = {
           "alt": "Food & beverage branding by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-riccos-pizza",
@@ -2909,7 +2909,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-project-vpne",
@@ -3096,7 +3096,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-project-kp",
@@ -3283,7 +3283,7 @@ export const nextLocationPages = {
           "alt": "Food & beverage websites by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-anvil-and-forge",
@@ -3470,7 +3470,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-project-kp",
@@ -3657,7 +3657,7 @@ export const nextLocationPages = {
           "alt": "Ongoing creative support by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-little-pond",
@@ -3844,7 +3844,7 @@ export const nextLocationPages = {
           "alt": "Food & beverage branding by Zion Creative"
         },
         {
-          "href": "/service-areas",
+          "href": "/sitemap/#service-areas",
           "title": "Explore service areas",
           "text": "Find the studio’s other locations and related service pages.",
           "image": "work-dolce-anna",
