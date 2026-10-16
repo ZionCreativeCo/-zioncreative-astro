@@ -40,6 +40,24 @@ export const demandLocationCities = [
     "state": "Illinois",
     "displayName": "Elgin",
     "aliases": []
+  },
+  {
+    "name": "Evansville",
+    "state": "Indiana",
+    "displayName": "Evansville",
+    "aliases": []
+  },
+  {
+    "name": "Sebastian",
+    "state": "Florida",
+    "displayName": "Sebastian",
+    "aliases": []
+  },
+  {
+    "name": "Fort Pierce",
+    "state": "Florida",
+    "displayName": "Fort Pierce",
+    "aliases": []
   }
 ];
 
@@ -1352,5 +1370,566 @@ export const demandLocationPages = {
     },
     "schemaName": "Website Design in Elgin, IL",
     "directoryLabel": "Elgin website design"
+  },
+  "web_design_evansville_in": {
+    "slug": "web-design-evansville-in",
+    "title": "Website Design in Evansville, IN | Zion Creative",
+    "description": "Website design for Evansville, Indiana businesses. Clear service content, authentic project examples, custom design, and practical website training and support.",
+    "name": "A clear introduction. Room for the details.",
+    "audience": "Evansville businesses",
+    "businessLabel": "business",
+    "serviceType": "Website design and development",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Evansville",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Indiana"
+        }
+      }
+    ],
+    "location": "",
+    "headline": "Evansville",
+    "emphasis": "website design.",
+    "intro": "Help prospective customers understand the work before the first conversation. We offer website design for Evansville businesses, combining useful service content, authentic imagery, and a clear route to the right inquiry.",
+    "cta": "Talk about your website",
+    "secondaryLabel": "Explore website pricing",
+    "secondaryHref": "/pricing/#websites",
+    "featureIntro": "Website design and development shaped around the decisions your customers need to make.",
+    "hero": "/images/work-project-kp-1280.webp",
+    "heroMobile": "/images/work-project-kp-640.webp",
+    "heroAlt": "KP, selected creative work by Zion Creative",
+    "heroCaption": "KP Corp · Webflow website",
+    "heroLink": "/project/kp",
+    "introTitle": "More than a list of services.",
+    "introEmphasis": "A useful way to understand them.",
+    "introParagraphs": [
+      "A buyer comparing professional services needs to understand what a company does, who the work is for, and what makes the team a good fit. A well-planned website can answer those questions without asking every visitor to begin with a phone call.",
+      "For an Evansville project, we begin with the material you already have: service descriptions, approved experience, team information, and the questions customers ask. We use it to define a manageable page structure and a considered visual direction, with responsibilities agreed before the build."
+    ],
+    "features": [
+      {
+        "icon": "strategy",
+        "title": "Decide what deserves its own page.",
+        "text": "A distinct service may need its own introduction, examples, and inquiry route. Closely related offers can share a useful overview. We plan the structure around the customer’s decision."
+      },
+      {
+        "icon": "web",
+        "title": "Choose the platform around the content.",
+        "text": "A focused business site and a resource-heavy website have different editing needs. We compare the requirements before agreeing on Squarespace, Webflow, or another supported approach."
+      },
+      {
+        "icon": "photo",
+        "title": "Put real experience in context.",
+        "text": "Use approved team details, photographs, and project examples to explain the work. We confirm what can be published and identify missing content before designing around it."
+      },
+      {
+        "icon": "email",
+        "title": "Give the first inquiry a purpose.",
+        "text": "Work with the people responding to decide which questions belong in a form. Keep phone and email routes visible, with supported notifications and routing agreed in the scope."
+      },
+      {
+        "icon": "branding",
+        "title": "Connect the website to the identity.",
+        "text": "If the logo and visual assets are ready, apply them consistently. If they need a refresh, define that work before the website phase so the deliverables and costs stay clear."
+      },
+      {
+        "icon": "management",
+        "title": "Plan who owns the next update.",
+        "text": "Identify which service, team, and resource details are likely to change. Agree on training, editing responsibilities, and whether ongoing creative support would be useful."
+      }
+    ],
+    "workTitle": "The work behind the approach.",
+    "workEmphasis": "Different customer journeys.",
+    "workIntro": "Selected projects from our broader portfolio. Each case study identifies the business, scope, and our role.",
+    "projects": [
+      {
+        "name": "KP Corp",
+        "path": "/project/kp",
+        "image": "work-project-kp",
+        "text": "A Webflow website project with Ten Gun Design, bringing KP’s print and digital communication services and company information into a clearer structure.",
+        "alt": "KP, selected creative work by Zion Creative"
+      },
+      {
+        "name": "The Villas",
+        "path": "/the-villas",
+        "image": "work-the-villas",
+        "text": "Sherman, Illinois · Brand direction, website design, photography, and social creative for The Villas Senior Care Community.",
+        "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois"
+      }
+    ],
+    "localEyebrow": "Independent studio. Direct collaboration.",
+    "localTitle": "A direct creative partner.",
+    "localEmphasis": "A defined project scope.",
+    "localParagraphs": [
+      "Zion Creative is based in Springfield, Illinois, and works remotely with Evansville businesses. KP Corp is a Webflow project with Ten Gun Design, while The Villas in Sherman, Illinois brings together website design, branding, photography, and social creative. These examples show different scopes we can discuss with your team; meetings and any on-site production are agreed separately."
+    ],
+    "steps": [
+      {
+        "title": "Understand the customer journey",
+        "text": "Review the current site, audience, brand assets, and the actions the new website needs to support."
+      },
+      {
+        "title": "Plan the content and design",
+        "text": "Agree on the page structure and visual direction, with clear responsibilities for copy and imagery."
+      },
+      {
+        "title": "Build and review",
+        "text": "Develop responsive pages and agreed integrations, then check key journeys on desktop and mobile."
+      },
+      {
+        "title": "Prepare for launch",
+        "text": "Check links, metadata, redirects, and domain requirements, then provide training or ongoing care."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What should an Evansville service business prepare before a website project?",
+        "a": "Bring the current site, service list, available logo files, approved project examples, and the questions customers regularly ask. We review what is usable and identify content or photography needs before setting the page list and responsibilities."
+      },
+      {
+        "q": "Do we need a new brand before redesigning the website?",
+        "a": "Not necessarily. We review the current identity and assets first. A website can use a strong existing brand; any logo refinement, identity system, or supporting materials are separately defined in the proposal."
+      },
+      {
+        "q": "Can you work with our marketing team or agency?",
+        "a": "Yes. We can agree on a defined design or development role, with clear ownership of creative direction, supplied content, responsive decisions, and approvals. The case studies identify the agency partners and roles behind relevant projects."
+      },
+      {
+        "q": "Which website platforms do you work with?",
+        "a": "We build custom Squarespace websites and provide Webflow and Shopify development, with the platform selected around the project. We can also discuss an AI-built website with hosting and ongoing care. We confirm the platform and ongoing costs before beginning."
+      },
+      {
+        "q": "What does a custom website cost?",
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+      },
+      {
+        "q": "How do we collaborate from Evansville?",
+        "a": "Zion Creative is based in Springfield, Illinois, working remotely with Evansville, Indiana businesses. We agree on communication, supplied content, review stages, and training before the project. Any travel, on-site photography, or outside production is discussed and quoted separately."
+      }
+    ],
+    "sectionOptions": {
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentHref": "/pricing/#websites",
+      "investmentCta": "Compare website options",
+      "faqLabel": "Evansville website",
+      "processIcons": [
+        "email",
+        "strategy",
+        "web",
+        "management"
+      ],
+      "exploreIntro": "Explore related services, portfolio examples, and the wider service area.",
+      "mockup": {
+        "src": "/images/work-the-villas-1280.webp",
+        "alt": "Brand and website design for The Villas Senior Care Community in Sherman, Illinois",
+        "caption": "The Villas · Selected project",
+        "href": "/the-villas",
+        "address": "The Villas",
+        "width": 894,
+        "height": 571,
+        "artwork": true
+      },
+      "explore": [
+        {
+          "href": "/web-design-springfield-il",
+          "title": "Website design",
+          "text": "Explore the approach, platform options, and ongoing care.",
+          "image": "work-koke-mill-church",
+          "alt": "Website design by Zion Creative"
+        },
+        {
+          "href": "/brand-management-services",
+          "title": "Ongoing creative support",
+          "text": "Connect the next phase of the brand, website, and customer communication.",
+          "image": "work-the-villas",
+          "alt": "Ongoing creative support by Zion Creative"
+        },
+        {
+          "href": "/sitemap/#service-areas",
+          "title": "Explore service areas",
+          "text": "Find the studio’s other locations and related service pages.",
+          "image": "work-project-kp",
+          "alt": "KP, selected creative work by Zion Creative"
+        }
+      ]
+    },
+    "schemaName": "Website Design in Evansville, IN",
+    "directoryLabel": "Evansville website design"
+  },
+  "web_design_sebastian_fl": {
+    "slug": "web-design-sebastian-fl",
+    "title": "Website Design in Sebastian, FL | Zion Creative",
+    "description": "Custom website design for Sebastian, Florida businesses. First websites and redesigns with authentic imagery, clear information, and useful booking or contact paths.",
+    "name": "A personal business. A useful website.",
+    "audience": "Sebastian businesses",
+    "businessLabel": "business",
+    "serviceType": "Website design and development",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Sebastian",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Florida"
+        }
+      }
+    ],
+    "location": "",
+    "headline": "Sebastian",
+    "emphasis": "website design.",
+    "intro": "Give people a clear place to discover what you do and how to get started. We create websites for Sebastian, Florida businesses, pairing a distinctive visual character with straightforward service, product, and visiting information.",
+    "cta": "Talk about your website",
+    "secondaryLabel": "Explore website pricing",
+    "secondaryHref": "/pricing/#websites",
+    "featureIntro": "Website design and development shaped around the decisions your customers need to make.",
+    "hero": "/images/work-dolce-anna-1280.webp",
+    "heroMobile": "/images/work-dolce-anna-640.webp",
+    "heroAlt": "Custom gelateria website design for Dolce Anna in Riverton, Illinois",
+    "heroCaption": "Dolce Anna · Custom Squarespace website",
+    "heroLink": "/dolce-anna",
+    "introTitle": "Start with what people need.",
+    "introEmphasis": "Make the business feel like itself.",
+    "introParagraphs": [
+      "A first website needs to do a few things well: introduce the business, explain the offer, and help someone take a practical next step. A redesign may need the same clarity, along with a careful review of existing information and links.",
+      "For a Sebastian project, we start with the customer’s questions and the material you can realistically maintain. We shape the page list, imagery, content, and contact options together, keeping the experience useful on a phone as well as a larger screen."
+    ],
+    "features": [
+      {
+        "icon": "web",
+        "title": "Give a first site a useful scope.",
+        "text": "Begin with the offer, business story, key details, and contact route. Add separate pages when they give visitors information they actually need."
+      },
+      {
+        "icon": "photo",
+        "title": "Use imagery with a clear job.",
+        "text": "Show the real product, people, or setting with approved photographs. Decide what can be reused and whether new photography belongs in the project budget."
+      },
+      {
+        "icon": "strategy",
+        "title": "Make practical details easy to find.",
+        "text": "Bring service coverage, visiting details, menus, or product information into the relevant pages. Your team confirms the information that customers rely on."
+      },
+      {
+        "icon": "campaign",
+        "title": "Connect tools the business already uses.",
+        "text": "Review ordering, booking, or inquiry providers before promising an integration. Scope supported links and embeds around how customers should move through the experience."
+      },
+      {
+        "icon": "branding",
+        "title": "Build on the existing character.",
+        "text": "Apply the current logo and visual assets where they work well. Brand identity and selected marketing materials can be added as defined creative phases."
+      },
+      {
+        "icon": "management",
+        "title": "Keep future changes straightforward.",
+        "text": "Plan how hours, images, service details, and other changing information will be edited. Include training or agree on ongoing help for those updates."
+      }
+    ],
+    "workTitle": "The work behind the approach.",
+    "workEmphasis": "Different customer journeys.",
+    "workIntro": "Selected projects from our broader portfolio. Each case study identifies the business, scope, and our role.",
+    "projects": [
+      {
+        "name": "Dolce Anna",
+        "path": "/dolce-anna",
+        "image": "work-dolce-anna",
+        "text": "Riverton, Illinois · A first website for Dolce Anna, bringing its Italian gelato, signature flavors, and family story online.",
+        "alt": "Custom gelateria website design for Dolce Anna in Riverton, Illinois"
+      },
+      {
+        "name": "Ricco’s Pizza",
+        "path": "/riccos-pizza",
+        "image": "work-riccos-pizza",
+        "text": "Sherman, Illinois · A custom Squarespace redesign that brings specialty pizzas, a readable menu, and call-to-order links into one experience.",
+        "alt": "Ricco’s Pizza custom website redesign in Sherman, Illinois"
+      }
+    ],
+    "localEyebrow": "Independent studio. Direct collaboration.",
+    "localTitle": "A direct creative partner.",
+    "localEmphasis": "A defined project scope.",
+    "localParagraphs": [
+      "Our independent studio is based in Springfield, Illinois, collaborating remotely with Sebastian businesses. Dolce Anna in Riverton is a first custom Squarespace website for an Italian gelateria; Ricco’s Pizza in Sherman is a custom redesign of an existing Squarespace site. Their case studies show the different starting points, with actual project locations clearly identified."
+    ],
+    "steps": [
+      {
+        "title": "Understand the customer journey",
+        "text": "Review the current site, audience, brand assets, and the actions the new website needs to support."
+      },
+      {
+        "title": "Plan the content and design",
+        "text": "Agree on the page structure and visual direction, with clear responsibilities for copy and imagery."
+      },
+      {
+        "title": "Build and review",
+        "text": "Develop responsive pages and agreed integrations, then check key journeys on desktop and mobile."
+      },
+      {
+        "title": "Prepare for launch",
+        "text": "Check links, metadata, redirects, and domain requirements, then provide training or ongoing care."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can you create a first website for a Sebastian business?",
+        "a": "Yes. We can begin with the business offer, practical details, approved brand assets, and available imagery. We agree on the essential pages and content responsibilities before development, with additional tools included only where the business needs them."
+      },
+      {
+        "q": "Can we keep using Squarespace when the existing site feels outdated?",
+        "a": "We review the current site, plan, content, and requirements before recommending an approach. A custom Squarespace redesign may be suitable; any version changes, migration, existing URLs, and outside tools are considered during scoping."
+      },
+      {
+        "q": "Can you include booking, ordering, or product information?",
+        "a": "We can organize approved information and assess links or supported embeds from the providers you use. If the project needs ecommerce or a more specialized connection, we confirm the platform, provider limitations, and fees before agreeing on the build."
+      },
+      {
+        "q": "Which website platforms do you work with?",
+        "a": "We build custom Squarespace websites and provide Webflow and Shopify development, with the platform selected around the project. We can also discuss an AI-built website with hosting and ongoing care. We confirm the platform and ongoing costs before beginning."
+      },
+      {
+        "q": "What does a custom website cost?",
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+      },
+      {
+        "q": "How do we collaborate from Sebastian?",
+        "a": "Zion Creative is based in Springfield, Illinois, working remotely with Sebastian, Florida businesses. We agree on communication, supplied content, review stages, and training before the project. Any travel, on-site photography, or outside production is discussed and quoted separately."
+      }
+    ],
+    "sectionOptions": {
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentHref": "/pricing/#websites",
+      "investmentCta": "Compare website options",
+      "faqLabel": "Sebastian website",
+      "processIcons": [
+        "email",
+        "strategy",
+        "web",
+        "management"
+      ],
+      "exploreIntro": "Explore related services, portfolio examples, and the wider service area.",
+      "mockup": {
+        "src": "/images/work-dolce-anna-1280.webp",
+        "alt": "Custom gelateria website design for Dolce Anna in Riverton, Illinois",
+        "caption": "Dolce Anna · Selected project",
+        "href": "/dolce-anna",
+        "address": "Dolce Anna",
+        "width": 1280,
+        "height": 960,
+        "artwork": true
+      },
+      "explore": [
+        {
+          "href": "/food-and-beverage-web-design",
+          "title": "Restaurant websites",
+          "text": "Explore menus, product stories, and customer journeys.",
+          "image": "work-dolce-anna",
+          "alt": "Restaurant websites by Zion Creative"
+        },
+        {
+          "href": "/food-beverage-branding",
+          "title": "Food & beverage branding",
+          "text": "Connect the next phase of the brand, website, and customer communication.",
+          "image": "work-anvil-and-forge",
+          "alt": "Food & beverage branding by Zion Creative"
+        },
+        {
+          "href": "/sitemap/#service-areas",
+          "title": "Explore service areas",
+          "text": "Find the studio’s other locations and related service pages.",
+          "image": "work-riccos-pizza",
+          "alt": "Ricco’s Pizza custom website redesign in Sherman, Illinois"
+        }
+      ]
+    },
+    "schemaName": "Website Design in Sebastian, FL",
+    "directoryLabel": "Sebastian website design"
+  },
+  "web_design_fort_pierce_fl": {
+    "slug": "web-design-fort-pierce-fl",
+    "title": "Website Design in Fort Pierce, FL | Zion Creative",
+    "description": "Website design for Fort Pierce, Florida businesses. Clear service pages, custom development, and connected branding and marketing creative. Explore relevant work.",
+    "name": "A connected brand. A clearer website.",
+    "audience": "Fort Pierce businesses",
+    "businessLabel": "business",
+    "serviceType": "Website design and development",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Fort Pierce",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Florida"
+        }
+      }
+    ],
+    "location": "",
+    "headline": "Fort Pierce",
+    "emphasis": "website design.",
+    "intro": "Bring the way your business looks and the way it explains itself into one experience. We offer website design for Fort Pierce companies, with clear service information and branding or marketing creative scoped around the work you need.",
+    "cta": "Talk about your website",
+    "secondaryLabel": "Explore website pricing",
+    "secondaryHref": "/pricing/#websites",
+    "featureIntro": "Website design and development shaped around the decisions your customers need to make.",
+    "hero": "/images/work-project-kp-1280.webp",
+    "heroMobile": "/images/work-project-kp-640.webp",
+    "heroAlt": "KP, selected creative work by Zion Creative",
+    "heroCaption": "KP Corp · Webflow website",
+    "heroLink": "/project/kp",
+    "introTitle": "A recognizable first impression.",
+    "introEmphasis": "Useful information behind it.",
+    "introParagraphs": [
+      "A business may introduce itself through a referral, a proposal, a product, or a social post before someone visits its website. The site should connect that impression with a clear explanation of the offer and an easy way to ask the right question.",
+      "For a Fort Pierce project, we review the visual identity and customer journey together. The scope may focus on the website or include a defined branding phase, with practical content, development requirements, and the launch handoff planned from the start."
+    ],
+    "features": [
+      {
+        "icon": "branding",
+        "title": "Review the visual foundation first.",
+        "text": "Check the logo files, color, typography, and existing materials before applying them to a new website. Define any identity work as an agreed phase with clear deliverables."
+      },
+      {
+        "icon": "strategy",
+        "title": "Explain the offer in the customer’s language.",
+        "text": "Map services, products, or capabilities around what visitors need to understand. Use a useful page structure rather than adding pages simply to repeat the same introduction."
+      },
+      {
+        "icon": "web",
+        "title": "Match the build to the business.",
+        "text": "Review editing needs, page types, and supported connections before choosing a platform. Define responsive behavior and the review process alongside the design."
+      },
+      {
+        "icon": "photo",
+        "title": "Connect the story with real assets.",
+        "text": "Use approved photography and project information that reflect the business. Plan content preparation and any new production while the scope is being set."
+      },
+      {
+        "icon": "email",
+        "title": "Make the next action specific.",
+        "text": "Help someone choose a relevant service, ask a question, or request a conversation. Agree on form fields, notifications, and provider capabilities before launch."
+      },
+      {
+        "icon": "campaign",
+        "title": "Carry the direction beyond launch.",
+        "text": "Selected presentation materials, social creative, or ongoing website updates can extend the approved design. Establish priorities and the working arrangement around your team’s capacity."
+      }
+    ],
+    "workTitle": "The work behind the approach.",
+    "workEmphasis": "Different customer journeys.",
+    "workIntro": "Selected projects from our broader portfolio. Each case study identifies the business, scope, and our role.",
+    "projects": [
+      {
+        "name": "KP Corp",
+        "path": "/project/kp",
+        "image": "work-project-kp",
+        "text": "A Webflow website project with Ten Gun Design, bringing KP’s print and digital communication services and company information into a clearer structure.",
+        "alt": "KP, selected creative work by Zion Creative"
+      },
+      {
+        "name": "Anvil & Forge",
+        "path": "/anvil-and-forge",
+        "image": "work-anvil-and-forge",
+        "text": "Springfield, Illinois · Branding, packaging, website design, and photography for Anvil & Forge, connecting the brewery’s character across different formats.",
+        "alt": "Brand and packaging design for Anvil & Forge brewery in Springfield, Illinois"
+      }
+    ],
+    "localEyebrow": "Independent studio. Direct collaboration.",
+    "localTitle": "A direct creative partner.",
+    "localEmphasis": "A defined project scope.",
+    "localParagraphs": [
+      "Zion Creative works from Springfield, Illinois, with remote collaboration for Fort Pierce businesses. KP Corp demonstrates a Webflow website completed with Ten Gun Design; Anvil & Forge in Springfield shows connected branding, packaging, website, and photography work. We use those credited examples to define the right combination for your business."
+    ],
+    "steps": [
+      {
+        "title": "Understand the customer journey",
+        "text": "Review the current site, audience, brand assets, and the actions the new website needs to support."
+      },
+      {
+        "title": "Plan the content and design",
+        "text": "Agree on the page structure and visual direction, with clear responsibilities for copy and imagery."
+      },
+      {
+        "title": "Build and review",
+        "text": "Develop responsive pages and agreed integrations, then check key journeys on desktop and mobile."
+      },
+      {
+        "title": "Prepare for launch",
+        "text": "Check links, metadata, redirects, and domain requirements, then provide training or ongoing care."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can a Fort Pierce website project include branding as well?",
+        "a": "Yes. We can plan identity and website work as connected phases. The proposal identifies the brand deliverables, website pages, content responsibilities, reviews, and final files, so the website follows an approved visual direction."
+      },
+      {
+        "q": "What if we only need the website and already have a brand?",
+        "a": "We can work with the current identity and approved assets. We review their suitability for the page layouts, identify missing files, and define only the additional design work needed for the website."
+      },
+      {
+        "q": "What marketing support can continue after the website launches?",
+        "a": "Ongoing support can include agreed website content updates, social creative, campaign materials, or other brand applications. We establish priorities, deliverables, timing, and fees around your needs and team rather than assuming every service belongs in one package."
+      },
+      {
+        "q": "Which website platforms do you work with?",
+        "a": "We build custom Squarespace websites and provide Webflow and Shopify development, with the platform selected around the project. We can also discuss an AI-built website with hosting and ongoing care. We confirm the platform and ongoing costs before beginning."
+      },
+      {
+        "q": "What does a custom website cost?",
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+      },
+      {
+        "q": "How do we collaborate from Fort Pierce?",
+        "a": "Zion Creative is based in Springfield, Illinois, working remotely with Fort Pierce, Florida businesses. We agree on communication, supplied content, review stages, and training before the project. Any travel, on-site photography, or outside production is discussed and quoted separately."
+      }
+    ],
+    "sectionOptions": {
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentHref": "/pricing/#websites",
+      "investmentCta": "Compare website options",
+      "faqLabel": "Fort Pierce website",
+      "processIcons": [
+        "email",
+        "strategy",
+        "web",
+        "management"
+      ],
+      "exploreIntro": "Explore related services, portfolio examples, and the wider service area.",
+      "mockup": {
+        "src": "/images/work-anvil-and-forge-1280.webp",
+        "alt": "Brand and packaging design for Anvil & Forge brewery in Springfield, Illinois",
+        "caption": "Anvil & Forge · Selected project",
+        "href": "/anvil-and-forge",
+        "address": "Anvil & Forge",
+        "width": 1280,
+        "height": 727,
+        "artwork": true
+      },
+      "explore": [
+        {
+          "href": "/web-design-springfield-il",
+          "title": "Website design",
+          "text": "Explore the approach, platform options, and ongoing care.",
+          "image": "work-koke-mill-church",
+          "alt": "Website design by Zion Creative"
+        },
+        {
+          "href": "/brand-management-services",
+          "title": "Ongoing creative support",
+          "text": "Connect the next phase of the brand, website, and customer communication.",
+          "image": "work-the-villas",
+          "alt": "Ongoing creative support by Zion Creative"
+        },
+        {
+          "href": "/sitemap/#service-areas",
+          "title": "Explore service areas",
+          "text": "Find the studio’s other locations and related service pages.",
+          "image": "work-project-kp",
+          "alt": "KP, selected creative work by Zion Creative"
+        }
+      ]
+    },
+    "schemaName": "Website Design in Fort Pierce, FL",
+    "directoryLabel": "Fort Pierce website design"
   }
 };

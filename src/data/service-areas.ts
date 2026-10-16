@@ -4,7 +4,7 @@ import {locationPages} from './location-pages';
 import {regionalCities} from './regional-pages';
 import {expansionCities} from './expansion-pages';
 const cities=[
- ...demandLocationCities.map(city=>({...city,region:city.state==='Florida'?'Florida':'Illinois & Missouri'})),
+ ...demandLocationCities.map(city=>({...city,region:city.state==='Florida'?'Florida':city.state==='Indiana'?'Indiana':'Illinois & Missouri'})),
  ...nextLocationCities.map(city=>({...city,region:city.state==='Florida'?'Florida':'Illinois & Missouri'})),
  ...regionalCities.map(city=>({...city,displayName:city.name,region:'Illinois & Missouri'})),
  ...expansionCities.map(city=>({...city,region:city.state==='Florida'?'Florida':'Illinois & Missouri'})),

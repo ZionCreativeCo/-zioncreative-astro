@@ -8,7 +8,8 @@ import {industryPages} from '../data/industry-pages';
 import {locationPages} from '../data/location-pages';
 import {serviceAreas} from '../data/service-areas';
 const locationSlugs=new Set(Object.values(locationPages).map(page=>page.slug));
-const areaLinks=serviceAreas.flatMap(area=>area.links.map(link=>({...link,label:`${link.label} (${area.state==='Florida'?'FL':area.state==='Missouri'?'MO':'IL'})`})));
+const stateAbbreviations:Record<string,string>={Florida:'FL',Missouri:'MO',Illinois:'IL',Indiana:'IN'};
+const areaLinks=serviceAreas.flatMap(area=>area.links.map(link=>({...link,label:`${link.label} (${stateAbbreviations[area.state]??area.state})`})));
 const areaPaths=new Set(areaLinks.map(link=>link.href));
 for(const page of pages.filter(page=>page.slug.endsWith('-springfield-il'))){
  if(!areaPaths.has(`/${page.slug}`))areaLinks.push({href:`/${page.slug}`,label:`Springfield ${page.title.split(' in ')[0].toLowerCase()} (IL)`});

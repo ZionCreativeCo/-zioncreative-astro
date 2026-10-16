@@ -646,5 +646,23 @@
     "width": 1280,
     "height": 960,
     "alt": "KP, selected creative work by Zion Creative"
+  },
+  "/web-design-evansville-in": {
+    "src": "/images/work-project-kp-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "KP, selected creative work by Zion Creative"
+  },
+  "/web-design-sebastian-fl": {
+    "src": "/images/work-dolce-anna-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "Custom gelateria website design for Dolce Anna in Riverton, Illinois"
+  },
+  "/web-design-fort-pierce-fl": {
+    "src": "/images/work-project-kp-1280.webp",
+    "width": 1280,
+    "height": 960,
+    "alt": "KP, selected creative work by Zion Creative"
   }
 }
