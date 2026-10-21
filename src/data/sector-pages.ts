@@ -314,11 +314,11 @@ export const sectorPages = {
       },
       {
         "q": "How much does a B2B website cost?",
-        "a": "The investment depends on the platform, page types, content, migration, and integrations. Custom Squarespace packages start at $2,500; Webflow, larger sites, and specialist development are quoted to scope. AI-built hosting and care starts at $75 per month, with the initial build quoted separately."
+        "a": "The investment depends on the platform, page types, content, migration, and integrations. Custom Squarespace packages start at $2,500; Webflow, larger sites, and specialist development are quoted to scope. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee."
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the initial build quoted separately; platform and provider fees are separate.",
+      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the agreed initial build included and no startup fee; platform and provider fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "B2B website",
@@ -673,11 +673,11 @@ export const sectorPages = {
       },
       {
         "q": "What does a nonprofit website cost?",
-        "a": "Custom Squarespace website packages start at $2,500. Content preparation, page count, migrations, and integrations affect the scope. AI-built website hosting and care starts at $75 per month, with an initial build quoted separately. Platform and provider fees are separate."
+        "a": "Custom Squarespace website packages start at $2,500. Content preparation, page count, migrations, and integrations affect the scope. AI-built website hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Platform and provider fees are separate."
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace website packages start at $2,500. Content preparation, migration, donation or event tools, and additional requirements are quoted to scope. AI-built hosting and care starts at $75/month, with the initial build quoted separately. Platform subscriptions and provider fees are separate.",
+      "investmentCopy": "Custom Squarespace website packages start at $2,500. Content preparation, migration, donation or event tools, and additional requirements are quoted to scope. AI-built hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Platform subscriptions and provider fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Nonprofit website",

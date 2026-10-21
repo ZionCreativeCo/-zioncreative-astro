@@ -433,7 +433,7 @@ export const specialtyPages = {
       },
       {
         "q": "How much does an equestrian website cost?",
-        "a": "Custom Squarespace website packages start at $2,500. Content needs, photography, additional templates, and integrations affect the scope. AI-built website hosting and care starts at $75 per month, with the initial build quoted separately."
+        "a": "Custom Squarespace website packages start at $2,500. Content needs, photography, additional templates, and integrations affect the scope. AI-built website hosting and care starts at $75 per month, with the agreed initial build included and no startup fee."
       },
       {
         "q": "Can we update the website ourselves?",
@@ -441,7 +441,7 @@ export const specialtyPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. Photography, video, branding, travel, and specialized integrations are scoped separately. AI-built hosting and care starts at $75/month, with the initial build quoted separately.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. Photography, video, branding, travel, and specialized integrations are scoped separately. AI-built hosting and care starts at $75/month, with the agreed initial build included and no startup fee.",
       "faqLabel": "Equestrian website",
       "mockup": {
         "src": "/images/work-project-equiventures-east-1280.webp",

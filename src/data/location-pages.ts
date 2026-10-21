@@ -152,7 +152,7 @@ export const locationPages = {
       },
       {
         "q": "How much does a website cost?",
-        "a": "Custom Squarespace website packages start at $2,500. AI-built website hosting and care starts at $75 per month, with the initial build quoted separately. Shopify development, larger sites, photography, and integrations are quoted around the scope. Platform and paid-tool fees are separate."
+        "a": "Custom Squarespace website packages start at $2,500. AI-built website hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger sites, photography, and integrations are quoted around the scope. Platform and paid-tool fees are separate."
       },
       {
         "q": "Can you help with branding and ongoing marketing too?",
@@ -160,7 +160,7 @@ export const locationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built hosting and care starts at $75/month, with the initial build quoted separately. Shopify development, photography, and integrations are quoted to scope. We confirm the deliverables and costs before work begins.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Shopify development, photography, and integrations are quoted to scope. We confirm the deliverables and costs before work begins.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "New Smyrna Beach website",

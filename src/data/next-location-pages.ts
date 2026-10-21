@@ -249,7 +249,7 @@ export const nextLocationPages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -261,7 +261,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Chatham website",
@@ -436,7 +436,7 @@ export const nextLocationPages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -448,7 +448,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Lincoln website",
@@ -623,7 +623,7 @@ export const nextLocationPages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -635,7 +635,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Taylorville website",
@@ -822,7 +822,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the initial build quoted separately; platform and provider fees are separate.",
+      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the agreed initial build included and no startup fee; platform and provider fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Effingham website",
@@ -997,7 +997,7 @@ export const nextLocationPages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -1009,7 +1009,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Quincy website",
@@ -1184,7 +1184,7 @@ export const nextLocationPages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -1196,7 +1196,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "O’Fallon website",
@@ -1383,7 +1383,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the initial build quoted separately; platform and provider fees are separate.",
+      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the agreed initial build included and no startup fee; platform and provider fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Aurora website",
@@ -1570,7 +1570,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the initial build quoted separately; platform and provider fees are separate.",
+      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the agreed initial build included and no startup fee; platform and provider fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Schaumburg website",
@@ -1745,7 +1745,7 @@ export const nextLocationPages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -1757,7 +1757,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "St. Charles website",
@@ -2112,7 +2112,7 @@ export const nextLocationPages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -2124,7 +2124,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "St. Peters website",
@@ -2311,7 +2311,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace website packages start at $2,500. Content preparation, migration, donation or event tools, and additional requirements are quoted to scope. AI-built hosting and care starts at $75/month, with the initial build quoted separately. Platform subscriptions and provider fees are separate.",
+      "investmentCopy": "Custom Squarespace website packages start at $2,500. Content preparation, migration, donation or event tools, and additional requirements are quoted to scope. AI-built hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Platform subscriptions and provider fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Columbia website",
@@ -2486,7 +2486,7 @@ export const nextLocationPages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -2498,7 +2498,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Palm Coast website",
@@ -2673,7 +2673,7 @@ export const nextLocationPages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -2685,7 +2685,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Flagler Beach website",
@@ -2860,7 +2860,7 @@ export const nextLocationPages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -2872,7 +2872,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Edgewater website",
@@ -3059,7 +3059,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the initial build quoted separately; platform and provider fees are separate.",
+      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the agreed initial build included and no startup fee; platform and provider fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Titusville website",
@@ -3433,7 +3433,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the initial build quoted separately; platform and provider fees are separate.",
+      "investmentCopy": "B2B website projects are scoped around the platform, page structure, content model, migration, and integrations. Custom Squarespace packages start at $2,500. Webflow and larger builds are quoted individually. AI-built hosting and care starts at $75/month, with the agreed initial build included and no startup fee; platform and provider fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Lake Mary website",
@@ -3795,7 +3795,7 @@ export const nextLocationPages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -3807,7 +3807,7 @@ export const nextLocationPages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Winter Garden website",

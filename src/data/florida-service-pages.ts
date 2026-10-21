@@ -499,7 +499,7 @@ export const floridaServicePages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -511,7 +511,7 @@ export const floridaServicePages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Port Orange website",
@@ -1057,7 +1057,7 @@ export const floridaServicePages = {
       },
       {
         "q": "What does a custom website cost?",
-        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with an initial build quoted separately. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
+        "a": "Custom Squarespace packages start at $2,500. AI-built hosting and care starts at $75 per month, with the agreed initial build included and no startup fee. Shopify development, larger websites, integrations, and photography are quoted to scope; platform fees are separate."
       },
       {
         "q": "Will we be able to update the website?",
@@ -1069,7 +1069,7 @@ export const floridaServicePages = {
       }
     ],
     "sectionOptions": {
-      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the initial build quoted separately. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
+      "investmentCopy": "Custom Squarespace websites start at $2,500. AI-built website hosting and care starts at $75/month, with the agreed initial build included and no startup fee. Larger builds, Shopify development, photography, and integrations are quoted to scope. Platform and paid-tool fees are separate.",
       "investmentHref": "/pricing/#websites",
       "investmentCta": "Compare website options",
       "faqLabel": "Ormond Beach website",
