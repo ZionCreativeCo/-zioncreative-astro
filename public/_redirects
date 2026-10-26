@@ -1,4 +1,6 @@
 # Preserve legacy Squarespace URLs.
+# Permanently consolidate Google's older Services URL into its canonical URL.
+/services /services/ 301
 /home / 301
 /home/ / 301
 /home-old / 301
